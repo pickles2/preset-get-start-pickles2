@@ -33,8 +33,8 @@ class theme{
 	 * entry method
 	 */
 	public static function exec( $px ){
-		$self = new self($px);
-		$src = $self->bind($px);
+		$theme = new self($px);
+		$src = $theme->bind($px);
 		$px->bowl()->replace($src, '');
 		return true;
 	}
@@ -43,10 +43,61 @@ class theme{
 	 * bind content to theme
 	 */
 	private function bind( $px ){
+		$theme = $this;
 		ob_start();
 		include( $this->path_tpl.$this->page['layout'].'.html' );
 		$src = ob_get_clean();
 		return $src;
+	}
+
+
+	/**
+	 * グローバルナビを自動生成する
+	 */
+	public function mk_global_menu(){
+		$global_menu = $this->px->site()->get_global_menu();
+		if( !count($global_menu) ){
+			return '';
+		}
+
+		$rtn = '';
+		$rtn .= '<ul>'."\n";
+		foreach( $global_menu as $global_menu_page_id ){
+			$rtn .= '<li>'.$this->px->mk_link( $global_menu_page_id );
+			$rtn .= $this->mk_global_sub_menu( $global_menu_page_id );
+			$rtn .= '</li>'."\n";
+		}
+		$rtn .= '</ul>'."\n";
+		return $rtn;
+	}
+	private function mk_global_sub_menu( $parent_page_id ){
+		$rtn = '';
+		$children = $this->px->site()->get_children( $parent_page_id );
+		if( count($children) && $this->px->site()->is_page_in_breadcrumb( $parent_page_id ) ){
+			$rtn .= '<ul>'."\n";
+			foreach( $children as $child ){
+				$rtn .= '<li>'.$this->px->mk_link( $child );
+				$rtn .= $this->mk_global_sub_menu( $child );
+				$rtn .= '</li>'."\n";
+			}
+			$rtn .= '</ul>'."\n";
+		}
+		return $rtn;
+	}
+
+	/**
+	 * パンくずを自動生成する
+	 */
+	public function mk_breadcrumb(){
+		$breadcrumb = $this->px->site()->get_breadcrumb_array();
+		$rtn = '';
+		$rtn .= '<ul>';
+		foreach( $breadcrumb as $pid ){
+			$rtn .= '<li>'.$this->px->mk_link( $pid, array('label'=>$this->px->site()->get_page_info($pid, 'title_breadcrumb'), 'current'=>false) ).'</li>';
+		}
+		$rtn .= '<li><span>'.htmlspecialchars( $this->px->site()->get_current_page_info('title_breadcrumb') ).'</span></li>';
+		$rtn .= '</ul>';
+		return $rtn;
 	}
 
 }
