@@ -6,6 +6,8 @@ Pickles 2
 ```
 $ cd {$documentRoot}
 $ composer create-project tomk79/pickles2 ./ dev-master
+$ chmod -R 777 ./.pickles/_sys
+$ chmod -R 777 ./caches
 ```
 
 
