@@ -3,10 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title><?= htmlspecialchars($px->site()->get_current_page_info('title_full')); ?></title>
-<?php include(__DIR__.'/inc/headsection.inc'); ?>
-<?= $px->bowl()->pull('head'); ?>
+<?php
+	// ↓テーマの共通設定を読み込んでいます。
+	include(__DIR__.'/inc/headsection.inc');
+?>
+<?php
+	//↓コンテンツから受け取った
+	//	headセクション内用のソースを出力しています。
+	print $px->bowl()->pull('head');
+?>
 	</head>
 	<body>
-<?= $px->bowl()->pull(); ?>
+<?php
+	//↓コンテンツから受け取った
+	//	コンテンツエリアのソースを出力しています。
+	print $px->bowl()->pull();
+?>
 	</body>
 </html>

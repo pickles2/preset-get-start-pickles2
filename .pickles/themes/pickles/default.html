@@ -2,9 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title><?= htmlspecialchars($px->site()->get_current_page_info('title_full')); ?></title>
-<?php include(__DIR__.'/inc/headsection.inc'); ?>
-<?= $px->bowl()->pull('head'); ?>
+		<title><?= htmlspecialchars( $px->site()->get_current_page_info('title_full') ); ?></title>
+<?php
+	// ↓テーマの共通設定を読み込んでいます。
+	include(__DIR__.'/inc/headsection.inc');
+?>
+<?php
+	//↓コンテンツから受け取った
+	//	headセクション内用のソースを出力しています。
+	print $px->bowl()->pull('head');
+?>
 	</head>
 	<body>
 <div class="container" id="page_top">
@@ -13,17 +20,24 @@
 	</header>
 	<div class="row">
 		<div class="col-sm-9">
-			<h1><?= htmlspecialchars($px->site()->get_current_page_info( 'title')); ?></h1>
+			<h1><?= htmlspecialchars( $px->site()->get_current_page_info( 'title') ); ?></h1>
 			<div class="contents">
-<?= $px->bowl()->pull(); ?>
-			</div>
+<?php
+	//↓コンテンツから受け取った
+	//	コンテンツエリアのソースを出力しています。
+	print $px->bowl()->pull();
+?>
+			</div><!-- /.contents -->
 		</div>
 		<div class="col-sm-3">
+<?php /*
+↓ ここからの記述は、ローカルナビゲーションの自動生成ロジックです。
+*/ ?>
 <?php
 $current_page_id = $px->site()->get_current_page_info('id');
-$parent = $px->site()->get_parent($current_page_id);
+$parent = $px->site()->get_parent( $current_page_id );
 if( is_string($parent) ){
-	print '<p><a href="'.htmlspecialchars( $px->href($parent) ).'">'.htmlspecialchars($px->site()->get_page_info($parent, 'title_label')).'</a></p>';
+	print '<p><a href="'.htmlspecialchars( $px->href($parent) ).'">'.htmlspecialchars( $px->site()->get_page_info($parent, 'title_label') ).'</a></p>';
 }
 $bros = $px->site()->get_bros( $current_page_id );
 if( count($bros) ){
@@ -31,7 +45,7 @@ if( count($bros) ){
 	foreach( $bros as $bro ){
 		print '<li>'.$px->mk_link( $bro );
 		$children = $px->site()->get_children( $bro );
-		if( $bro == $current_page_id && count($children) ){
+		if( $bro == $current_page_id && count( $children ) ){
 			print '<ul>';
 			foreach( $children as $child ){
 				print '<li>'.$px->mk_link( $child ).'</li>';
@@ -43,6 +57,9 @@ if( count($bros) ){
 	print '</ul>';
 }
 ?>
+<?php /*
+↑ ローカルナビゲーションの自動生成ロジックはここで終わりです。
+*/ ?>
 		</div>
 	</div><!-- /.row -->
 </div><!-- /.container -->
