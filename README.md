@@ -22,11 +22,11 @@ $ curl -sS https://getcomposer.org/installer | php
 $ mv composer.phar /usr/local/bin/composer
 ```
 
-Windows の方は、次のコマンドでグローバルインストールできます。
-GUIインストーラ Composer-Setup.exe も用意されていますので、お好みの方法でインストールしてください。
+Windows の方は、GUIインストーラ Composer-Setup.exe が用意されています。
+次のコマンドでもインストールできますので、お好みの方法でインストールしてください。
 
 ```
-$ C:\Users\username>cd C:\bin
-$ C:\bin>php -r "readfile('https://getcomposer.org/installer');" | php
+$ cd C:\bin
+$ php -r "readfile('https://getcomposer.org/installer');" | php
 ```
 
