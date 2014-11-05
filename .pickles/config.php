@@ -29,7 +29,7 @@ return call_user_func( function(){
 	$conf->output_eol_coding = 'lf';
 	$conf->session_name = 'PXSID';
 	$conf->session_expire = 1800;
-	$conf->allow_pxcommands = 1; // PX Commands の実行を許可
+	$conf->allow_pxcommands = 0; // PX Commands のウェブインターフェイスからの実行を許可
 
 	// commands
 	$conf->commands = new stdClass;
@@ -75,6 +75,9 @@ return call_user_func( function(){
 
 	// Starting
 	$conf->funcs->starting = [
+		 // PX=config
+		'picklesFramework2\commands\config::regist' ,
+
 		 // PX=phpinfo
 		'picklesFramework2\commands\phpinfo::regist' ,
 
@@ -97,7 +100,7 @@ return call_user_func( function(){
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
 		// テーマ
-		'theme'=>'pickles2\themes\pickles\theme::exec' , 
+		'picklesFramework2\theme::exec' , 
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
