@@ -7,42 +7,13 @@
 <?= $px->bowl()->pull('head') ?>
 <style>
 
-/* ショルダーメニュー */
-.theme_shouldernavi{}
-.theme_shouldernavi ul{
-	margin:0; padding:0;
-}
-.theme_shouldernavi ul li{
-	margin:0 1px; padding:0; list-style-type:none;
-	display:inline-block;
-}
-.theme_shouldernavi ul li a{
-	display:block;
-	color:#fff;
-}
-
-/* グローバルメニュー */
-.theme_globalnavi{}
-.theme_globalnavi ul{
-	margin:0; padding:0;
-}
-.theme_globalnavi ul li{
-	margin:0 1px; padding:0; list-style-type:none;
-	display:inline-block;
-}
-.theme_globalnavi ul li a{
-	padding:0.5em 2em;
-	display:block;
-	background-color:#f5f5ff;
-}
 </style>
 	</head>
 	<body>
 		<header class="theme_header" id="page_top">
 			<div class="container">
 				<p class="theme_si"><a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a></p>
-			</div>
-			<div class="container theme_shouldernavi">
+				<div class="theme_shouldernavi">
 <?php
 	$shoulder_menu = $px->site()->get_shoulder_menu();
 	echo( '<ul>' );
@@ -51,9 +22,8 @@
 	}
 	echo( '</ul>' );
 ?>
-
-			</div>
-			<div class="container theme_globalnavi">
+				</div>
+				<div class="theme_globalnavi">
 <?php
 	$global_menu = $px->site()->get_global_menu();
 	echo( '<ul>' );
@@ -63,6 +33,7 @@
 	echo( '</ul>' );
 ?>
 
+				</div>
 			</div>
 		</header>
 		<div class="theme_mainblock">
@@ -89,6 +60,22 @@
 			</div><!-- /.container -->
 		</div><!-- /.theme_mainblock -->
 		<footer class="theme_footer">
+			<div class="container">
+				<nav class="theme_megafooter_navi">
+<?= $theme->mk_megafooter_menu() ?>
+				</nav>
+			</div>
+			<div class="container theme_footer_shouldernavi">
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	echo( '<li>'.$px->mk_link( '', array('current'=>false) ).'</li>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+			</div>
 			<div class="container">
 				<p style="text-align:center;">Pickles Framework is made by &copy;Tomoya Koyanagi.</p>
 			</div>

@@ -111,6 +111,34 @@ class theme{
 	}
 
 	/**
+	 * グローバルナビを自動生成する
+	 */
+	public function mk_megafooter_menu(){
+		$global_menu = $this->px->site()->get_global_menu();
+		if( !count($global_menu) ){
+			return '';
+		}
+
+		$rtn = '';
+		$rtn .= '<ul>'."\n";
+		foreach( $global_menu as $global_menu_page_id ){
+			$rtn .= '<li>'.$this->px->mk_link( $global_menu_page_id );
+			$children = $this->px->site()->get_children( $global_menu_page_id );
+			if( count( $children ) ){
+				$rtn .= '<ul>'."\n";
+				foreach( $children as $child_page_id ){
+					$rtn .= '<li>'.$this->px->mk_link( $child_page_id );
+					$rtn .= '</li>'."\n";
+				}
+				$rtn .= '</ul>'."\n";
+			}
+			$rtn .= '</li>'."\n";
+		}
+		$rtn .= '</ul>'."\n";
+		return $rtn;
+	}
+
+	/**
 	 * パンくずを自動生成する
 	 */
 	public function mk_breadcrumb(){

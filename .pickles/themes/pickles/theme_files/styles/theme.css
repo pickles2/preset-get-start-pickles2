@@ -3,13 +3,17 @@
 html, body{
 	background-color: #eee;
 }
+img, svg, video{
+	max-width:100%;
+	height:auto;
+}
 
 /**
  * ヘッダー
  */
 .theme_header{
 	background-color: #00a0e6;
-	padding:1em 0 0.5em 0;
+	padding:1em 0 1px 0;
 }
 
 /**
@@ -24,6 +28,7 @@ html, body{
  * Site Identity
  */
 .theme_si{
+	float:left;
 }
 .theme_si,
 .theme_si *{
@@ -40,6 +45,54 @@ html, body{
 	content: url('data:image/svg+xml;base64,<?= base64_encode( $px->get_pickles_logo_svg() ) ?>');
 	margin: 0 20px 0 0;
 }
+
+/**
+ * グローバルメニュー
+ */
+.theme_globalnavi{
+	clear:both;
+}
+.theme_globalnavi ul{
+	margin:0; padding:0;
+}
+.theme_globalnavi ul li{
+	margin:0.2em 1px 0 1px; padding:0; list-style-type:none;
+	display:inline-block;
+}
+.theme_globalnavi ul li a{
+	padding:0.5em 2em;
+	display:block;
+	background-color:#f5f5ff;
+}
+@media all and (max-width: 580px) {
+	.theme_globalnavi{
+		display:none;
+	}
+}
+
+/**
+ * ショルダーメニュー
+ */
+.theme_shouldernavi{
+	float:right;
+}
+.theme_shouldernavi ul{
+	margin:0; padding:0;
+}
+.theme_shouldernavi ul li{
+	margin:0 1px; padding:0; list-style-type:none;
+	display:inline-block;
+}
+.theme_shouldernavi ul li a{
+	display:block;
+	color:#fff;
+}
+@media all and (max-width: 580px) {
+	.theme_shouldernavi{
+		display:none;
+	}
+}
+
 
 
 /**
@@ -105,11 +158,70 @@ html, body{
 }
 
 
+
+
 /**
  * フッター
  */
 .theme_footer{
 	padding:1em 0 0.5em 0;
+}
+
+/**
+ * メガフッターメニュー
+ */
+.theme_megafooter_navi{
+	margin:0 auto 1em auto;
+	zoom:1;
+}
+.theme_megafooter_navi:after{
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+  clear: both;
+}
+.theme_megafooter_navi ul{
+	margin:0; padding:0;
+}
+.theme_megafooter_navi ul li{
+	margin:0 1px; padding:0; list-style-type:none;
+	float:left;
+	display:block;
+}
+.theme_megafooter_navi ul li ul li{
+	display:block;
+	float:none;
+	font-size:80%;
+}
+.theme_megafooter_navi ul li a{
+	padding:0.5em 2em;
+	display:block;
+}
+.theme_megafooter_navi ul li ul li a{
+	padding-left:4em;
+}
+
+/**
+ * ショルダーメニュー(フッター)
+ */
+.theme_footer_shouldernavi{}
+.theme_footer_shouldernavi ul{
+	margin:0.5em; padding:0;
+	text-align:center;
+}
+.theme_footer_shouldernavi ul li{
+	margin:0 1em; padding:0; list-style-type:none;
+	display:inline;
+}
+
+/**
+ * トップページ: ウェルカムボード
+ */
+.theme_welcome{
+	/* top.html に実装 */
 }
 
 /**
