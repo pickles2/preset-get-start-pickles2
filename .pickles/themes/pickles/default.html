@@ -5,11 +5,64 @@
 		<title><?= htmlspecialchars($px->site()->get_current_page_info('title_full')); ?></title>
 <?php include(__DIR__.'/inc/headsection.inc'); ?>
 <?= $px->bowl()->pull('head') ?>
+<style>
+
+/* ショルダーメニュー */
+.theme_shouldernavi{}
+.theme_shouldernavi ul{
+	margin:0; padding:0;
+}
+.theme_shouldernavi ul li{
+	margin:0 1px; padding:0; list-style-type:none;
+	display:inline-block;
+}
+.theme_shouldernavi ul li a{
+	display:block;
+	color:#fff;
+}
+
+/* グローバルメニュー */
+.theme_globalnavi{}
+.theme_globalnavi ul{
+	margin:0; padding:0;
+}
+.theme_globalnavi ul li{
+	margin:0 1px; padding:0; list-style-type:none;
+	display:inline-block;
+}
+.theme_globalnavi ul li a{
+	padding:0.5em 2em;
+	display:block;
+	background-color:#f5f5ff;
+}
+</style>
 	</head>
 	<body>
 		<header class="theme_header" id="page_top">
 			<div class="container">
 				<p class="theme_si"><a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a></p>
+			</div>
+			<div class="container theme_shouldernavi">
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+
+			</div>
+			<div class="container theme_globalnavi">
+<?php
+	$global_menu = $px->site()->get_global_menu();
+	echo( '<ul>' );
+	foreach( $global_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+
 			</div>
 		</header>
 		<div class="theme_mainblock">
@@ -25,11 +78,11 @@
 					</div>
 					<div class="col-sm-3">
 						<nav class="theme_common_navi">
-						<p><a href="<?= htmlspecialchars( $px->href('') ) ?>"><?= htmlspecialchars($px->site()->get_page_info('', 'title_label')) ?></a></p>
-<?= $theme->mk_global_menu() ?>
-						</nav>
-						<nav class="theme_common_navi">
-<?= $theme->mk_shoulder_menu() ?>
+<?php
+	$category_top_id = $px->site()->get_category_top();
+?>
+							<p><a href="<?= htmlspecialchars( $px->href($category_top_id) ) ?>"><?= htmlspecialchars($px->site()->get_page_info($category_top_id, 'title_label')) ?></a></p>
+<?= $theme->mk_sub_menu( $category_top_id ) ?>
 						</nav>
 					</div>
 				</div><!-- /.row -->

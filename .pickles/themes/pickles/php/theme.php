@@ -89,14 +89,20 @@ class theme{
 		$rtn .= '</ul>'."\n";
 		return $rtn;
 	}
-	private function mk_sub_menu( $parent_page_id ){
+	/**
+	 * 指定されたページの小階層のメニューを展開する
+	 * 
+	 * @param string $parent_page_id 親ページのページID
+	 * @return string ページリストのHTMLソース
+	 */
+	public function mk_sub_menu( $parent_page_id ){
 		$rtn = '';
 		$children = $this->px->site()->get_children( $parent_page_id );
-		if( count($children) && $this->px->site()->is_page_in_breadcrumb( $parent_page_id ) ){
+		if( count($children) ){
 			$rtn .= '<ul>'."\n";
 			foreach( $children as $child ){
 				$rtn .= '<li>'.$this->px->mk_link( $child );
-				$rtn .= $this->mk_sub_menu( $child );
+				$rtn .= $this->mk_sub_menu( $child );//←再帰的呼び出し
 				$rtn .= '</li>'."\n";
 			}
 			$rtn .= '</ul>'."\n";
