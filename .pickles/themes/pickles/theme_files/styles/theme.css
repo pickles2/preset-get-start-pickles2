@@ -80,7 +80,7 @@ img, svg, video{
 	margin:0; padding:0;
 }
 .theme_shouldernavi ul li{
-	margin:0 1px; padding:0; list-style-type:none;
+	margin:0 1em; padding:0; list-style-type:none;
 	display:inline-block;
 }
 .theme_shouldernavi ul li a{
@@ -199,9 +199,11 @@ img, svg, video{
 .theme_megafooter_navi ul li a{
 	padding:0.5em 2em;
 	display:block;
+	font-weight:bold;
 }
 .theme_megafooter_navi ul li ul li a{
 	padding-left:4em;
+	font-weight:normal;
 }
 
 /**
