@@ -7,6 +7,12 @@ img, svg, video{
 	max-width:100%;
 	height:auto;
 }
+.contents pre code,
+pre code{
+	border:none;
+	padding:0;
+	margin:0;
+}
 
 /**
  * ヘッダー
@@ -226,13 +232,6 @@ img, svg, video{
 	/* top.html に実装 */
 }
 
-/**
- * .code
- */
-.code pre{
-	border:none;
-	padding:0;
-}
 
 /**
  * .anchor_links
