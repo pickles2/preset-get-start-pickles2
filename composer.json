@@ -1,6 +1,6 @@
 {
     "name": "tomk79/pickles2",
-    "description": "",
+    "description": "Pickles 2 は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。",
     "keywords": ["pickles"],
     "license": "MIT",
     "authors": [
