@@ -20,7 +20,7 @@
     },
     "autoload": {
         "files": [
-            ".pickles/themes/pickles/php/theme.php"
+            "px-files/themes/pickles/php/theme.php"
         ]
     }
 }
