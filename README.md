@@ -34,7 +34,7 @@ $ php ./.px_execute.php /?PX=config
 $ php ./.px_execute.php /?PX=publish.run
 ```
 
-`./.pickles/_sys/ram/publish/` に、スタティックなHTMLとして出力されます。
+`./px-files/_sys/ram/publish/` に、スタティックなHTMLとして出力されます。
 
 
 ## キャッシュを消去する手順 - Clear caches
