@@ -84,6 +84,9 @@ return call_user_func( function(){
 		 // PX=phpinfo
 		'picklesFramework2\commands\phpinfo::register' ,
 
+		// sitemapExcel
+		'tomk79\pickles2\sitemap_excel\pickles_sitemap_excel::exec'
+
 	];
 
 	// funcs: Before content
