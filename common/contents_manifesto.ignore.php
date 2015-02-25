@@ -31,3 +31,4 @@
 
 <!-- FESS -->
 <link rel="stylesheet" href="<?php print htmlspecialchars($px->href('/common/styles/contents.css')); ?>" type="text/css" />
+<script src="<?= htmlspecialchars( $px->href('/common/scripts/contents.js') ); ?>"></script>
