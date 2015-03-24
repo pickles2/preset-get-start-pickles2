@@ -6,6 +6,7 @@
 <!-- autoindex -->
 
 
+
 <h2>ユニット .unit</h2>
 
 <p>すべてのユニットモジュールの基本となるユニットです。レイアウト上のまとまり1つ分をくくるコンテナで、標準仕様では、前後に一定のマージンが与えられ、回り込みが解除されます。</p>
@@ -124,6 +125,57 @@
 </textarea></div>
 </div><!-- /.unit -->
 
+
+<h3>5分割</h3>
+<div class="cols unit">
+	<div class="cols-col cols-1of5"><div class="cols-pad">
+		<p><code>.cols</code> には <code>.unit</code> を併記します。</p>
+		<p>このカラムは、<code>.cols-1of5</code> でマークアップされた5分割サイズのカラムです。</p>
+	</div></div>
+	<div class="cols-col cols-1of5"><div class="cols-pad">
+		<p><code>.cols</code> には <code>.unit</code> を併記します。</p>
+		<p>このカラムは、<code>.cols-1of5</code> でマークアップされた5分割サイズのカラムです。</p>
+	</div></div>
+	<div class="cols-col cols-1of5"><div class="cols-pad">
+		<p><code>.cols</code> には <code>.unit</code> を併記します。</p>
+		<p>このカラムは、<code>.cols-1of5</code> でマークアップされた5分割サイズのカラムです。</p>
+	</div></div>
+	<div class="cols-col cols-1of5"><div class="cols-pad">
+		<p><code>.cols</code> には <code>.unit</code> を併記します。</p>
+		<p>このカラムは、<code>.cols-1of5</code> でマークアップされた5分割サイズのカラムです。</p>
+	</div></div>
+	<div class="cols-col cols-1of5 cols-last"><div class="cols-pad">
+		<p>最後のカラムには、<code>.cols-last</code> を併記します。</p>
+		<p>このカラムは、<code>.cols-1of5</code> でマークアップされた5分割サイズのカラムです。</p>
+	</div></div>
+</div><!-- / .cols -->
+<div class="unit">
+	<div class="code"><textarea readonly="readonly">&lt;div class=&quot;cols unit&quot;&gt;
+	&lt;div class=&quot;cols-col cols-1of5&quot;&gt;&lt;div class=&quot;cols-pad&quot;&gt;
+		&lt;p&gt;&lt;code&gt;.cols&lt;/code&gt; には &lt;code&gt;.unit&lt;/code&gt; を併記します。&lt;/p&gt;
+		&lt;p&gt;このカラムは、&lt;code&gt;.cols-1of5&lt;/code&gt; でマークアップされた5分割サイズのカラムです。&lt;/p&gt;
+	&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;cols-col cols-1of5&quot;&gt;&lt;div class=&quot;cols-pad&quot;&gt;
+		&lt;p&gt;&lt;code&gt;.cols&lt;/code&gt; には &lt;code&gt;.unit&lt;/code&gt; を併記します。&lt;/p&gt;
+		&lt;p&gt;このカラムは、&lt;code&gt;.cols-1of5&lt;/code&gt; でマークアップされた5分割サイズのカラムです。&lt;/p&gt;
+	&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;cols-col cols-1of5&quot;&gt;&lt;div class=&quot;cols-pad&quot;&gt;
+		&lt;p&gt;&lt;code&gt;.cols&lt;/code&gt; には &lt;code&gt;.unit&lt;/code&gt; を併記します。&lt;/p&gt;
+		&lt;p&gt;このカラムは、&lt;code&gt;.cols-1of5&lt;/code&gt; でマークアップされた5分割サイズのカラムです。&lt;/p&gt;
+	&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;cols-col cols-1of5&quot;&gt;&lt;div class=&quot;cols-pad&quot;&gt;
+		&lt;p&gt;&lt;code&gt;.cols&lt;/code&gt; には &lt;code&gt;.unit&lt;/code&gt; を併記します。&lt;/p&gt;
+		&lt;p&gt;このカラムは、&lt;code&gt;.cols-1of5&lt;/code&gt; でマークアップされた5分割サイズのカラムです。&lt;/p&gt;
+	&lt;/div&gt;&lt;/div&gt;
+	&lt;div class=&quot;cols-col cols-1of5 cols-last&quot;&gt;&lt;div class=&quot;cols-pad&quot;&gt;
+		&lt;p&gt;最後のカラムには、&lt;code&gt;.cols-last&lt;/code&gt; を併記します。&lt;/p&gt;
+		&lt;p&gt;このカラムは、&lt;code&gt;.cols-1of5&lt;/code&gt; でマークアップされた5分割サイズのカラムです。&lt;/p&gt;
+	&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- / .cols --&gt;
+</textarea></div>
+</div>
+
+
 <h3>変則2分割</h3>
 <div class="cols unit">
 	<div class="cols-col cols-3of4"><div class="cols-pad">
@@ -185,7 +237,7 @@
 <h3>1/2画像右回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-r1of2">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -219,7 +271,7 @@
 <h3>1/3画像右回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-r1of3">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -253,7 +305,7 @@
 <h3>1/4画像右回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-r1of4">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -287,7 +339,7 @@
 <h3>1/2画像左回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-l1of2">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -321,7 +373,7 @@
 <h3>1/3画像左回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-l1of3">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -355,7 +407,7 @@
 <h3>1/4画像左回り込み</h3>
 <div class="unit float_media">
 	<div class="float_media-l1of4">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body">
@@ -390,7 +442,7 @@
 <h3>本文部分を矩形に保つ</h3>
 <div class="unit float_media">
 	<div class="float_media-l1of4">
-		<div class="float_media-image"><img src="index.files/sampleimage.png" alt="サンプル画像" /></div>
+		<div class="float_media-image"><img src="index_files/sampleimage.png" alt="サンプル画像" /></div>
 		<p class="float_media-caption">キャプションテキスト。キャプションテキスト。キャプションテキスト。</p>
 	</div>
 	<div class="float_media-body_rect">
@@ -433,16 +485,16 @@ UTODO: ガイドラインを提示すべき。
 
 <div class="unit thumb_list">
 	<ul>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベルサムネイルラベルサムネイルラベルサムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベルサムネイルラベルサムネイルラベルサムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><a href="#"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
-		<li><div class="thumb_list-pad"><img src="index.files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル(リンクしない場合の例)</span></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベルサムネイルラベルサムネイルラベルサムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベルサムネイルラベルサムネイルラベルサムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><a href="#"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル</span></a></div></li>
+		<li><div class="thumb_list-pad"><img src="index_files/sampleimage.png" alt="サンプル画像" /><span class="thumb_list-caption">サムネイルラベル(リンクしない場合の例)</span></div></li>
 	</ul>
 </div><!-- /.thumb_list -->
 <div class="unit">
