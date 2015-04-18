@@ -8,10 +8,15 @@ namespace pickles2\themes\pickles;
  * theme "pickles" class
  */
 class theme_top{
+	/**
+	 * objects
+	 */
 	private $px, $theme;
 
 	/**
-	 * コンストラクタ
+	 * constructor
+	 * @param object $px $px object
+	 * @param object $theme $theme object
 	 */
 	public function __construct( $px, $theme ){
 		$this->px = $px;
@@ -23,14 +28,18 @@ class theme_top{
 
 
 	/**
-	 * カラースキームを返す
+	 * カラースキームを取得
+	 * @return array カラースキーム
 	 */
 	public function get_color_scheme(){
 		$colors = array();
 		$colors['main'] = '#00a0e6';
-		$hsb = $this->theme->color_hex2hsb( $colors['main'] );
-
-		$colors['thin'] = $this->theme->color_hsb2hex($hsb['h'], $hsb['s']-($hsb['s']/4*3), $hsb['b']+((100-$hsb['b'])/4*3));
+		$hsb = [
+			"h"=>198,
+			"s"=>100,
+			"b"=>90
+		];
+		$colors['thin'] = "#bae5f8";
 
 		$colors['link'] = $colors['main'];
 		$colors['text'] = '#333';
@@ -49,6 +58,8 @@ class theme_top{
 
 	/**
 	 * PxFWのSVGロゴソースを返す。
+	 * @param array $opt オプション
+	 * @return string SVGソース
 	 */
 	public function create_src_pxfw_logo_svg($opt = array()){
 		$colors = $this->get_color_scheme();
@@ -62,6 +73,11 @@ class theme_top{
 
 	/**
 	 * リンクアイコンのSVGロゴソースを返す。
+	 * @param array $type アイコンの種類
+	 * 
+	 * blank, download, pdf, up, down, back, icon(default) のいずれかを指定。
+	 * @param array $opt オプション
+	 * @return string SVGソース
 	 */
 	public function create_src_link_icon_uri($type, $opt = array()){
 		$colors = $this->get_color_scheme();
@@ -141,6 +157,8 @@ class theme_top{
 
 	/**
 	 * welcomeイメージのソースを返す。
+	 * @param array $opt オプション
+	 * @return string SVGソース
 	 */
 	public function create_src_welcome_svg($opt = array()){
 		$colors = $this->get_color_scheme();
@@ -156,6 +174,7 @@ class theme_top{
 
 	/**
 	 * セットアップを検証する
+	 * @return array エラーの一覧。エラーがない場合は、空白の配列 `array()` が返ります。
 	 */
 	public function setup_test(){
 		$errors = array();
@@ -189,6 +208,8 @@ class theme_top{
 
 	/**
 	 * セットアップ検証結果を表示する
+	 * @param array $errors `setup_test()` が返したエラー一覧
+	 * @return string HTMLソース
 	 */
 	public function mk_setup_test( $errors = array() ){
 		// 結果のエラーメッセージ(または成功メッセージ)を生成して返す。
