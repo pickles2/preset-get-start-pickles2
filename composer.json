@@ -16,7 +16,7 @@
         "tomk79/px-fw-2.x": "2.0.*",
         "tomk79/px2-fess": "dev-master",
         "tomk79/px2-px2dthelper": "dev-master",
-        "tomk79/pickles-sitemap-excel-2": "2.*",
+        "tomk79/px2-sitemapexcel": "2.*",
         "tomk79/px2-mod-plain-html-elements": "dev-master"
     },
     "require-dev": {
