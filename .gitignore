@@ -5,3 +5,4 @@ scss_cache
 /px-files/_sys/ram/
 composer.lock
 /caches/
+!*.gitkeep
