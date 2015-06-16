@@ -6,3 +6,4 @@ scss_cache
 composer.lock
 /caches/
 !*.gitkeep
+~$*
