@@ -49,7 +49,7 @@ $ php ./.px_execute.php /?PX=clearcache
 - Apache1.3以降
   - mod_rewrite が利用可能であること
   - .htaccess が利用可能であること
-- PHP5.3以上
+- PHP5.4以上
   - mb_string が有効に設定されていること
   - safe_mode が無効に設定されていること
 
