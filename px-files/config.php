@@ -15,34 +15,43 @@ return call_user_func( function(){
 	$conf->public_cache_dir = '/caches/'; // 公開キャッシュディレクトリ
 	$conf->contents_manifesto = '/common/contents_manifesto.ignore.php'; // Contents Manifesto のパス
 
+
 	// directory index
+	// `directory_index` は、省略できるファイル名のリストを設定します。
 	$conf->directory_index = array(
 		'index.html'
 	);
 
 
 	// system
-	$conf->file_default_permission = '775';
-	$conf->dir_default_permission = '775';
-	$conf->filesystem_encoding = 'UTF-8';
-	$conf->output_encoding = 'UTF-8';
-	$conf->output_eol_coding = 'lf';
-	$conf->session_name = 'PXSID';
-	$conf->session_expire = 1800;
+	$conf->file_default_permission = '775'; // ファイルに適用されるデフォルトのパーミッション
+	$conf->dir_default_permission = '775'; // ディレクトリに適用されるデフォルトのパーミッション
+	$conf->filesystem_encoding = 'UTF-8'; // ファイルシステムの文字セット。ファイル名にマルチバイト文字を使う場合に参照されます。
+	$conf->output_encoding = 'UTF-8'; // 出力文字エンコーディング名
+	$conf->output_eol_coding = 'lf'; // 出力改行コード名 (cr|lf|crlf)
+	$conf->session_name = 'PXSID'; // セッション名
+	$conf->session_expire = 1800; // セッションの有効期間
 	$conf->allow_pxcommands = 0; // PX Commands のウェブインターフェイスからの実行を許可
 
+
+
 	// commands
+	// Pickles2 が認識するコマンドのパスを設定します。
+	// コマンドのパスが通っていない場合は、絶対パスで設定してください。
 	$conf->commands = new stdClass;
 	$conf->commands->php = 'php';
 
-	// processor
+
+
+	// paths_proc_type
+	// パスのパターン別に処理方法を設定します。
+	//     - ignore = 対象外パス
+	//     - direct = 加工せずそのまま出力する(デフォルト)
+	//     - その他 = extension 名
+	// パターンは先頭から検索され、はじめにマッチした設定を採用します。
+	// ワイルドカードとして "*"(アスタリスク) が使用可能です。
+	// 処理は、 `$conf->funcs->processor` に設定した順に実行されます。
 	$conf->paths_proc_type = array(
-		// パスのパターン別に処理方法を設定
-		//     - ignore = 対象外パス
-		//     - direct = 加工せずそのまま出力する(デフォルト)
-		//     - その他 = extension 名
-		// パターンは先頭から検索され、はじめにマッチした設定を採用する。
-		// ワイルドカードとして "*"(アスタリスク) を使用可。
 		'/.htaccess' => 'ignore' ,
 		'/.px_execute.php' => 'ignore' ,
 		'/px-files/*' => 'ignore' ,
@@ -74,6 +83,7 @@ return call_user_func( function(){
 	$conf->funcs = new stdClass;
 
 	// funcs: Before sitemap
+	// サイトマップ読み込みの前に実行するプラグインを設定します。
 	$conf->funcs->before_sitemap = [
 		// PX=clearcache
 		'picklesFramework2\commands\clearcache::register' ,
@@ -90,6 +100,7 @@ return call_user_func( function(){
 	];
 
 	// funcs: Before content
+	// サイトマップ読み込みの後、コンテンツ実行の前に実行するプラグインを設定します。
 	$conf->funcs->before_content = [
 		// PX=api
 		'picklesFramework2\commands\api::register' ,
@@ -101,6 +112,10 @@ return call_user_func( function(){
 
 
 	// processor
+	// コンテンツの種類に応じた処理の設定を行います。
+	// `$conf->funcs->processor->{$paths_proc_typeに設定した処理名}` のように設定します。
+	// それぞれの処理は配列で、複数登録することができます。処理は上から順に実行されます。
+	// Tips: テーマは、html に対するプロセッサの1つとして実装されています。
 	$conf->funcs->processor = new stdClass;
 
 	$conf->funcs->processor->html = [
@@ -145,11 +160,15 @@ return call_user_func( function(){
 
 
 	// funcs: Before output
+	// 最終出力の直前で実行される処理を設定します。
+	// この処理は、拡張子によらずすべてのリクエストが対象です。
+	// (HTMLの場合は、テーマの処理の後のコードが対象になります)
 	$conf->funcs->before_output = [
 	];
 
 
 	// config for Plugins.
+	// その他のプラグインに対する設定を行います。
 	$conf->plugins = new stdClass;
 
 	// config for Pickles2 Desktop Tool.
