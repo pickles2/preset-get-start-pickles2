@@ -125,7 +125,7 @@ return call_user_func( function(){
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
 		// テーマ
-		'theme'=>'pickles2\themes\pickles\theme::exec' , 
+		'theme'=>'pickles2\themes\pickles\theme::exec' ,
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
@@ -166,6 +166,21 @@ return call_user_func( function(){
 	// この処理は、拡張子によらずすべてのリクエストが対象です。
 	// (HTMLの場合は、テーマの処理の後のコードが対象になります)
 	$conf->funcs->before_output = [
+		// px2-path-resolver - 相対パス・絶対パスを変換して出力する
+		//   options
+		//     string 'to':
+		//       - relate: 相対パスへ変換
+		//       - absolute: 絶対パスへ変換
+		//       - pass: 変換を行わない(default)
+		//     bool 'supply_index_filename':
+		//       - true: 省略されたindexファイル名を補う
+		//       - false: 省略できるindexファイル名を削除
+		//       - null: そのまま (default)
+		'tomk79\pickles2\pathResolver\main::exec('.json_encode(array(
+			'to' => 'absolute' ,
+			'supply_index_filename' => false
+		)).')' ,
+
 	];
 
 
