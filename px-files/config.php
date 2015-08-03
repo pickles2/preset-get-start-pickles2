@@ -13,6 +13,7 @@ return call_user_func( function(){
 	$conf->path_top = '/'; // トップページのパス(デフォルト "/")
 	$conf->path_publish_dir = null; // パブリッシュ先ディレクトリパス
 	$conf->public_cache_dir = '/caches/'; // 公開キャッシュディレクトリ
+	$conf->path_files = '{$dirname}/{$filename}_files/'; // リソースディレクトリ(各コンテンツに対して1:1で関連付けられる)のパス
 	$conf->contents_manifesto = '/common/contents_manifesto.ignore.php'; // Contents Manifesto のパス
 
 
@@ -32,6 +33,7 @@ return call_user_func( function(){
 	$conf->session_name = 'PXSID'; // セッション名
 	$conf->session_expire = 1800; // セッションの有効期間
 	$conf->allow_pxcommands = 0; // PX Commands のウェブインターフェイスからの実行を許可
+	$conf->default_timezone = 'Asia/Tokyo';
 
 
 
@@ -40,6 +42,7 @@ return call_user_func( function(){
 	// コマンドのパスが通っていない場合は、絶対パスで設定してください。
 	$conf->commands = new stdClass;
 	$conf->commands->php = 'php';
+	$conf->path_phpini = null; // php.ini のパス。主にパブリッシュ時のサブクエリで使用する。
 
 
 
