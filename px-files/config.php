@@ -133,6 +133,13 @@ return call_user_func( function(){
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
 
+		// DEC変換処理の実行
+		//   Pickles2の状態を参照し、自動的に処理を振り分けます。
+		//   パブリッシュする場合、DECコメントを削除します。
+		//   プレビューの場合、DECライブラリを埋め込み、
+		//   URIパラメータからDECの表示・非表示を切り替えられるようにします。
+		'tomk79\pickles2\dec\main::exec()' ,
+
 		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
 		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
 	];
