@@ -202,6 +202,7 @@ return call_user_func( function(){
 	$conf->plugins->px2dt = new stdClass;
 	$conf->plugins->px2dt->paths_module_template = [
 		"PlainHTMLElements" => "./vendor/tomk79/px2-mod-plain-html-elements/modules/",
+		"local" => "./px-files/modules/"
 		"FESS" => "./vendor/tomk79/px2-fess/modules/"
 	];
 
