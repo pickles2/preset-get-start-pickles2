@@ -17,7 +17,7 @@ Pickles 2 のインストールは、`composer` コマンドを使用します�
 
 ```
 $ cd {$documentRoot}
-$ composer create-project tomk79/pickles2 ./ dev-master
+$ composer create-project pickles2/pickles2 ./ dev-master
 $ chmod -R 777 ./px-files/_sys
 $ chmod -R 777 ./caches
 ```
@@ -93,4 +93,3 @@ Windows の方は、GUIインストーラ Composer-Setup.exe が用意されて�
 $ cd C:\bin
 $ php -r "readfile('https://getcomposer.org/installer');" | php
 ```
-
