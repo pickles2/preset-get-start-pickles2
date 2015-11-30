@@ -14,8 +14,8 @@
     "require": {
         "php": ">=5.4.0" ,
         "pickles2/px-fw-2.x": "2.0.*",
-        "pickles2/px2-mod-fess": "dev-master",
-        "pickles2/px2-mod-plain-html-elements": "dev-master",
+        "pickles2/broccoli-module-fess": "dev-master",
+        "pickles2/broccoli-module-plain-html-elements": "dev-master",
         "tomk79/px2-px2dthelper": "dev-master",
         "tomk79/px2-sitemapexcel": "2.*",
         "tomk79/px2-path-resolver": "2.*",
