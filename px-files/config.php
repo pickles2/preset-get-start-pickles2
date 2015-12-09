@@ -205,6 +205,8 @@ return call_user_func( function(){
 		"local" => "./px-files/modules/",
 		"FESS" => "./vendor/pickles2/broccoli-module-fess/modules/"
 	];
+	$conf->plugins->px2dt->contents_area_selector = '.contents'; // <- コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい)
+	$conf->plugins->px2dt->contents_bowl_name_by = 'id'; // <- コンテンツエリアのbowl名を指定する属性名
 
 
 	// -------- PHP Setting --------
