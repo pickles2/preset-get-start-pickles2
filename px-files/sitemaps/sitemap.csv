@@ -16,6 +16,8 @@
 "/sample_pages/page2/index.html",,,"サンプルページ2",,,,,,1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",1,,
 "/sample_pages/page2/1.htm",,,"サンプル2-1",,,,,"/sample_pages/page2/index.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,
 "/sample_pages/page2/2.html",,,"サンプル2-2",,,,,"/sample_pages/page2/index.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,
+"/sample_pages/page2/2_subpages/sub1.html","/sample_pages/page2/2.html",,"サンプル2-2-1",,,,,"/sample_pages/page2/index.html>/sample_pages/page2/2.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,
+"/sample_pages/page2/2_subpages/sub2/sub2.html","/sample_pages/page2/2.html",,"サンプル2-2-2",,,,,"/sample_pages/page2/index.html>/sample_pages/page2/2.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,
 "/sample_pages/page3/index.html",,,"サンプルページ3",,,,,,1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",1,,
 "/sample_pages/page3/1.html",,,"サンプル3-1",,,,,"/sample_pages/page3/index.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,
 "/sample_pages/page3/2.html",,,"サンプル3-2",,,,,"/sample_pages/page3/index.html",1,,,"sample, サンプル","このページはPxFWのサンプルコードとして予め用意されたものです。サンプルが不要であれば、sample_pagesディレクトリとともに削除してください。",,,

@@ -127,6 +127,11 @@ return call_user_func( function(){
 		// ページ内目次を自動生成する
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
+		// px2-path-resolver - 共通コンテンツのリンクやリソースのパスを解決する
+		//   このAPIは、サイトマップCSV上で path と content が異なるパスを参照している場合に、
+		//   相対的に記述されたリンクやリソースのパスがあわなくなる問題を解決します。
+		'tomk79\pickles2\pathResolver\main::resolve_common_contents()' ,
+
 		// テーマ
 		'theme'=>'pickles2\themes\pickles\theme::exec' ,
 
