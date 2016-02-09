@@ -133,7 +133,10 @@ return call_user_func( function(){
 		'tomk79\pickles2\pathResolver\main::resolve_common_contents()' ,
 
 		// テーマ
-		'theme'=>'pickles2\themes\pickles\theme::exec' ,
+		'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode([
+			'path_theme_collection'=>'./px-files/themes/',
+			'default_theme_id'=>'pickles2'
+		]).')' ,
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
