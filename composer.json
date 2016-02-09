@@ -19,7 +19,7 @@
         "pickles2/px2-px2dthelper": "dev-master",
         "pickles2/px2-sitemapexcel": "2.*",
         "pickles2/px2-path-resolver": "2.*",
-        "tomk79/px2-dec": "dev-master"
+        "pickles2/px2-dec": "dev-master"
     },
     "require-dev": {
     },
