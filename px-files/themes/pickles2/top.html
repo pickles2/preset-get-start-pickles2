@@ -87,7 +87,7 @@
 		</div><!-- /.theme_welcome -->
 		<div class="theme_mainblock">
 			<div class="container">
-				<div class="contents">
+				<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="main">
 <?= $px->bowl()->pull() ?>
 				</div>
 			</div><!-- /.container -->

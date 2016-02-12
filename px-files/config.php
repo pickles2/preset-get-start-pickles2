@@ -134,7 +134,10 @@ return call_user_func( function(){
 
 		// テーマ
 		'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode([
+			'param_theme_switch'=>'THEME',
+			'cookie_theme_switch'=>'THEME',
 			'path_theme_collection'=>'./px-files/themes/',
+			'attr_bowl_name_by'=>'data-contents-area',
 			'default_theme_id'=>'pickles2'
 		]).')' ,
 
@@ -147,6 +150,13 @@ return call_user_func( function(){
 		//   プレビューの場合、DECライブラリを埋め込み、
 		//   URIパラメータからDECの表示・非表示を切り替えられるようにします。
 		'tomk79\pickles2\dec\main::exec()' ,
+
+		// 属性 data-contents-area を削除する
+		'tomk79\pickles2\remove_attr\main::exec('.json_encode(array(
+			"attrs"=>array(
+				'data-contents-area',
+			) ,
+		)).')' ,
 
 		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
 		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
@@ -213,8 +223,8 @@ return call_user_func( function(){
 		"local" => "./px-files/modules/",
 		"FESS" => "./vendor/pickles2/broccoli-module-fess/modules/"
 	];
-	$conf->plugins->px2dt->contents_area_selector = '.contents'; // <- コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい)
-	$conf->plugins->px2dt->contents_bowl_name_by = 'id'; // <- コンテンツエリアのbowl名を指定する属性名
+	$conf->plugins->px2dt->contents_area_selector = '[data-contents-area]'; // <- コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい)
+	$conf->plugins->px2dt->contents_bowl_name_by = 'data-contents-area'; // <- コンテンツエリアのbowl名を指定する属性名
 
 
 	// -------- PHP Setting --------

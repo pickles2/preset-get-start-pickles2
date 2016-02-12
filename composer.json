@@ -16,11 +16,12 @@
         "pickles2/px-fw-2.x": "2.0.*",
         "pickles2/broccoli-module-fess": "*",
         "pickles2/broccoli-module-plain-html-elements": "*",
+        "pickles2/px2-dec": "dev-master",
         "pickles2/px2-multitheme": "dev-master",
-        "pickles2/px2-px2dthelper": "dev-master",
-        "pickles2/px2-sitemapexcel": "2.*",
         "pickles2/px2-path-resolver": "2.*",
-        "pickles2/px2-dec": "dev-master"
+        "pickles2/px2-px2dthelper": "dev-master",
+        "pickles2/px2-remove-attr": "2.*",
+        "pickles2/px2-sitemapexcel": "2.*"
     },
     "require-dev": {
     },
