@@ -17,7 +17,7 @@ Pickles 2 のインストールは、`composer` コマンドを使用します�
 
 ```
 $ cd {$documentRoot}
-$ composer create-project pickles2/pickles2 ./ dev-master
+$ composer create-project pickles2/pickles2 ./
 $ chmod -R 777 ./px-files/_sys
 $ chmod -R 777 ./caches
 ```
