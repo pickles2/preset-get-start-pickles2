@@ -74,7 +74,8 @@ return call_user_func( function(){
 		'*.html' => 'html' ,
 		'*.htm' => 'html' ,
 		'*.css' => 'css' ,
-		'*.js' => 'js' ,
+		'/common/scripts/contents.js' => 'js' , // <- モジュールJSをロードするため、PHPコードを有効に設定。
+		'*.js' => 'direct' ,
 		'*.png' => 'direct' ,
 		'*.jpg' => 'direct' ,
 		'*.gif' => 'direct' ,
