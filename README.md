@@ -57,12 +57,13 @@ $ php ./.px_execute.php /?PX=clearcache
 
 ## ライセンス - License
 
-MIT License
+Copyright (c)2001-2016 Tomoya Koyanagi, and Pickles 2 Project<br />
+MIT License https://opensource.org/licenses/mit-license.php
 
 
 ## 作者 - Author
 
-- (C)Tomoya Koyanagi <tomk79@gmail.com>
+- Tomoya Koyanagi <tomk79@gmail.com>
 - website: <http://www.pxt.jp/>
 - Twitter: @tomk79 <http://twitter.com/tomk79/>
 
