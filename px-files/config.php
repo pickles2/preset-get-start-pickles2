@@ -1,7 +1,12 @@
 <?php
+/**
+ * config.php template
+ */
 return call_user_func( function(){
 
 	// initialize
+
+	/** コンフィグオブジェクト */
 	$conf = new stdClass;
 
 
@@ -65,7 +70,8 @@ return call_user_func( function(){
 	 * パスのパターン別に処理方法を設定します。
 	 *
 	 * - ignore = 対象外パス。Pickles 2 のアクセス可能範囲から除外します。このパスにへのアクセスは拒絶され、パブリッシュの対象からも外されます。
-	 * - direct = 物理ファイルを、そのまま無加工で出力します。 (デフォルト)
+	 * - direct = 物理ファイルを、ファイルとして読み込んだでから加工処理を通します。 (direct以外の通常の処理は、PHPファイルとして `include()` されます)
+	 * - pass = 物理ファイルを、そのまま無加工で出力します。 (デフォルト)
 	 * - その他 = extension名
 	 *
 	 * パターンは先頭から検索され、はじめにマッチした設定を採用します。
@@ -95,12 +101,28 @@ return call_user_func( function(){
 		'*.htm' => 'html' ,
 		'*.css' => 'css' ,
 		'*.js' => 'js' ,
-		'*.png' => 'direct' ,
-		'*.jpg' => 'direct' ,
-		'*.gif' => 'direct' ,
-		'*.svg' => 'direct' ,
+		'*.png' => 'pass' ,
+		'*.jpg' => 'pass' ,
+		'*.gif' => 'pass' ,
+		'*.svg' => 'pass' ,
 	);
 
+
+	/**
+	 * paths_enable_sitemap
+	 *
+	 * サイトマップのロードを有効にするパスのパターンを設定します。
+	 * ワイルドカードとして "*"(アスタリスク) が使用可能です。
+	 *
+	 * サイトマップ中のページ数が増えると、サイトマップのロード自体に時間を要する場合があります。
+	 * サイトマップへのアクセスが必要ないファイルでは、この処理はスキップするほうがよいでしょう。
+	 *
+	 * 多くの場合では、 *.html と *.htm 以外ではロードする必要はありません。
+	 */
+	$conf->paths_enable_sitemap = array(
+		'*.html',
+		'*.htm',
+	);
 
 
 	// system
@@ -135,7 +157,7 @@ return call_user_func( function(){
 	 *
 	 * サイトマップ読み込みの前に実行するプラグインを設定します。
 	 */
-	$conf->funcs->before_sitemap = [
+	$conf->funcs->before_sitemap = array(
 		// PX=clearcache
 		'picklesFramework2\commands\clearcache::register' ,
 
@@ -150,21 +172,21 @@ return call_user_func( function(){
 
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register'
-	];
+	);
 
 	/**
 	 * funcs: Before content
 	 *
 	 * サイトマップ読み込みの後、コンテンツ実行の前に実行するプラグインを設定します。
 	 */
-	$conf->funcs->before_content = [
+	$conf->funcs->before_content = array(
 		// PX=api
 		'picklesFramework2\commands\api::register' ,
 
 		// PX=publish
 		'picklesFramework2\commands\publish::register' ,
 
-	];
+	);
 
 
 	/**
@@ -178,7 +200,7 @@ return call_user_func( function(){
 	 */
 	$conf->funcs->processor = new stdClass;
 
-	$conf->funcs->processor->html = [
+	$conf->funcs->processor->html = array(
 		// ページ内目次を自動生成する
 		'picklesFramework2\processors\autoindex\autoindex::exec' ,
 
@@ -215,33 +237,33 @@ return call_user_func( function(){
 
 		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
 		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
-	];
+	);
 
-	$conf->funcs->processor->css = [
+	$conf->funcs->processor->css = array(
 		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
 		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
-	];
+	);
 
-	$conf->funcs->processor->js = [
+	$conf->funcs->processor->js = array(
 		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
 		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
-	];
+	);
 
-	$conf->funcs->processor->md = [
+	$conf->funcs->processor->md = array(
 		// Markdown文法を処理する
 		'picklesFramework2\processors\md\ext::exec' ,
 
 		// html のデフォルトの処理を追加
 		$conf->funcs->processor->html ,
-	];
+	);
 
-	$conf->funcs->processor->scss = [
+	$conf->funcs->processor->scss = array(
 		// SCSS文法を処理する
 		'picklesFramework2\processors\scss\ext::exec' ,
 
 		// css のデフォルトの処理を追加
 		$conf->funcs->processor->css ,
-	];
+	);
 
 
 	/**
@@ -251,7 +273,7 @@ return call_user_func( function(){
 	 * この処理は、拡張子によらずすべてのリクエストが対象です。
 	 * (HTMLの場合は、テーマの処理の後のコードが対象になります)
 	 */
-	$conf->funcs->before_output = [
+	$conf->funcs->before_output = array(
 		// px2-path-resolver - 相対パス・絶対パスを変換して出力する
 		//   options
 		//     string 'to':
@@ -267,7 +289,7 @@ return call_user_func( function(){
 			'supply_index_filename' => false
 		)).')' ,
 
-	];
+	);
 
 
 	// -------- config for Plugins. --------
@@ -319,8 +341,8 @@ return call_user_func( function(){
 	 *
 	 * エラーメッセージは問題解決の助けになります。
 	 */
-	// @ini_set('display_errors', 'On');
-	// @ini_set('error_reporting', 32767);
+	// @ini_set('display_errors', 1);
+	// @ini_set('error_reporting', E_ALL);
 
 
 	return $conf;
