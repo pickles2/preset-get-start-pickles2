@@ -169,9 +169,6 @@ return call_user_func( function(){
 
 		// sitemapExcel
 		'tomk79\pickles2\sitemap_excel\pickles_sitemap_excel::exec' ,
-
-		// PX=px2dthelper
-		'tomk79\pickles2\px2dthelper\main::register'
 	);
 
 	/**
@@ -186,6 +183,8 @@ return call_user_func( function(){
 		// PX=publish
 		'picklesFramework2\commands\publish::register' ,
 
+		// PX=px2dthelper
+		'tomk79\pickles2\px2dthelper\main::register' ,
 	);
 
 
