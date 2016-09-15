@@ -70,7 +70,7 @@ return call_user_func( function(){
 	 * パスのパターン別に処理方法を設定します。
 	 *
 	 * - ignore = 対象外パス。Pickles 2 のアクセス可能範囲から除外します。このパスにへのアクセスは拒絶され、パブリッシュの対象からも外されます。
-	 * - direct = 物理ファイルを、ファイルとして読み込んだでから加工処理を通します。 (direct以外の通常の処理は、PHPファイルとして `include()` されます)
+	 * - direct = 物理ファイルを、ファイルとして読み込んでから加工処理を通します。 (direct以外の通常の処理は、PHPファイルとして `include()` されます)
 	 * - pass = 物理ファイルを、そのまま無加工で出力します。 (デフォルト)
 	 * - その他 = extension名
 	 *
@@ -169,9 +169,6 @@ return call_user_func( function(){
 
 		// sitemapExcel
 		'tomk79\pickles2\sitemap_excel\pickles_sitemap_excel::exec' ,
-
-		// PX=px2dthelper
-		'tomk79\pickles2\px2dthelper\main::register'
 	);
 
 	/**
@@ -186,6 +183,8 @@ return call_user_func( function(){
 		// PX=publish
 		'picklesFramework2\commands\publish::register' ,
 
+		// PX=px2dthelper
+		'tomk79\pickles2\px2dthelper\main::register' ,
 	);
 
 
