@@ -19,7 +19,7 @@
         "pickles2/px2-dec": "2.0.*",
         "pickles2/px2-multitheme": "2.0.*",
         "pickles2/px2-path-resolver": "2.0.*",
-        "pickles2/px2-px2dthelper": "dev-master",
+        "pickles2/px2-px2dthelper": "2.0.*",
         "pickles2/px2-remove-attr": "2.0.*",
         "pickles2/px2-sitemapexcel": "2.0.*"
     },
