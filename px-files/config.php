@@ -295,7 +295,7 @@ return call_user_func( function(){
 	// その他のプラグインに対する設定を行います。
 	$conf->plugins = new stdClass;
 
-	/** config for Pickles2 Desktop Tool. */
+	/** config for Pickles 2 Desktop Tool. */
 	$conf->plugins->px2dt = new stdClass;
 
 	/** broccoliモジュールセットの登録 */
@@ -310,6 +310,37 @@ return call_user_func( function(){
 
 	/** コンテンツエリアのbowl名を指定する属性名 */
 	$conf->plugins->px2dt->contents_bowl_name_by = 'data-contents-area';
+
+	/** パブリッシュのパターンを登録 */
+	$conf->plugins->px2dt->publish_patterns = array(
+		array(
+			'label'=>'すべて',
+			'paths_region'=> array('/'),
+			'paths_ignore'=> array(),
+			'keep_cache'=>false
+		),
+		array(
+			'label'=>'リソース類',
+			'paths_region'=> array('/caches/','/common/'),
+			'paths_ignore'=> array(),
+			'keep_cache'=>true
+		),
+		array(
+			'label'=>'すべて(commonを除く)',
+			'paths_region'=> array('/'),
+			'paths_ignore'=> array('/common/'),
+			'keep_cache'=>false
+		),
+	);
+
+	/** config for GUI Editor. */
+	$conf->plugins->px2dt->guieditor = new stdClass;
+
+	/** GUI編集データディレクトリ */
+	// $conf->plugins->px2dt->guieditor->realpathDataDir = '{$dirname}/{$filename}_files/guieditor.ignore/';
+
+	/** GUI編集リソース出力先ディレクトリ */
+	// $conf->plugins->px2dt->guieditor->pathResourceDir = '{$dirname}/{$filename}_files/resources/';
 
 
 	// -------- PHP Setting --------
