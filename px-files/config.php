@@ -337,10 +337,10 @@ return call_user_func( function(){
 	$conf->plugins->px2dt->guieditor = new stdClass;
 
 	/** GUI編集データディレクトリ */
-	// $conf->plugins->px2dt->guieditor->realpathDataDir = '{$dirname}/{$filename}_files/guieditor.ignore/';
+	// $conf->plugins->px2dt->guieditor->path_data_dir = '{$dirname}/{$filename}_files/guieditor.ignore/';
 
 	/** GUI編集リソース出力先ディレクトリ */
-	// $conf->plugins->px2dt->guieditor->pathResourceDir = '{$dirname}/{$filename}_files/resources/';
+	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
 
 
 	// -------- PHP Setting --------
