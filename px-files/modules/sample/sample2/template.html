@@ -1,0 +1,21 @@
+<div class="module_sample_sample2">
+    sample module 2<br />
+    <div>{&{"input":{"type":"multitext","name":"input1","label":"テキスト入力","description":"HTML、テキスト、Markdownから書式を選ぶことができます。"}}&}</div>
+    <div><img src="{&{"input":{"type":"image","name":"input2","label":"画像入力"}}&}" alt="{&{"input":{"type":"html_attr_text","name":"input3","label":"属性値入力","rows":1}}&}" /></div>
+    <div><a href="{&{"input":{"type":"href","name":"input4","label":"リンク先入力"}}&}">Link</a></div>
+    <div class="module_sample_sample2__select1">{&{"input":{"type":"select", "name":"input5", "label":"選択入力", "display":"select", "options":[
+        {"value":"option1", "label":"選択肢1"},
+        {"value":"option2", "label":"選択肢2"},
+        {"value":"option3", "label":"選択肢3"}
+    ]}}&}</div>
+    <div class="module_sample_sample2__select2">{&{"input":{"type":"select", "name":"input6", "label":"選択入力(ラジオボタン)", "display":"radio", "options":[
+        {"value":"option1", "label":"選択肢1"},
+        {"value":"option2", "label":"選択肢2"},
+        {"value":"option3", "label":"選択肢3"}
+    ]}}&}</div>
+    <div><table border="1">{&{"input":{"type":"table","name":"input7","label":"テーブル入力"}}&}</table></div>
+    <div>{&{"module":{"name":"main","label":"モジュール挿入"}}&}</div>
+    <ul>{&{"loop":{"name":"loop1", "label":"サムネイルリスト"}}&}
+        <li>list: {&{"input":{"type":"multitext","name":"loop1_input1","label":"テキスト入力","description":"繰り返しを表現する loopフィールドの中にも入力欄を作成できます。"}}&}</li>
+    {&"endloop"&}</ul>
+</div>
