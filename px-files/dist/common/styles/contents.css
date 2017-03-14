@@ -170,6 +170,9 @@ html, body {
    */
   /* ライブラリ同士の衝突吸収 */
   /**
+   * module: local:sample/sample2
+   */
+  /**
    * module: FESS:boxes/aside_box
    */
   /**
@@ -204,9 +207,6 @@ html, body {
    */
   /**
    * module: FESS:parts_links/anchor_links
-   */
-  /**
-   * module: FESS:parts_links/link
    */
   /**
    * module: FESS:parts_links/link_back
@@ -390,6 +390,14 @@ html, body {
     padding: 0;
     margin: 0;
     display: inline; }
+  .contents .module_sample_sample2 {
+    margin: 1em auto;
+    padding: 20px;
+    background: #f6f6f6; }
+  .contents .module_sample_sample2__select1 {
+    color: #f00; }
+  .contents .module_sample_sample2__select2 {
+    color: #00f; }
   .contents .aside_box {
     padding: 1em 20px;
     margin: 1em;
