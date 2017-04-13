@@ -1,7 +1,7 @@
 {
-    "name": "pickles2/pickles2",
+    "name": "pickles2/preset-get-start-pickles2",
     "description": "Pickles 2 は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。",
-    "keywords": ["pickles2", "pickles"],
+    "keywords": ["pickles2"],
     "license": "MIT",
     "authors": [
         {
@@ -13,15 +13,15 @@
     ],
     "require": {
         "php": ">=5.4.0" ,
-        "pickles2/px-fw-2.x": "2.0.*",
-        "pickles2/broccoli-module-fess": "0.1.*",
-        "pickles2/broccoli-module-plain-html-elements": "0.1.*",
-        "pickles2/px2-dec": "2.0.*",
-        "pickles2/px2-multitheme": "2.0.*",
-        "pickles2/px2-path-resolver": "2.0.*",
-        "pickles2/px2-px2dthelper": "2.0.*",
-        "pickles2/px2-remove-attr": "2.0.*",
-        "pickles2/px2-sitemapexcel": "2.0.*"
+        "broccoli-html-editor/broccoli-module-fess": "0.1.*",
+        "broccoli-html-editor/broccoli-module-plain-html-elements": "0.1.*",
+        "pickles2/px-fw-2.x": "^2.0",
+        "pickles2/px2-dec": "^2.0",
+        "pickles2/px2-multitheme": "^2.0",
+        "pickles2/px2-path-resolver": "^2.0",
+        "pickles2/px2-px2dthelper": "^2.0",
+        "pickles2/px2-remove-attr": "^2.0",
+        "pickles2/px2-sitemapexcel": "^2.0"
     },
     "require-dev": {
     },
