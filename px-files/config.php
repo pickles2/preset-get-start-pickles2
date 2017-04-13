@@ -13,7 +13,7 @@ return call_user_func( function(){
 	// project
 
 	/** サイト名 */
-	$conf->name = 'Pickles 2';
+	$conf->name = 'Get start "Pickles 2" !';
 	/** コピーライト表記 */
 	$conf->copyright = 'Pickles 2 Project';
 	/** ドメイン(本番環境のドメイン) */

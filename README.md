@@ -1,4 +1,4 @@
-Pickles 2
+Get start "Pickles 2" !
 =========
 
 Pickles 2 は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。
@@ -15,22 +15,22 @@ Pickles 2 は、静的で大きなウェブサイトを効率よく構築でき�
 
 Pickles 2 のインストールは、`composer` コマンドを使用します。
 
-```
+```bash
 $ cd {$documentRoot}
-$ composer create-project pickles2/pickles2 ./
+$ composer create-project pickles2/preset-get-start-pickles2 ./
 $ chmod -R 777 ./px-files/_sys
 $ chmod -R 777 ./caches
 ```
 
 ウェブサーバーにブラウザでアクセスして、トップページが表示されるか、または、次のコマンドで設定情報が表示されれば成功です。
 
-```
+```bash
 $ php ./.px_execute.php /?PX=config
 ```
 
 ## パブリッシュ手順 - Publish
 
-```
+```bash
 $ php ./.px_execute.php /?PX=publish.run
 ```
 
@@ -39,7 +39,7 @@ $ php ./.px_execute.php /?PX=publish.run
 
 ## キャッシュを消去する手順 - Clear caches
 
-```
+```bash
 $ php ./.px_execute.php /?PX=clearcache
 ```
 
@@ -66,31 +66,3 @@ MIT License https://opensource.org/licenses/mit-license.php
 - Tomoya Koyanagi <tomk79@gmail.com>
 - website: <http://www.pxt.jp/>
 - Twitter: @tomk79 <http://twitter.com/tomk79/>
-
-
-## 付録 - Appendix
-
-### composer のインストール
-
-`composer` のインストール方法について
-詳しくは [composerの公式サイト(英語)](https://getcomposer.org/doc/00-intro.md) を参照してください。
-
-下記は公式サイトからの抜粋です。参考までに。
-
-#### Macの方
-
-Mac の方は、次のコマンドでグローバルインストールできます。
-
-```
-$ curl -sS https://getcomposer.org/installer | php
-$ mv composer.phar /usr/local/bin/composer
-```
-#### Windowsの方
-
-Windows の方は、GUIインストーラ Composer-Setup.exe が用意されています。
-次のコマンドでもインストールできますので、お好みの方法でインストールしてください。
-
-```
-$ cd C:\bin
-$ php -r "readfile('https://getcomposer.org/installer');" | php
-```
