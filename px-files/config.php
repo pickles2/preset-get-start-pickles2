@@ -301,9 +301,9 @@ return call_user_func( function(){
 
 	/** broccoliモジュールセットの登録 */
 	$conf->plugins->px2dt->paths_module_template = [
-		"PlainHTMLElements" => "./vendor/pickles2/broccoli-module-plain-html-elements/modules/",
+		"PlainHTMLElements" => "./vendor/broccoli-html-editor/broccoli-module-plain-html-elements/modules/",
 		"local" => "./px-files/modules/",
-		"FESS" => "./vendor/pickles2/broccoli-module-fess/modules/"
+		"FESS" => "./vendor/broccoli-html-editor/broccoli-module-fess/modules/"
 	];
 
 	/** コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい) */
