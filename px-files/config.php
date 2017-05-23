@@ -29,7 +29,7 @@ return call_user_func( function(){
 	/** パブリッシュ先ディレクトリパス */
 	$conf->path_publish_dir = './px-files/dist/';
 	/** 公開キャッシュディレクトリ */
-	$conf->public_cache_dir = '/caches/';
+	$conf->public_cache_dir = '/common/px_resources/';
 	/** リソースディレクトリ(各コンテンツに対して1:1で関連付けられる)のパス */
 	$conf->path_files = '{$dirname}/{$filename}_files/';
 	/** Contents Manifesto のパス */
@@ -322,7 +322,7 @@ return call_user_func( function(){
 		),
 		array(
 			'label'=>'リソース類',
-			'paths_region'=> array('/caches/','/common/'),
+			'paths_region'=> array('/common/'),
 			'paths_ignore'=> array(),
 			'keep_cache'=>true
 		),
