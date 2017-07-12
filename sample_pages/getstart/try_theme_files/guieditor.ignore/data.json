@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## テーマはどこにあるか？\n\nテーマは、次のフォルダに格納されています。\n\n- `./px-files/themes/{$theme_id}/*`\n\nこのフォルダには、テンプレートとなるHTMLファイルが置かれています。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

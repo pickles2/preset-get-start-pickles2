@@ -1,0 +1,33 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## サイトマップはどこにあるか？\r\n\r\nサイトマップは次のパスに配置されています。\r\n\r\n- `./px-files/sitemaps/sitemap.xlsx`\r\n\r\nこのファイルに定義されたサイトマップの設定がページにどのように影響するか、ブラウザで確認しながら見比べてみてください。サイトマップの値を変更してみながら、画面の変化を観察してみましょう。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## サイトマップCSV\r\n\r\n`sitemap.xlsx` を編集してブラウザでプレビューすると、同じフォルダにある `sitemap.csv` も同時に更新されます。\r\n\r\nこのファイルはとても重要です。 XLSXファイルは、ユーザーが編集しやすくするために追加された形式で、Pickles 2 が実際に参照しているのは、このCSVファイルだからです。\r\n\r\n誤って捨ててしまわないようにしましょう。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

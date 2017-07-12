@@ -8,22 +8,9 @@
       "modId": "PlainHTMLElements:PlainHTML/MultiText",
       "fields": {
        "main": {
-        "src": "Pickles2 DesktopTool でGUI編集したHTMLです。",
+        "src": "このカテゴリでは、Pickles 2 が持っている様々な機能の一部をサンプルとして実装しています。\n\nここで紹介できること以外にも、まだまだ機能やプラグインがたくさんあります。\nこれらを参考に、よりよいサイト制作環境を構築してみてください。\n",
         "editor": "markdown"
        }
-      },
-      "anchor": "",
-      "dec": ""
-     },
-     {
-      "modId": "PlainHTMLElements:PlainHTML/image",
-      "fields": {
-       "href": "",
-       "image_src": {
-        "resKey": "56d1f65651835fd6494a8af29ec49a03",
-        "path": "./index_files/resources/IMG_0961_200x150.png"
-       },
-       "alt_text": "テストイメージ"
       },
       "anchor": "",
       "dec": ""

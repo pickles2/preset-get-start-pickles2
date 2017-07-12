@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "サイトマップ、テーマ、コンテンツの制作ができたら、最後の仕上げ \"パブリッシュ\" を実行します。\n\nパブリッシュは、部品ごとにバラバラに作られたサイトを統合し、静的なHTMLファイル群を生成します。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

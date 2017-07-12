@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "サイトマップにページを追加したら、コンテンツを作る準備ができました。\n\nコンテンツのパスにHTMLを作成し、ページを完成させてください。\n\n[編集してみよう](../training/) の下層ページは、まだコンテンツが作られていないページです。\n練習用に活用してみてください。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}
