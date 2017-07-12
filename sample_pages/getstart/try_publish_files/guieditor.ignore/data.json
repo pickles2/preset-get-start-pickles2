@@ -14,6 +14,17 @@
       },
       "anchor": "",
       "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n- `./px-files/dist/`",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
      }
     ]
    }
