@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title></title>
+		<title>共有コンテンツ-1 | Get start &quot;Pickles 2&quot; !</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
+		<meta name="keywords" content="実装サンプル, 機能紹介" />
+		<meta name="description" content="共通のコンテンツを表示するサンプルです。その1" />
 
  
 <!-- jQuery -->
@@ -30,7 +30,7 @@
 				<div class="theme_shouldernavi">
 <ul><li><a href="/sample_pages/help/">ヘルプ</a></li></ul>				</div>
 				<div class="theme_globalnavi">
-<ul><li><a href="/sample_pages/">はじめに</a></li><li><a href="/sample_pages/training/">編集してみょう</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li></ul>
+<ul><li><a href="/sample_pages/">はじめに</a></li><li><a href="/sample_pages/training/">編集してみょう</a></li><li><a href="/sample_pages/samples/" class="current">さまざまな機能</a></li></ul>
 				</div>
 			</div>
 		</header>
@@ -38,20 +38,40 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-9">
-						<div class="theme_breadcrumb"><ul><li><span></span></li></ul></div>
-						<h1></h1>
+						<div class="theme_breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li><li><span>共有コンテンツ-1</span></li></ul></div>
+						<h1>共有コンテンツ-1</h1>
 						<div class="contents">
-<p>404 - File not found.</p>						</div>
-						<div class="theme_breadcrumb"><ul><li><span></span></li></ul></div>
+<!-- == autoindex == -->
+<div style="margin:2em 5%; border:1px solid #bbb; padding:1em; background:rgba(124, 124, 124, 0.05); border-radius:5px;">
+<div style="margin:0; padding:0; text-align:center; font-weight:bold;">INDEX</div><ul style="margin:0; padding:0 0 0 2em;"><li style="list-style-type:disc; display:list-item;"><a href="#hash_共通コンテンツファイルのサンプル">共通コンテンツファイルのサンプル</a></li></ul>
+</div>
+<!-- / == autoindex == -->
+
+
+<span id="hash_共通コンテンツファイルのサンプル"></span><h2>共通コンテンツファイルのサンプル</h2>
+
+<p>物理パスのディレクトリ階層が異なる複数のページ間で、共通のコンテンツファイルを共有するサンプルです。</p>
+
+<p style="text-align:center;"><img src="/sample_pages/samples/shared_content_files/coffee.jpg" alt="Coffee" /></p>
+						</div>
+						<div class="theme_breadcrumb"><ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/samples/">さまざまな機能</a></li><li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li><li><span>共有コンテンツ-1</span></li></ul></div>
 					</div>
 					<div class="col-sm-3">
 						<nav class="theme_common_navi">
-							<p><a href="/">ホーム</a></p>
+							<p><a href="/sample_pages/samples/">さまざまな機能</a></p>
 <ul>
-<li><a href="/sample_pages/">はじめに</a></li>
-<li><a href="/sample_pages/training/">編集してみょう</a></li>
-<li><a href="/sample_pages/samples/">さまざまな機能</a></li>
-<li><a href="/sample_pages/help/">ヘルプ</a></li>
+<li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
+<li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
+<li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
+<li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
+<li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
+<li><a href="/sample_pages/samples/shared_content.html" class="current">共有コンテンツ</a><ul>
+<li><a href="/sample_pages/samples/shared_content_subpages/sub1.html" class="current">共有コンテンツ-1</a></li>
+<li><a href="/sample_pages/samples/shared_content_subpages/sub2/sub2.html">共有コンテンツ-2</a></li>
+</ul>
+</li>
+<li><a href="/sample_pages/samples/ssi.html">SSI</a></li>
+<li><a href="/sample_pages/samples/ext_htm.htm">拡張子 *.htm</a></li>
 </ul>
 						</nav>
 					</div>
@@ -79,13 +99,13 @@
 <li><a href="/sample_pages/training/training_006.html">練習ページ6</a></li>
 </ul>
 </li>
-<li><a href="/sample_pages/samples/">さまざまな機能</a><ul>
+<li><a href="/sample_pages/samples/" class="current">さまざまな機能</a><ul>
 <li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
 <li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
 <li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
 <li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
 <li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
-<li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li>
+<li><a href="/sample_pages/samples/shared_content.html" class="current">共有コンテンツ</a></li>
 <li><a href="/sample_pages/samples/ssi.html">SSI</a></li>
 <li><a href="/sample_pages/samples/ext_htm.htm">拡張子 *.htm</a></li>
 </ul>
