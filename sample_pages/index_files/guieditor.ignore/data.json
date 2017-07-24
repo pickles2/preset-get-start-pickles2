@@ -1,0 +1,81 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "このディレクトリ `/sample_pages/*` に配置されているファイルは、チュートリアルのためのサンプルコード集です。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "FESS:parts_links/anchor_links",
+      "fields": {}
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## サイトマップを編集してみよう\r\n\r\n詳しくは、[サイトマップを編集してみよう](getstart/try_sitemap.html) を参照してください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## テーマを編集してみよう\r\n\r\n詳しくは、[テーマを編集してみよう](getstart/try_theme.html) を参照してください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## コンテンツを編集してみよう\r\n\r\n詳しくは、[コンテンツを編集してみよう](getstart/try_contents.html) を参照してください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## パブリッシュしてみよう\r\n\r\n詳しくは、[パブリッシュしてみよう](getstart/try_publish.html) を参照してください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "## 自分のサイトを編集しよう\r\n\r\n詳しくは、[自分のサイトを編集しよう](getstart/try_your_project.html) を参照してください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

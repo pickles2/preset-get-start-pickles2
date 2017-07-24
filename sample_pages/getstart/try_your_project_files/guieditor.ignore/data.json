@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "サイトの制作の手順に慣れてきたら、いよいよ自分のサイトを編集してみましょう。\n\n- もともとあったチュートリアルコンテンツはもう必要ありません。 `/sample_pages/` フォルダごと削除してください。\n- サイトマップも作り直しましょう。トップページ以外はすべて不要です。削除して、新しくページを追加しましょう。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "このカテゴリには、いくつかの練習ページが用意されています。\r\n\r\nこれらのページは、まだコンテンツが作られていません。 コンテンツファイルが存在しないページにアクセスすると、<q>404 - File not found.</q> のような文言が表示されるはずです。\r\n\r\n新しくコンテンツファイルを作成して、ページを完成させてください。\r\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

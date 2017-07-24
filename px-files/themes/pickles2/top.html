@@ -22,6 +22,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title><?= htmlspecialchars( $px->conf()->name ) ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
+		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
 <?php include(__DIR__.'/inc/headsection.inc'); ?>
 <?= $px->bowl()->pull('head') ?>
 

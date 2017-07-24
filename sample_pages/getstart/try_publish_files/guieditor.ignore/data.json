@@ -1,0 +1,33 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "サイトマップ、テーマ、コンテンツの制作ができたら、最後の仕上げ \"パブリッシュ\" を実行します。\n\nパブリッシュは、部品ごとにバラバラに作られたサイトを統合し、静的なHTMLファイル群を生成します。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n- `./px-files/dist/`",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

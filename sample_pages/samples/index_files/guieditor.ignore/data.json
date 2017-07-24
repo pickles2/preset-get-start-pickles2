@@ -1,0 +1,22 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "PlainHTMLElements:PlainHTML/MultiText",
+      "fields": {
+       "main": {
+        "src": "このカテゴリでは、Pickles 2 が持っている様々な機能の一部をサンプルとして実装しています。\n\nここで紹介できること以外にも、まだまだ機能やプラグインがたくさんあります。\nこれらを参考に、よりよいサイト制作環境を構築してみてください。\n",
+        "editor": "markdown"
+       }
+      },
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}
