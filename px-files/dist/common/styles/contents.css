@@ -1,18 +1,11 @@
 @charset 'UTF-8';
-html, body {
-  font-size: medium;
-  font-family: Meiryo, "Hiragino Kaku Gothic ProN", Verdana, sans-serif; }
-
-.current {
-  font-weight: bold; }
-
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 .contents {
-  /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-  /**
-   * 1. Set default font family to sans-serif.
-   * 2. Prevent iOS text size adjust after orientation change, without disabling
-   *    user zoom.
-   */
   /**
    * Remove default margin.
    */
