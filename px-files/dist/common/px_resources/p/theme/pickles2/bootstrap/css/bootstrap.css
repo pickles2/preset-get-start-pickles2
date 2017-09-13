@@ -263,8 +263,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url("/common/px_resources/p/theme/bootstrap/fonts/glyphicons-halflings-regular.eot");
-  src: url("/common/px_resources/p/theme/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("/common/px_resources/p/theme/bootstrap/fonts/glyphicons-halflings-regular.woff") format('woff'), url("/common/px_resources/p/theme/bootstrap/fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("/common/px_resources/p/theme/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+  src: url("/common/px_resources/p/theme/pickles2/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("/common/px_resources/p/theme/pickles2/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("/common/px_resources/p/theme/pickles2/bootstrap/fonts/glyphicons-halflings-regular.woff") format('woff'), url("/common/px_resources/p/theme/pickles2/bootstrap/fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("/common/px_resources/p/theme/pickles2/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
 }
 .glyphicon {
   position: relative;
