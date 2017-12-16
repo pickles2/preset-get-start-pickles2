@@ -1,0 +1,13 @@
+{
+    "name": "Contents Area",
+    "areaSizeDetection": "shallow",
+    "interface": {
+        "fields": {
+            "bowlName":{
+                "fieldType": "input",
+                "type":"text",
+                "rows":1
+            }
+        }
+    }
+}

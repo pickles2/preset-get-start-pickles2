@@ -1,0 +1,12 @@
+{
+    "name":"Layouts",
+    "sort":[
+        "header",
+        "fullcolumn",
+        "lnavi",
+        "rnavi",
+        "3columns",
+        "footer"
+    ],
+    "deprecated": false
+}

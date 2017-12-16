@@ -1,0 +1,22 @@
+<nav class="theme-common-navi">
+{% if _ENV.mode == 'canvas' %}
+
+<p><a href="javascript:;">親ページ名</a></p>
+<ul>
+<li><a href="javascript:;">子階層ページ1</a></li>
+<li><a href="javascript:;">子階層ページ2</a></li>
+<li><a href="javascript:;">子階層ページ3</a></li>
+<li><a href="javascript:;">子階層ページ4</a></li>
+<li><a href="javascript:;">子階層ページ5</a></li>
+<li><a href="javascript:;">子階層ページ6</a></li>
+</ul>
+
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php
+	$category_top_id = $px->site()->get_category_top();
+?>
+	<p><a href="<?= htmlspecialchars( $px->href($category_top_id) ) ?>"><?= htmlspecialchars($px->site()->get_page_info($category_top_id, 'title_label')) ?></a></p>
+<?= $theme->mk_sub_menu( $category_top_id ) ?>
+{% endif %}
+</nav>

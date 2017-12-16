@@ -26,6 +26,7 @@
 		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
 		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
 <?php include(__DIR__.'/inc/headsection.inc'); ?>
+		<link rel="stylesheet" href="<?= htmlspecialchars( $theme->files('/modules.css') ); ?>" />
 <?= $px->bowl()->get_clean('head') ?>
 
 		<style type="text/css">
@@ -70,9 +71,9 @@
 		</style>
 	</head>
 	<body>
-		<header class="theme_header" id="page_top">
-			<div class="container">
-				<h1 class="theme_si"><?= htmlspecialchars( $px->conf()->name ) ?></h1>
+		<header class="theme-header" id="page_top">
+			<div class="theme-header__inner">
+				<h1 class="theme-header__si"><?= htmlspecialchars( $px->conf()->name ) ?></h1>
 			</div>
 		</header>
 		<div class="theme_welcome">
@@ -88,20 +89,22 @@
 				</div>
 			</div>
 		</div><!-- /.theme_welcome -->
-		<div class="theme_mainblock">
-			<div class="container">
+
+		<div class="theme-layouts theme-layouts--fullcolumn">
+			<div class="theme-layouts__body">
 				<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="main">
 <?= $px->bowl()->get_clean() ?>
 				</div>
-			</div><!-- /.container -->
-		</div><!-- /.theme_mainblock -->
-		<footer class="theme_footer">
-			<div class="container">
-				<nav class="theme_megafooter_navi">
+			</div>
+		</div>
+
+		<footer class="theme-footer">
+			<div class="theme-footer__inner">
+				<nav class="theme-footer__megafooter-navi">
 <?= $theme->mk_megafooter_menu() ?>
 				</nav>
 			</div>
-			<div class="container theme_footer_shouldernavi">
+			<div class="theme-footer__shouldernavi">
 <?php
 	$shoulder_menu = $px->site()->get_shoulder_menu();
 	echo( '<ul>' );
@@ -112,9 +115,7 @@
 ?>
 			</div>
 <?php if( @strlen($px->conf()->copyright) ){ ?>
-			<div class="container">
-				<p style="text-align:center;">&copy;<?= htmlspecialchars($px->conf()->copyright); ?>.</p>
-			</div>
+			<p style="text-align:center;">&copy;<?= htmlspecialchars($px->conf()->copyright); ?>.</p>
 <?php } ?>
 		</footer>
 	</body>

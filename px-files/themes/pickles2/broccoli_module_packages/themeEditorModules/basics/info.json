@@ -1,0 +1,8 @@
+{
+    "name":"Basic Modules",
+    "sort":[
+        "multitext",
+        "image"
+    ],
+    "deprecated": false
+}

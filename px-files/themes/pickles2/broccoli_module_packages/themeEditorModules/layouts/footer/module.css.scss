@@ -1,0 +1,85 @@
+
+/**
+ * Footer
+ */
+.theme-footer{
+	padding: 1em 0 0.5em 0;
+	clear: both;
+	&::after{
+		display: block;
+		content: " ";
+		clear: both;
+		float: none;
+	}
+
+	&__inner{
+		margin: 0 auto;
+		max-width: 1024px;
+
+		clear: both;
+		&::after{
+			display: block;
+			content: " ";
+			clear: both;
+			float: none;
+		}
+	}
+
+	/**
+	 * メガフッターメニュー
+	 */
+	&__megafooter-navi{
+		margin:0 auto 1em auto;
+		zoom:1;
+	}
+	&__megafooter-navi:after{
+	  content: " ";
+	  display: block;
+	  visibility: hidden;
+	  height: 0.1px;
+	  font-size: 0.1em;
+	  line-height: 0;
+	  clear: both;
+	}
+	&__megafooter-navi ul{
+		margin:0; padding:0;
+	}
+	&__megafooter-navi ul li{
+		margin:0 1px; padding:0; list-style-type:none;
+		float:left;
+		display:block;
+	}
+	&__megafooter-navi ul li ul li{
+		display:block;
+		float:none;
+		font-size:80%;
+	}
+	&__megafooter-navi ul li a{
+		padding:0.5em 2em;
+		display:block;
+		font-weight:bold;
+	}
+	&__megafooter-navi ul li ul li a{
+		padding-left:4em;
+		font-weight:normal;
+	}
+
+	/**
+	 * ショルダーメニュー(フッター)
+	 */
+	&__shouldernavi{
+		ul{
+			margin:0.5em;
+			padding:0;
+			text-align:center;
+
+			li{
+				margin:0 1em;
+				padding:0;
+				list-style-type:none;
+				display:inline;
+			}
+		}
+	}
+
+}

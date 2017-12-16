@@ -1,0 +1,42 @@
+<header class="theme-header">
+	<div class="theme-header__inner">
+		<div class="theme-header__si">
+{% if _ENV.mode == 'canvas' %}
+			<a href="javascript:;">ページ名</a>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+			<a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a>
+{% endif %}
+		</div>
+		<div class="theme-header__shouldernavi">
+{% if _ENV.mode == 'canvas' %}
+<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+{% endif %}
+		</div>
+		<div class="theme-header__globalnavi">
+{% if _ENV.mode == 'canvas' %}
+<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php
+	$global_menu = $px->site()->get_global_menu();
+	echo( '<ul>' );
+	foreach( $global_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+{% endif %}
+		</div>
+	</div>
+</header>

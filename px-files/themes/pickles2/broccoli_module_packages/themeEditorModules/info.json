@@ -1,0 +1,9 @@
+{
+    "name":"Theme Modules",
+    "sort":[
+        "layouts",
+        "basics",
+        "vars"
+    ],
+    "deprecated": false
+}

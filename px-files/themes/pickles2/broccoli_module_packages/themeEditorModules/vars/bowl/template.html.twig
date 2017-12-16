@@ -1,0 +1,14 @@
+{% if _ENV.mode == 'canvas' %}
+<div class="contents">
+<div style="display:block; width:auto; background:#999; color:#fff; text-align:center; padding:10em 20%;">
+<p>CONTENTS AREA</p>
+<p>bowl name: <strong>{{bowlName}}</strong></p>
+</div>
+</div>
+{% endif %}
+
+{% if _ENV.mode == 'finalize' %}
+<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="{{bowlName}}">
+<?= $px->bowl()->pull('{{bowlName}}') ?>
+</div>
+{% endif %}

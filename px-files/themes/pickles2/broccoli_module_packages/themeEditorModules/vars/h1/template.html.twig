@@ -1,0 +1,6 @@
+{% if _ENV.mode == 'canvas' %}
+<h1>ページのタイトル</h1>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<h1><?= preg_replace('/\r\n|\r|\n/', '<br />', $px->site()->get_current_page_info('title_h1')) ?></h1>
+{% endif %}

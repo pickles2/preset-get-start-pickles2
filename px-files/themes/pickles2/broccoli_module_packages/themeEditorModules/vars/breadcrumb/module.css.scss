@@ -1,0 +1,27 @@
+/**
+ * パンくず
+ */
+.theme-breadcrumb{
+	margin:0 0;
+
+	ul,
+	ul li{
+		margin: 0;
+		padding: 0 0.3em 0 0;
+		display: inline;
+		font-size: small;
+		list-style-type: none;
+	}
+	ul li:after{
+		content:' > ';
+		margin: 0 0.3em;
+	}
+	ul li:last-child:after{
+		content:'';
+		margin: 0;
+	}
+	ul li span{
+		font-weight:bold;
+	}
+
+}

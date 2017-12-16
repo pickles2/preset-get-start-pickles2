@@ -1,0 +1,64 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "themeEditorModules:layouts/header",
+      "fields": {},
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "themeEditorModules:layouts/rnavi",
+      "fields": {
+       "header": [],
+       "main": [
+        {
+         "modId": "themeEditorModules:vars/breadcrumb",
+         "fields": {},
+         "anchor": "",
+         "dec": ""
+        },
+        {
+         "modId": "themeEditorModules:vars/h1",
+         "fields": {},
+         "anchor": "",
+         "dec": ""
+        },
+        {
+         "modId": "themeEditorModules:vars/bowl",
+         "fields": {
+          "bowlName": ""
+         },
+         "anchor": "",
+         "dec": ""
+        },
+        {
+         "modId": "themeEditorModules:vars/breadcrumb",
+         "fields": {}
+        }
+       ],
+       "rnavi": [
+        {
+         "modId": "themeEditorModules:vars/localnavigation",
+         "fields": {}
+        }
+       ],
+       "footer": []
+      },
+      "anchor": "",
+      "dec": ""
+     },
+     {
+      "modId": "themeEditorModules:layouts/footer",
+      "fields": {},
+      "anchor": "",
+      "dec": ""
+     }
+    ]
+   }
+  }
+ }
+}

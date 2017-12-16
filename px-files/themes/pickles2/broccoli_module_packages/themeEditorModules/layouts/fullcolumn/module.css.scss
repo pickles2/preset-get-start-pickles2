@@ -1,0 +1,125 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+	font-family: Meiryo, "Hiragino Kaku Gothic ProN", Verdana, sans-serif;
+	background-color: #eee;
+}
+.current{
+	font-weight: bold;
+}
+img, svg, video{
+	max-width:100%;
+	height:auto;
+}
+.contents pre code,
+pre code{
+	border:none;
+	padding:0;
+	margin:0;
+}
+a{
+	color: #00a0e6;
+}
+
+
+/**
+ * .anchor_links
+ */
+.anchor_links{
+	margin:2em 7%;
+}
+
+
+
+/**
+ * Layout
+ */
+.theme-layouts{
+	background-color: #fff;
+	padding:18px 15px;
+
+	clear: both;
+	&::after{
+		content: " ";
+		clear: both;
+		float: none;
+	}
+
+	margin: 0 auto;
+	width: auto;
+
+	img{
+		max-width: 100%;
+	}
+
+	// ベーススタイル
+	&__header{
+		border: 3px solid #930;
+	}
+	&__body{
+		display: flex;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	&__content{
+		width: 100%;
+	}
+	&__lnavi{
+		margin-right: 20px;
+	}
+	&__rnavi{
+		margin-left: 20px;
+	}
+	&__footer{
+		border: 3px solid #036;
+	}
+
+	// レイアウトごとの拡張
+	&--fullcolumn{
+	}
+	&--lnavi{
+		.theme-layouts__content{
+			width: 75%;
+		}
+		.theme-layouts__lnavi{
+			width: 25%;
+		}
+	}
+	&--rnavi{
+		.theme-layouts__content{
+			width: 75%;
+		}
+		.theme-layouts__rnavi{
+			width: 25%;
+		}
+	}
+	&--3columns{
+		.theme-layouts__content{
+			width: 60%;
+		}
+		.theme-layouts__lnavi{
+			width: 20%;
+		}
+		.theme-layouts__rnavi{
+			width: 20%;
+		}
+	}
+
+
+	// レスポンシブ拡張
+	@media all and (max-width:740px){
+		.theme-layouts{
+			&__body{
+				display: block;
+			}
+			&__content,
+			&__lnavi,
+			&__rnavi{
+				width: auto;
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
