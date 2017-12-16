@@ -25,5 +25,6 @@
 "/sample_pages/samples/shared_content_subpages/sub1.html","/sample_pages/samples/shared_content.html",,"共有コンテンツ-1",,,,,"/sample_pages/samples/index.html>/sample_pages/samples/shared_content.html",1,,,"実装サンプル, 機能紹介","共通のコンテンツを表示するサンプルです。その1",,,,
 "/sample_pages/samples/shared_content_subpages/sub2/sub2.html","/sample_pages/samples/shared_content.html",,"共有コンテンツ-2",,,,,"/sample_pages/samples/index.html>/sample_pages/samples/shared_content.html",1,,,"実装サンプル, 機能紹介","共通のコンテンツを表示するサンプルです。その2",,,,
 "/sample_pages/samples/ssi.html",,,"SSI",,,,,"/sample_pages/samples/index.html",1,,,"実装サンプル, 機能紹介","インクルード機能のサンプルです。",,,,
+"/sample_pages/samples/popup.html",,,"Popup Page",,,,,"/sample_pages/samples/index.html",1,"popup",,"実装サンプル, 機能紹介","ポップアップページのサンプルです。",,,,
 "/sample_pages/samples/ext_htm.htm",,,"拡張子 *.htm",,,,,"/sample_pages/samples/index.html",1,,,"実装サンプル, 機能紹介","htm拡張子のページを描画するサンプルです。",,,,
 "/sample_pages/help/index.html",,,"ヘルプ",,,,,,1,,,"help","ヘルプページです。",,,,

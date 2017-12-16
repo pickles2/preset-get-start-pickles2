@@ -126,6 +126,8 @@ a {
     margin-left: 20px; }
   .theme-layouts__footer {
     border: 3px solid #036; }
+  .theme-layouts--fullcolumn .theme-layouts__body {
+    display: block; }
   .theme-layouts--lnavi .theme-layouts__content {
     width: 75%; }
     .theme-layouts--lnavi .theme-layouts__lnavi {

@@ -77,6 +77,9 @@ a{
 
 	// レイアウトごとの拡張
 	&--fullcolumn{
+		.theme-layouts__body{
+			display: block;
+		}
 	}
 	&--lnavi{
 		.theme-layouts__content{
