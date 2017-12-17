@@ -1,0 +1,22 @@
+{
+    "name": "サイト名",
+    "interface": {
+        "fields":{
+            "linkto":{
+                "fieldType": "input",
+                "label": "リンク先",
+                "type": "href"
+            },
+            "htmlElement":{
+                "fieldType": "input",
+                "label": "HTML要素で囲う",
+                "type": "select",
+                "options": [
+                     {"value":"", "label":"囲わない"},
+                     {"value":"h1", "label":"h1"}
+                ]
+            }
+        },
+        "subModule": {}
+    }
+}

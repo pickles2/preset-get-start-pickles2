@@ -6,7 +6,22 @@
     "main": [
      {
       "modId": "themeEditorModules:layouts/header",
-      "fields": {},
+      "fields": {
+       "sitetitle_linkto": "/index.html",
+       "sitetitle_htmlElement": "",
+       "shouldernavi": [
+        {
+         "modId": "themeEditorModules:vars/shouldernavi",
+         "fields": {}
+        }
+       ],
+       "globalnavi": [
+        {
+         "modId": "themeEditorModules:vars/globalnavi",
+         "fields": {}
+        }
+       ]
+      },
       "anchor": "",
       "dec": ""
      },

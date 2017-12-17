@@ -1,0 +1,13 @@
+{% if _ENV.mode == 'canvas' %}
+<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+{% endif %}

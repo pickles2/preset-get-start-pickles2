@@ -16,10 +16,8 @@
 <header class="theme-header">
 	<div class="theme-header__inner">
 		<div class="theme-header__si">
-			<a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a>
-		</div>
-		<div class="theme-header__shouldernavi">
-<?php
+			<a href="/index.html"><?= htmlspecialchars( $px->conf()->name ) ?></a>		</div>
+		<div class="theme-header__shouldernavi"><?php
 	$shoulder_menu = $px->site()->get_shoulder_menu();
 	echo( '<ul>' );
 	foreach( $shoulder_menu as $page_id ){
@@ -27,9 +25,9 @@
 	}
 	echo( '</ul>' );
 ?>
-		</div>
-		<div class="theme-header__globalnavi">
-<?php
+</div>
+
+		<div class="theme-header__globalnavi"><?php
 	$global_menu = $px->site()->get_global_menu();
 	echo( '<ul>' );
 	foreach( $global_menu as $page_id ){
@@ -37,7 +35,8 @@
 	}
 	echo( '</ul>' );
 ?>
-		</div>
+</div>
+
 	</div>
 </header>
 <div class="theme-layouts theme-layouts--rnavi">

@@ -1,42 +1,15 @@
 <header class="theme-header">
 	<div class="theme-header__inner">
 		<div class="theme-header__si">
-{% if _ENV.mode == 'canvas' %}
-			<a href="javascript:;">ページ名</a>
-{% endif %}
-{% if _ENV.mode == 'finalize' %}
-			<a href="<?= htmlspecialchars($px->href('')); ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a>
-{% endif %}
+			{% if sitetitle_htmlElement %}<{{ sitetitle_htmlElement }}>{% endif %}{% if sitetitle_linkto %}<a href="{{ sitetitle_linkto }}">{% endif %}{% if _ENV.mode == 'canvas' %}サイト名{% endif %}{% if _ENV.mode == 'finalize' %}<?= htmlspecialchars( $px->conf()->name ) ?>{% endif %}{% if sitetitle_linkto %}</a>{% endif %}{% if sitetitle_htmlElement %}</{{ sitetitle_htmlElement }}>{% endif %}
 		</div>
-		<div class="theme-header__shouldernavi">
-{% if _ENV.mode == 'canvas' %}
-<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
+{% if shouldernavi %}
+		<div class="theme-header__shouldernavi">{{ shouldernavi }}</div>
 {% endif %}
-{% if _ENV.mode == 'finalize' %}
-<?php
-	$shoulder_menu = $px->site()->get_shoulder_menu();
-	echo( '<ul>' );
-	foreach( $shoulder_menu as $page_id ){
-		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
-	}
-	echo( '</ul>' );
-?>
+
+{% if globalnavi %}
+		<div class="theme-header__globalnavi">{{ globalnavi }}</div>
 {% endif %}
-		</div>
-		<div class="theme-header__globalnavi">
-{% if _ENV.mode == 'canvas' %}
-<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
-{% endif %}
-{% if _ENV.mode == 'finalize' %}
-<?php
-	$global_menu = $px->site()->get_global_menu();
-	echo( '<ul>' );
-	foreach( $global_menu as $page_id ){
-		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
-	}
-	echo( '</ul>' );
-?>
-{% endif %}
-		</div>
+
 	</div>
 </header>
