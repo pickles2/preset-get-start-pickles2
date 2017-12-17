@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title><?= htmlspecialchars($px->site()->get_current_page_info('title_full')); ?></title>
+		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
+		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
+<?= $px->get_contents_manifesto(); ?>
+
+		<link rel="stylesheet" href="<?= htmlspecialchars( $theme->files('/modules.css') ); ?>" />
+
+<?= $px->bowl()->get_clean('head'); ?>
+
+	</head>
+	<body>
+<header class="theme-header">
+	<div class="theme-header__inner">
+		<div class="theme-header__si">
+			<h1><?= htmlspecialchars( $px->conf()->name ) ?></h1>		</div>
+
+
+	</div>
+</header>
 <?php
 	require_once( __DIR__.'/php/top.php' );
 	$theme_top = new pickles2\themes\pickles\theme_top($px, $theme);
@@ -17,107 +40,74 @@
 		$messageBoxSetting['bg'] = '#ffeeee';
 		$messageBoxSetting['radius'] = '0px';
 	}
-?><!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<title><?= htmlspecialchars( $px->conf()->name ) ?></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
-		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
-<?php include(__DIR__.'/inc/headsection.inc'); ?>
-		<link rel="stylesheet" href="<?= htmlspecialchars( $theme->files('/modules.css') ); ?>" />
-<?= $px->bowl()->get_clean('head') ?>
-
-		<style type="text/css">
-			.theme_welcome{
-				background:#fff;
-				min-height:300px;
-				text-align: center;
-				padding:20px 1em 0;
-			}
-			.theme_welcome .theme_welcome-inner{
-				width:auto;
-				max-width:900px;
-				margin:0 auto;
-				padding:0;
-			}
-			.theme_welcome .theme_welcome-title{
-				color: <?php print htmlspecialchars($colors['link']); ?>;
-				font-weight:bold;
-				font-size:xx-large;
-				margin:1em 0 0.5em 0;
-			}
-			.theme_welcome .theme_welcome-message{
-				color: <?php print $messageBoxSetting['main']; ?>;
-				border:2px solid <?php print $messageBoxSetting['main']; ?>;
-				background-color: <?php print $messageBoxSetting['bg']; ?>;
-				border-radius: <?php print $messageBoxSetting['radius']; ?>;
-				padding:0.5em 1em;
-				max-width:680px;
-				margin:0 auto 10px auto;
-			}
-			.theme_welcome .theme_welcome-message *{
-				margin-top:0;
-				margin-bottom:0;
-			}
-			.theme_welcome .theme_welcome-message ul{
-				text-align:left;
-				word-break:break-all;
-			}
-			.theme_welcome .theme_welcome-image_everyone{
-				text-align:center;
-			}
-		</style>
-	</head>
-	<body>
-		<header class="theme-header" id="page_top">
-			<div class="theme-header__inner">
-				<h1 class="theme-header__si"><?= htmlspecialchars( $px->conf()->name ) ?></h1>
-			</div>
-		</header>
-		<div class="theme_welcome">
-			<div class="theme_welcome-inner">
-				<p class="theme_welcome-title"><?= $theme_top->create_src_welcome_svg(); ?></p>
-				<div class="theme_welcome-body clearfix">
-					<div class="theme_welcome-message">
-						<?= $theme_top->mk_setup_test( $test_results ); ?>
-					</div>
-					<?php if( !count($test_results) ){ ?>
-						<div class="theme_welcome-image_everyone"><img src="<?= $theme->files('images/everyone.png'); ?>" alt="" /></div>
-					<?php } ?>
-				</div>
-			</div>
-		</div><!-- /.theme_welcome -->
-
-		<div class="theme-layouts theme-layouts--fullcolumn">
-			<div class="theme-layouts__body">
-				<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="main">
-<?= $px->bowl()->get_clean() ?>
-				</div>
-			</div>
-		</div>
-
-		<footer class="theme-footer">
-			<div class="theme-footer__inner">
-				<nav class="theme-footer__megafooter-navi">
-<?= $theme->mk_megafooter_menu() ?>
-				</nav>
-			</div>
-			<div class="theme-footer__shouldernavi">
-<?php
-	$shoulder_menu = $px->site()->get_shoulder_menu();
-	echo( '<ul>' );
-	foreach( $shoulder_menu as $page_id ){
-		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
-	}
-	echo( '</ul>' );
 ?>
+
+<div class="theme-welcome">
+	<div class="theme-welcome__inner">
+		<p class="theme-welcome__title"><?= $theme_top->create_src_welcome_svg(); ?></p>
+		<div class="theme-welcome__body clearfix">
+			<div class="theme-welcome__message">
+				<?= $theme_top->mk_setup_test( $test_results ); ?>
 			</div>
-<?php if( @strlen($px->conf()->copyright) ){ ?>
-			<p style="text-align:center;">&copy;<?= htmlspecialchars($px->conf()->copyright); ?>.</p>
-<?php } ?>
-		</footer>
+			<?php if( !count($test_results) ){ ?>
+				<div class="theme-welcome__image-everyone"><img src="<?= $theme->files('images/everyone.png'); ?>" alt="" /></div>
+			<?php } ?>
+		</div>
+	</div>
+</div><!-- /.theme-welcome -->
+<div class="theme-layouts theme-layouts--fullcolumn">
+    <div class="theme-layouts__body">
+
+<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="">
+<?= $px->bowl()->pull('') ?>
+</div>
+    </div>
+</div>
+<footer class="theme-footer">
+	<div class="theme-footer__inner">
+		<nav class="theme-footer__megafooter-navi">
+<ul>
+<li><a href="/sample_pages/">はじめに</a><ul>
+<li><a href="/sample_pages/getstart/try_sitemap.html">サイトマップを編集してみよう</a></li>
+<li><a href="/sample_pages/getstart/try_theme.html">テーマを編集してみよう</a></li>
+<li><a href="/sample_pages/getstart/try_contents.html">コンテンツを編集してみよう</a></li>
+<li><a href="/sample_pages/getstart/try_publish.html">パブリッシュしてみよう</a></li>
+<li><a href="/sample_pages/getstart/try_your_project.html">自分のサイトを編集しよう</a></li>
+</ul>
+</li>
+<li><a href="/sample_pages/training/" class="current">編集してみょう</a><ul>
+<li><a href="/sample_pages/training/training_001.html">練習ページ1</a></li>
+<li><a href="/sample_pages/training/training_002.html">練習ページ2</a></li>
+<li><a href="/sample_pages/training/training_003.html">練習ページ3</a></li>
+<li><a href="/sample_pages/training/training_004.html">練習ページ4</a></li>
+<li><a href="/sample_pages/training/training_005.html">練習ページ5</a></li>
+<li><a href="/sample_pages/training/training_006.html">練習ページ6</a></li>
+</ul>
+</li>
+<li><a href="/sample_pages/samples/">さまざまな機能</a><ul>
+<li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
+<li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
+<li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
+<li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
+<li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
+<li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li>
+<li><a href="/sample_pages/samples/ssi.html">SSI</a></li>
+<li><a href="/sample_pages/samples/ext_htm.htm">拡張子 *.htm</a></li>
+</ul>
+</li>
+</ul>
+		</nav>
+
+		<div class="theme-footer__shouldernavi">
+<ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/help/">ヘルプ</a></li></ul>
+		</div>
+		<p style="text-align:center;">©Pickles 2 Project.</p>
+	</div>
+</footer>
+
+
+		<script src="<?= htmlspecialchars( $theme->files('/modules.js') ); ?>"></script>
+<?= $px->bowl()->get_clean('foot'); ?>
+
 	</body>
-<?= $px->bowl()->get_clean('foot') ?>
 </html>

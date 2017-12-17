@@ -1,0 +1,9 @@
+{
+    "name": "Welcome!",
+    "areaSizeDetection": "shallow",
+    "interface": {
+        "fields":{
+        },
+        "subModule": {}
+    }
+}
