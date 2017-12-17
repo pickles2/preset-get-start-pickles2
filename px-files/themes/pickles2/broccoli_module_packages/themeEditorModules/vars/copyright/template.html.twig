@@ -1,0 +1,8 @@
+{% if _ENV.mode == 'canvas' %}
+<p style="text-align:center;">&copy;Example.</p>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php if( @strlen($px->conf()->copyright) ){ ?>
+<p style="text-align:center;">&copy;<?= htmlspecialchars($px->conf()->copyright); ?>.</p>
+<?php } ?>
+{% endif %}

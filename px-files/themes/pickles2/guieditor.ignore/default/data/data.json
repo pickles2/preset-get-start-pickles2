@@ -68,7 +68,16 @@
      },
      {
       "modId": "themeEditorModules:layouts/footer",
-      "fields": {},
+      "fields": {
+       "content": [
+        {
+         "modId": "themeEditorModules:vars/copyright",
+         "fields": {},
+         "anchor": "",
+         "dec": ""
+        }
+       ]
+      },
       "anchor": "",
       "dec": ""
      }

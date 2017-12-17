@@ -8,7 +8,7 @@
       "modId": "themeEditorModules:layouts/header",
       "fields": {
        "sitetitle_linkto": "",
-       "sitetitle_htmlElement": "h1",
+       "sitetitle_htmlElement": "",
        "shouldernavi": [],
        "globalnavi": []
       },
@@ -16,15 +16,13 @@
       "dec": ""
      },
      {
-      "modId": "themeEditorModules:layouts/welcome",
-      "fields": {},
-      "anchor": "",
-      "dec": ""
-     },
-     {
       "modId": "themeEditorModules:layouts/fullcolumn",
       "fields": {
        "main": [
+        {
+         "modId": "themeEditorModules:vars/h1",
+         "fields": {}
+        },
         {
          "modId": "themeEditorModules:vars/bowl",
          "fields": {
@@ -35,17 +33,14 @@
       }
      },
      {
-      "modId": "themeEditorModules:layouts/footer",
-      "fields": {
-       "content": [
-        {
-         "modId": "themeEditorModules:vars/copyright",
-         "fields": {},
-         "anchor": "",
-         "dec": ""
-        }
-       ]
-      }
+      "modId": "themeEditorModules:vars/close_button",
+      "fields": {}
+     },
+     {
+      "modId": "themeEditorModules:vars/copyright",
+      "fields": {},
+      "anchor": "",
+      "dec": ""
      }
     ]
    }

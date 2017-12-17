@@ -1,41 +1,59 @@
 <footer class="theme-footer">
 	<div class="theme-footer__inner">
 		<nav class="theme-footer__megafooter-navi">
+{% if _ENV.mode == 'canvas' %}
 <ul>
-<li><a href="/sample_pages/">はじめに</a><ul>
-<li><a href="/sample_pages/getstart/try_sitemap.html">サイトマップを編集してみよう</a></li>
-<li><a href="/sample_pages/getstart/try_theme.html">テーマを編集してみよう</a></li>
-<li><a href="/sample_pages/getstart/try_contents.html">コンテンツを編集してみよう</a></li>
-<li><a href="/sample_pages/getstart/try_publish.html">パブリッシュしてみよう</a></li>
-<li><a href="/sample_pages/getstart/try_your_project.html">自分のサイトを編集しよう</a></li>
+<li><a href="javascript:;">ページ名</a><ul>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
 </ul>
 </li>
-<li><a href="/sample_pages/training/" class="current">編集してみょう</a><ul>
-<li><a href="/sample_pages/training/training_001.html">練習ページ1</a></li>
-<li><a href="/sample_pages/training/training_002.html">練習ページ2</a></li>
-<li><a href="/sample_pages/training/training_003.html">練習ページ3</a></li>
-<li><a href="/sample_pages/training/training_004.html">練習ページ4</a></li>
-<li><a href="/sample_pages/training/training_005.html">練習ページ5</a></li>
-<li><a href="/sample_pages/training/training_006.html">練習ページ6</a></li>
+<li><a href="javascript:;">ページ名</a><ul>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
 </ul>
 </li>
-<li><a href="/sample_pages/samples/">さまざまな機能</a><ul>
-<li><a href="/sample_pages/samples/php_code.html">PHPコード埋め込み</a></li>
-<li><a href="/sample_pages/samples/markdown.html">Markdown記法</a></li>
-<li><a href="/sample_pages/samples/page_title.html">ページタイトル(リンクのラベル)</a></li>
-<li><a href="/sample_pages/samples/alias/">エイリアス機能</a></li>
-<li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
-<li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li>
-<li><a href="/sample_pages/samples/ssi.html">SSI</a></li>
-<li><a href="/sample_pages/samples/ext_htm.htm">拡張子 *.htm</a></li>
+<li><a href="javascript:;">ページ名</a><ul>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
+<li><a href="javascript:;">ページ名</a></li>
 </ul>
 </li>
 </ul>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?= $theme->mk_megafooter_menu() ?>
+{% endif %}
 		</nav>
 
 		<div class="theme-footer__shouldernavi">
-<ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/help/">ヘルプ</a></li></ul>
+{% if _ENV.mode == 'canvas' %}
+<ul><li><a href="javascript:;">ページ名</a></li><li><a href="javascript:;">ページ名</a></li></ul>
+{% endif %}
+{% if _ENV.mode == 'finalize' %}
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	echo( '<li>'.$px->mk_link( '', array('current'=>false) ).'</li>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+{% endif %}
 		</div>
-		<p style="text-align:center;">©Pickles 2 Project.</p>
+{% if content %}
+{{ content }}
+{% endif %}
 	</div>
 </footer>

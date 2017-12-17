@@ -1,4 +1,12 @@
 {
     "name": "Footer",
-    "areaSizeDetection": "shallow"
+    "areaSizeDetection": "shallow",
+    "interface":{
+        "fields":{
+            "content":{
+                "fieldType": "module",
+                "label": "コンテンツ"
+            }
+        }
+    }
 }
