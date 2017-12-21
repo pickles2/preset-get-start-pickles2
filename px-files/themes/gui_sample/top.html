@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title><?= htmlspecialchars($px->site()->get_current_page_info('title_full')); ?></title>
+		<meta name="description" content="<?= htmlspecialchars($px->site()->get_current_page_info('description')); ?>" />
+		<meta name="keywords" content="<?= htmlspecialchars($px->site()->get_current_page_info('keywords')); ?>" />
+<?= $px->get_contents_manifesto(); ?>
+
+		<link rel="stylesheet" href="<?= htmlspecialchars( $theme->files('/modules.css') ); ?>" />
+
+<?= $px->bowl()->get_clean('head'); ?>
+
+	</head>
+	<body>
+<header class="theme-header">
+	<div class="theme-header__inner">
+		<div class="theme-header__si">
+			<h1><?= htmlspecialchars( $px->conf()->name ) ?></h1>		</div>
+
+
+	</div>
+</header>
+<?php
+	require_once( __DIR__.'/php/top.php' );
+	$theme_top = new pickles2\themes\pickles\theme_top($px, $theme);
+
+	//↓ $page_info にページの情報を格納しています。
+	//	 test::var_dump( $page_info ); で、変数の内容を確認できます。
+	$page_info = $px->site()->get_current_page_info();
+	$colors = $theme_top->get_color_scheme();
+	$test_results = $theme_top->setup_test();
+	$messageBoxSetting = array();
+	$messageBoxSetting['main'] = $colors['main'];
+	$messageBoxSetting['bg'] = '#fff';
+	$messageBoxSetting['radius'] = '1em';
+	if( count($test_results) ){
+		// エラーが検出された場合
+		$messageBoxSetting['main'] = '#ff0000';
+		$messageBoxSetting['bg'] = '#ffeeee';
+		$messageBoxSetting['radius'] = '0px';
+	}
+?>
+
+<div class="theme-welcome">
+	<div class="theme-welcome__inner">
+		<p class="theme-welcome__title"><?= $theme_top->create_src_welcome_svg(); ?></p>
+		<div class="theme-welcome__body clearfix">
+			<div class="theme-welcome__message">
+				<?= $theme_top->mk_setup_test( $test_results ); ?>
+			</div>
+			<?php if( !count($test_results) ){ ?>
+				<div class="theme-welcome__image-everyone"><img src="<?= $theme->files('images/everyone.png'); ?>" alt="" /></div>
+			<?php } ?>
+		</div>
+	</div>
+</div><!-- /.theme-welcome -->
+<div class="theme-layouts theme-layouts--fullcolumn">
+    <div class="theme-layouts__body">
+
+<div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="">
+<?= $px->bowl()->pull('') ?>
+</div>
+    </div>
+</div>
+<footer class="theme-footer">
+	<div class="theme-footer__inner">
+		<nav class="theme-footer__megafooter-navi">
+<?= $theme->mk_megafooter_menu() ?>
+		</nav>
+
+		<div class="theme-footer__shouldernavi">
+<?php
+	$shoulder_menu = $px->site()->get_shoulder_menu();
+	echo( '<ul>' );
+	echo( '<li>'.$px->mk_link( '', array('current'=>false) ).'</li>' );
+	foreach( $shoulder_menu as $page_id ){
+		echo( '<li>'.$px->mk_link( $page_id ).'</li>' );
+	}
+	echo( '</ul>' );
+?>
+		</div>
+<?php if( @strlen($px->conf()->copyright) ){ ?>
+<p style="text-align:center;">&copy;<?= htmlspecialchars($px->conf()->copyright); ?>.</p>
+<?php } ?>
+
+	</div>
+</footer>
+
+
+		<script src="<?= htmlspecialchars( $theme->files('/modules.js') ); ?>"></script>
+<?= $px->bowl()->get_clean('foot'); ?>
+
+	</body>
+</html>
