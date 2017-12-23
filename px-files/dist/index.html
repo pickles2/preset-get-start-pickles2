@@ -2,15 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>Get start &quot;Pickles 2&quot; !</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="" />
+		<title>ホーム | Get start &quot;Pickles 2&quot; !</title>
 		<meta name="description" content="" />
-
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="/common/px_resources/p/theme/pickles2/bootstrap/css/bootstrap.min.css">
-		<script src="/common/px_resources/p/theme/pickles2/bootstrap/js/bootstrap.min.js"></script>
-
+		<meta name="keywords" content="" />
  
 <!-- jQuery -->
 <script src="/common/scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
@@ -23,60 +17,23 @@
 <link rel="stylesheet" href="/common/styles/contents.css" type="text/css" />
 <script src="/common/scripts/contents.js"></script>
 
-		<!-- Bootstrap Theme -->
-		<link rel="stylesheet" href="/common/px_resources/p/theme/pickles2/bootstrap/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="/common/px_resources/p/theme/pickles2/styles/theme.css">
+		<link rel="stylesheet" href="/common/px_resources/p/theme/pickles2/modules.css" />
 
-		<style type="text/css">
-			.theme_welcome{
-				background:#fff;
-				min-height:300px;
-				text-align: center;
-				padding:20px 1em 0;
-			}
-			.theme_welcome .theme_welcome-inner{
-				width:auto;
-				max-width:900px;
-				margin:0 auto;
-				padding:0;
-			}
-			.theme_welcome .theme_welcome-title{
-				color: #00a0e6;
-				font-weight:bold;
-				font-size:xx-large;
-				margin:1em 0 0.5em 0;
-			}
-			.theme_welcome .theme_welcome-message{
-				color: #00a0e6;
-				border:2px solid #00a0e6;
-				background-color: #fff;
-				border-radius: 1em;
-				padding:0.5em 1em;
-				max-width:680px;
-				margin:0 auto 10px auto;
-			}
-			.theme_welcome .theme_welcome-message *{
-				margin-top:0;
-				margin-bottom:0;
-			}
-			.theme_welcome .theme_welcome-message ul{
-				text-align:left;
-				word-break:break-all;
-			}
-			.theme_welcome .theme_welcome-image_everyone{
-				text-align:center;
-			}
-		</style>
+
 	</head>
 	<body>
-		<header class="theme_header" id="page_top">
-			<div class="container">
-				<h1 class="theme_si">Get start &quot;Pickles 2&quot; !</h1>
-			</div>
-		</header>
-		<div class="theme_welcome">
-			<div class="theme_welcome-inner">
-				<p class="theme_welcome-title"><svg version="1.1" id="theme_welcome_title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<header class="theme-header">
+	<div class="theme-header__inner">
+		<div class="theme-header__si">
+			<h1>Get start &quot;Pickles 2&quot; !</h1>		</div>
+
+
+	</div>
+</header>
+
+<div class="theme-welcome">
+	<div class="theme-welcome__inner">
+		<p class="theme-welcome__title"><svg version="1.1" id="theme_welcome_title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewbox="0 0 595 100" enable-background="new 0 0 595 100" xml:space="preserve">
 <g>
 	<g>
@@ -120,16 +77,17 @@
 </g>
 </svg>
 </p>
-				<div class="theme_welcome-body clearfix">
-					<div class="theme_welcome-message">
-						<p>おめでとうございます！<br />Pickles Framework のセットアップは正常に完了しました。</p>					</div>
-											<div class="theme_welcome-image_everyone"><img src="/common/px_resources/p/theme/pickles2/images/everyone.png" alt="" /></div>
-									</div>
-			</div>
-		</div><!-- /.theme_welcome -->
-		<div class="theme_mainblock">
-			<div class="container">
-				<div class="contents">
+		<div class="theme-welcome__body clearfix">
+			<div class="theme-welcome__message">
+				<p>おめでとうございます！<br />Pickles Framework のセットアップは正常に完了しました。</p>			</div>
+							<div class="theme-welcome__image-everyone"><img src="/common/px_resources/p/theme/pickles2/images/everyone.png" alt="" /></div>
+					</div>
+	</div>
+</div><!-- /.theme-welcome -->
+<div class="theme-layouts theme-layouts--fullcolumn">
+    <div class="theme-layouts__body">
+
+<div class="contents">
 
 
 <h2>次のステップ</h2>
@@ -182,12 +140,12 @@
 	しばらくすると、次のパスに、静的なHTMLファイルが生成されます。<br />
 </p>
 <div class="code"><pre><code>./px-files/dist/</code></pre></div>
-				</div>
-			</div><!-- /.container -->
-		</div><!-- /.theme_mainblock -->
-		<footer class="theme_footer">
-			<div class="container">
-				<nav class="theme_megafooter_navi">
+</div>
+    </div>
+</div>
+<footer class="theme-footer">
+	<div class="theme-footer__inner">
+		<nav class="theme-footer__megafooter-navi">
 <ul>
 <li><a href="/sample_pages/">はじめに</a><ul>
 <li><a href="/sample_pages/getstart/try_sitemap.html">サイトマップを編集してみよう</a></li>
@@ -214,17 +172,22 @@
 <li><a href="/sample_pages/samples/dynamic_path/">ダイナミックパス機能</a></li>
 <li><a href="/sample_pages/samples/shared_content.html">共有コンテンツ</a></li>
 <li><a href="/sample_pages/samples/ssi.html">SSI</a></li>
+<li><a href="/sample_pages/samples/popup.html" onclick="window.open(this.href);return false;">Popup Page</a></li>
 <li><a href="/sample_pages/samples/ext_htm.htm">拡張子 *.htm</a></li>
 </ul>
 </li>
 </ul>
-				</nav>
-			</div>
-			<div class="container theme_footer_shouldernavi">
-<ul><li><a href="/sample_pages/help/">ヘルプ</a></li></ul>			</div>
-			<div class="container">
-				<p style="text-align:center;">&copy;Pickles 2 Project.</p>
-			</div>
-		</footer>
+		</nav>
+
+		<div class="theme-footer__shouldernavi">
+<ul><li><a href="/">ホーム</a></li><li><a href="/sample_pages/help/">ヘルプ</a></li></ul>		</div>
+<p style="text-align:center;">&copy;Pickles 2 Project.</p>
+
+	</div>
+</footer>
+
+
+		<script src="/common/px_resources/p/theme/pickles2/modules.js"></script>
+
 	</body>
 </html>
