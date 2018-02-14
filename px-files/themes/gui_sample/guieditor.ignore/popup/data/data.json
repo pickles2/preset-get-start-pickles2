@@ -21,7 +21,9 @@
        "main": [
         {
          "modId": "themeEditorModules:vars/h1",
-         "fields": {}
+         "fields": {},
+         "anchor": "",
+         "dec": ""
         },
         {
          "modId": "themeEditorModules:vars/bowl",
