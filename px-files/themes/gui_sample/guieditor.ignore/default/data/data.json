@@ -18,7 +18,9 @@
        "globalnavi": [
         {
          "modId": "themeEditorModules:vars/globalnavi",
-         "fields": {}
+         "fields": {},
+         "anchor": "",
+         "dec": ""
         }
        ]
       },
