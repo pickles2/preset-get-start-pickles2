@@ -220,13 +220,13 @@ return call_user_func( function(){
 		'tomk79\pickles2\pathResolver\main::resolve_common_contents()' ,
 
 		// テーマ
-		'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode([
+		'theme'=>'tomk79\pickles2\multitheme\theme::exec('.json_encode(array(
 			'param_theme_switch'=>'THEME',
 			'cookie_theme_switch'=>'THEME',
 			'path_theme_collection'=>'./px-files/themes/',
 			'attr_bowl_name_by'=>'data-contents-area',
-			'default_theme_id'=>'pickles2'
-		]).')' ,
+			'default_theme_id'=>'pickles2',
+		)).')' ,
 
 		// Apache互換のSSIの記述を解決する
 		'picklesFramework2\processors\ssi\ssi::exec' ,
@@ -317,11 +317,11 @@ return call_user_func( function(){
 	$conf->plugins->px2dt = new stdClass;
 
 	/** broccoliモジュールセットの登録 */
-	$conf->plugins->px2dt->paths_module_template = [
+	$conf->plugins->px2dt->paths_module_template = array(
 		"PlainHTMLElements" => "./vendor/broccoli-html-editor/broccoli-module-plain-html-elements/modules/",
 		"local" => "./px-files/modules/",
-		"FESS" => "./vendor/broccoli-html-editor/broccoli-module-fess/modules/"
-	];
+		"FESS" => "./vendor/broccoli-html-editor/broccoli-module-fess/modules/",
+	);
 
 	/** コンテンツエリアを識別するセレクタ(複数の要素がマッチしてもよい) */
 	$conf->plugins->px2dt->contents_area_selector = '[data-contents-area]';
