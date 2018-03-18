@@ -179,7 +179,26 @@ return call_user_func( function(){
 		'picklesFramework2\commands\phpinfo::register' ,
 
 		// sitemapExcel
-		'tomk79\pickles2\sitemap_excel\pickles_sitemap_excel::exec' ,
+		'tomk79\pickles2\sitemap_excel\pickles_sitemap_excel::exec('.json_encode(array(
+			// `master_format`
+			// マスターにするファイルフォーマットを指定します。
+			//   - `timestamp` = タイムスタンプが新しい方をマスターにする(デフォルト)
+			//   - `xlsx` = XLSXをマスターにする
+			//   - `csv` = CSVをマスターにする
+			//   - `pass` = 変換しない
+			// のいずれかを指定します。
+			'master_format'=>'xlsx',
+
+			// `files_master_format`
+			// ファイル名ごとにマスターにするファイルフォーマットを指定します。
+			// ここに設定されていないファイルは、 `master_format` の設定に従います。
+			'files_master_format'=>array(
+				// 'timestamp_sitemap'=>'timestamp',
+				// 'csv_master_sitemap'=>'csv',
+				// 'xlsx_master_sitemap'=>'xlsx',
+				// 'no_convert'=>'pass',
+			),
+		)).')' ,
 	);
 
 	/**
