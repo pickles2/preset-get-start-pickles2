@@ -55,9 +55,27 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 
 
+## 更新履歴 - Change log
+
+### pickles2/preset-get-start-pickles2 v2.0.11 (未定)
+
+- GUI編集モード対応のサンプルテーマを追加
+- px2-sitemapexcel の変換方向を xlsx -> csv のみになる設定を追加
+
+### pickles2/preset-get-start-pickles2 v2.0.10 (2017年10月27日)
+
+- 古いメソッド名 `$bowl->pull()` で呼び出していた箇所を、新しい `$bowl->get_clean()` に変更
+
+### pickles2/preset-get-start-pickles2 v2.0.9 (2017年9月21日)
+
+- 新しいコンフィグ項目 `scheme` を追加
+- broccoli-receive-message スクリプト挿入プラグインを標準で有効化
+- テーマとプロジェクトのリソースが密依存になっていた問題を解消
+
+
 ## ライセンス - License
 
-Copyright (c)2001-2017 Tomoya Koyanagi, and Pickles 2 Project<br />
+Copyright (c)2001-2018 Tomoya Koyanagi, and Pickles 2 Project<br />
 MIT License https://opensource.org/licenses/mit-license.php
 
 
