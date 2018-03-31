@@ -17,7 +17,7 @@
 <header class="theme-header">
 	<div class="theme-header__inner">
 		<div class="theme-header__si">
-			<a href="/index.html"><?= htmlspecialchars( $px->conf()->name ) ?></a>		</div>
+			<a href="<?= htmlspecialchars($px->href('/index.html')) ?>"><?= htmlspecialchars( $px->conf()->name ) ?></a>		</div>
 		<div class="theme-header__shouldernavi"><?php
 	$shoulder_menu = $px->site()->get_shoulder_menu();
 	echo( '<ul>' );
