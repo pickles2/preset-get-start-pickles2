@@ -57,10 +57,11 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 v2.0.11 (2018年4月11日)
+### pickles2/preset-get-start-pickles2 v2.0.11 (2018年4月19日)
 
 - GUI編集モード対応のサンプルテーマを追加
 - px2-sitemapexcel の変換方向を xlsx -> csv のみになる設定を追加
+- プロジェクトにバンドルされていた Bootstrap を削除。
 
 ### pickles2/preset-get-start-pickles2 v2.0.10 (2017年10月27日)
 
