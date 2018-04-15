@@ -161,7 +161,6 @@
   /**
    * Remove most spacing between table cells.
    */
-  /* ライブラリ同士の衝突吸収 */
   /**
    * module: local:sample/sample2
    */
@@ -370,19 +369,6 @@
     border-spacing: 0; }
   .contents td, .contents th {
     padding: 0; }
-  .contents p, .contents ul, .contents ol, .contents dl {
-    margin: 1em 0; }
-  .contents dl dd {
-    margin-left: 2em; }
-  .contents p, .contents li, .contents dt, .contents dd {
-    line-height: 1.6; }
-  .contents .btn {
-    background-color: #428bca; }
-  .contents pre code {
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: inline; }
   .contents .module_sample_sample2 {
     margin: 1em auto;
     padding: 20px;
