@@ -60,7 +60,9 @@
        "rnavi": [
         {
          "modId": "themeEditorModules:vars/localnavigation",
-         "fields": {}
+         "fields": {},
+         "anchor": "",
+         "dec": ""
         }
        ],
        "footer": []

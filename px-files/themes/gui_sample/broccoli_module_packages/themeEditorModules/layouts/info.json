@@ -6,6 +6,7 @@
         "lnavi",
         "rnavi",
         "3columns",
+        "welcome",
         "footer"
     ],
     "deprecated": false

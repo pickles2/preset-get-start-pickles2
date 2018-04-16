@@ -1,8 +1,10 @@
+@import "../../../env";
+
 /**
  * Header
  */
 .theme-header{
-	background-color: #00a0e6;
+	background-color: $keycolor;
 	padding:1em 15px 1px 15px;
 
 	clear: both;
