@@ -1,6 +1,5 @@
 @charset 'UTF-8';
 
 .contents{
-<?php include(__DIR__.'/normalize/normalize-3.0.1.css'); ?>
 <?= (new \tomk79\pickles2\px2dthelper\main($px))->document_modules()->build_css(); ?>
 }
