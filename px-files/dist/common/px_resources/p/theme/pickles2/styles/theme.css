@@ -1,4 +1,27 @@
-/* ライブラリ同士の衝突吸収 */
+html, body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #333;
+  background-color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit; }
+
+a {
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #00a0e6;
+  text-decoration: underline;
+  outline: none; }
+
+a:focus {
+  outline: 5px auto;
+  outline-offset: -2px; }
+
 p, ul, ol, dl {
   margin: 1em 0; }
 
@@ -7,9 +30,6 @@ dl dd {
 
 p, li, dt, dd {
   line-height: 1.6; }
-
-.btn {
-  background-color: #428bca; }
 
 pre code {
   border: none;
