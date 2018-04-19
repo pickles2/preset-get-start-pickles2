@@ -40,7 +40,7 @@
 	<div class="theme-layouts__body">
 		<div class="theme-layouts__content">
 <div class="theme-breadcrumb"><?= $theme->mk_breadcrumb() ?></div>
-<h1><?= preg_replace('/\r\n|\r|\n/', '<br />', $px->site()->get_current_page_info('title_h1')) ?></h1>
+<h1><?= preg_replace('/\r\n|\r|\n/', '<br />', htmlspecialchars( $px->site()->get_current_page_info('title_h1') )) ?></h1>
 
 <div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="">
 <?= $px->bowl()->pull('') ?>
