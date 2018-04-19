@@ -12,7 +12,9 @@
        "shouldernavi": [
         {
          "modId": "themeEditorModules:vars/shouldernavi",
-         "fields": {}
+         "fields": {},
+         "anchor": "",
+         "dec": ""
         }
        ],
        "globalnavi": [
