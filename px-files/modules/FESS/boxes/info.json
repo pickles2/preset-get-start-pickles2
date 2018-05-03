@@ -1,0 +1,8 @@
+{
+	"name":"Box Modules",
+	"sort":[
+		"topic_box",
+		"attention_box",
+		"aside_box"
+	]
+}

@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.12 (リリース日未定)
+
+- モジュールの設定を `$conf->paths_module_template` から `$conf->path_module_templates_dir` に変更。これにより、 DesktopTool で編集できるようになった。
+
 ### pickles2/preset-get-start-pickles2 v2.0.11 (2018年4月24日)
 
 - GUI編集モード対応のサンプルテーマを追加

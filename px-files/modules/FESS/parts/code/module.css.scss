@@ -1,0 +1,37 @@
+.code {
+  margin: 1em 0;
+}
+.code pre,
+.code textarea {
+  margin: 0;
+  border: 1px solid #999999;
+  background: #f5f5f5;
+  padding: 1em;
+  font-size: small;
+  line-height: 1.5;
+}
+.code pre {
+  display: block;
+  width: auto;
+  background: #e8e8e8;
+  border: 1px dashed #999999;
+  overflow: auto;
+}
+.code pre code {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+.code textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 16em;
+}
+@media all and (max-width: 460px) {
+  .code pre {
+    white-space: pre-wrap;
+  }
+}

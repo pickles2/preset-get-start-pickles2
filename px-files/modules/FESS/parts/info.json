@@ -1,0 +1,15 @@
+{
+	"name": "Parts Modules",
+	"sort":[
+		"ul",
+		"ul_notes",
+		"ul_horizontal",
+		"ul_nomark",
+		"dl",
+		"dl_notes",
+		"table_def",
+		"date_list",
+		"code",
+		"code_readonly"
+	]
+}

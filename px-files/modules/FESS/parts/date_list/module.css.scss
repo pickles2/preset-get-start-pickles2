@@ -1,0 +1,53 @@
+.date_list table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.date_list table th,
+.date_list table td {
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding: 10px;
+}
+.date_list table th {
+  background: #e7e7e7;
+}
+.date_list table thead th,
+.date_list table tfoot th {
+  background: #d9d9d9;
+}
+.date_list table thead td,
+.date_list table tfoot td {
+  background: #eeeeee;
+}
+.date_list table th {
+  white-space: nowrap;
+}
+.date_list table thead {
+  text-align: center;
+  display:none;
+}
+
+@media all and (max-width: 460px) {
+  .date_list table {
+    width: auto;
+    display: block;
+    border-bottom: 1px solid;
+  }
+  .date_list table th,
+  .date_list table td {
+    width: auto;
+    display: block;
+    border-bottom: 0;
+  }
+  .date_list table th {
+    background: #e7e7e7;
+  }
+  .date_list table thead,
+  .date_list table tfoot {
+    display: none;
+  }
+  .date_list table th {
+    white-space: nowrap;
+  }
+}

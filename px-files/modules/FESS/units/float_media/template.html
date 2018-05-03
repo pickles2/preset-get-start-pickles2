@@ -1,0 +1,19 @@
+<div class="unit float_media">
+  <div class="float_media-{&{"input":{"type":"select","name":"LR","options":[
+	{"value":"l", "label":"Float Left"},
+	{"value":"r", "label":"Float Right"}
+]}}&}{&{"input":{"type":"select","name":"ImageSize","options":[
+	{"value":"1of4", "label":"1/4"},
+	{"value":"1of3", "label":"1/3"},
+	{"value":"1of2", "label":"1/2"}
+]}}&}">
+    <div class="float_media-image"><img src="{&{"input":{"type":"image","name":"thumb"}}&}" alt="{&{"input":{"type":"html_attr_text","name":"alt","rows":"1"}}&}" /></div>
+    <p class="float_media-caption">{&{"input":{"type":"multitext","name":"caption","rows":3}}&}</p>
+  </div>
+  <div class="float_media-body{&{"input":{"type":"select","name":"body_rect","options":[
+  {"value":"", "label":"回り込み"},
+  {"value":"_rect", "label":"矩形を維持"}
+]}}&}">
+    {&{"module":{"name":"main"}}&}
+  </div>
+</div><!-- /.float_media -->

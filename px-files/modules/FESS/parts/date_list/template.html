@@ -1,0 +1,21 @@
+<div class="date_list">
+	<table>
+		<thead>
+			<tr>
+				<th>日付</th>
+				<th class="date_list-flag">フラグ</th>
+				<th>内容</th>
+			</tr>
+		</thead>
+		<tbody>
+{&{"loop":{"name":"loop"}}&}
+			<tr>
+				<th>{&{"input":{"type":"multitext","name":"date","rows":1}}&}</th>
+				<td class="date_list-flag">{&{"input":{"type":"multitext","name":"flags","rows":1}}&}</td>
+				<td><a href="{&{"input":{"type":"href","name":"href"}}&}">{&{"input":{"type":"multitext","name":"news","rows":1}}&}</a></td>
+			</tr>
+{&"endloop"&}
+		</tbody>
+	</table>
+
+</div><!-- /.date_list -->

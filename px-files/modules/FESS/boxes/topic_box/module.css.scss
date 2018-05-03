@@ -1,0 +1,19 @@
+.topic_box {
+	padding: 1em 20px;
+	margin: 1em;
+	background-color: #cceecc;
+	border: 1px solid #4a7;
+	border-radius: 5px;
+
+	.topic_box-heading {
+		font-weight: bold;
+		margin: 1em 0;
+		font-size: 120%;
+	}
+}
+.topic_box :first-child {
+	margin-top: 0;
+}
+.topic_box :last-child {
+	margin-bottom: 0;
+}

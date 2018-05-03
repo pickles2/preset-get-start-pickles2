@@ -1,0 +1,56 @@
+.float_media .float_media-r1of2 {
+  float: right;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-l1of2 {
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-r1of3 {
+  float: right;
+  width: 33%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-l1of3 {
+  float: left;
+  width: 33%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-r1of4 {
+  float: right;
+  width: 25%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-l1of4 {
+  float: left;
+  width: 25%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.float_media .float_media-l1of2 img,
+.float_media .float_media-l1of3 img,
+.float_media .float_media-l1of4 img,
+.float_media .float_media-r1of2 img,
+.float_media .float_media-r1of3 img,
+.float_media .float_media-r1of4 img {
+  width: 100%;
+  height: auto;
+}
+.float_media .float_media-caption {
+  font-size: 77%;
+  margin-top: 0.5em;
+  line-height: 1.3;
+}
+.float_media .float_media-body_rect {
+  overflow: hidden;
+}
+.float_media .float_media-body_rect *:first-child {
+  margin-top: 0;
+}

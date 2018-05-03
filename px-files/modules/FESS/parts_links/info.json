@@ -1,0 +1,16 @@
+{
+	"name": "Parts Modules (Link)",
+	"sort":[
+		"link",
+		"link_icon",
+		"link_back",
+		"link_up",
+		"link_down",
+		"link_blank",
+		"link_download",
+		"link_pdf",
+		"anchor_links",
+		"more_links",
+		"page_top"
+	]
+}

@@ -1,0 +1,15 @@
+.more_links {
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+	border-top: dashed 1px #dddddd;
+	ul{
+		margin: 0.3em 0 0 0;
+		text-align: right;
+		li{
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			padding: 0 0 0 1em;
+		}
+	}
+}

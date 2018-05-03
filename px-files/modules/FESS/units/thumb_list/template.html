@@ -1,0 +1,8 @@
+<div class="unit thumb_list">
+	<ul>
+{&{"loop":{"name":"thumb_loop"}}&}
+		{&{"input":{"type":"href","name":"href","hidden":true}}&}
+		<li><div class="thumb_list-pad">{&{"if":{"is_set":"href"}}&}<a href="{&{"echo":{"ref":"href"}}&}">{&"endif"&}<img src="{&{"input":{"type":"image","name":"thumb"}}&}" alt="{&{"input":{"type":"html_attr_text","name":"alt","rows":1}}&}" /><span class="thumb_list-caption">{&{"input":{"type":"multitext","name":"caption","rows":3}}&}</span>{&{"if":{"is_set":"href"}}&}</a>{&"endif"&}</div></li>
+{&"endloop"&}
+	</ul>
+</div><!-- /.thumb_list -->
