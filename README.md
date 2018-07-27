@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.13 (リリース日未定)
+
+- guiEngine の設定を `broccoli-html-editor-php` に変更。 PHPに移植された新しいエンジンを使用する。(DesktopTool の v2.0.0-beta.20 以降が必要)
+
 ### pickles2/preset-get-start-pickles2 v2.0.12 (2018年5月16日)
 
 - モジュールの設定を `$conf->paths_module_template` から `$conf->path_module_templates_dir` に変更。これにより、 DesktopTool で編集できるようになった。

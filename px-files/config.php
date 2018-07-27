@@ -335,6 +335,14 @@ return call_user_func( function(){
 	/** config for Pickles 2 Desktop Tool. */
 	$conf->plugins->px2dt = new stdClass;
 
+	/**
+	 * GUIエディタのエンジンの種類
+	 * - `legacy` = 旧GUI編集ツール。(廃止)
+	 * - `broccoli-html-editor` = NodeJSで実装された broccoli-html-editor を使用。
+	 * - `broccoli-html-editor-php` = PHPで実装された broccoli-html-editor を使用。
+	 */
+	$conf->plugins->px2dt->guiEngine = 'broccoli-html-editor-php';
+
 	/** broccoliモジュールセットの登録 */
 	$conf->plugins->px2dt->paths_module_template = array(
 		// 'moduleId' => './path/to/module/',
