@@ -57,7 +57,7 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 v2.0.13 (リリース日未定)
+### pickles2/preset-get-start-pickles2 v2.0.13 (2018年8月30日)
 
 - guiEngine の設定を `broccoli-html-editor-php` に変更。 PHPに移植された新しいエンジンを使用する。(DesktopTool の v2.0.0-beta.20 以降が必要)
 
