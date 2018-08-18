@@ -14,20 +14,24 @@ return call_user_func( function(){
 
 	/** サイト名 */
 	$conf->name = 'Get start "Pickles 2" !';
+
 	/** コピーライト表記 */
 	$conf->copyright = 'Pickles 2 Project';
+
 	/**
 	 * スキーマ
 	 * 本番環境のスキーマ
 	 * (例: http, https)
 	 */
 	$conf->scheme = 'http';
+
 	/**
 	 * ドメイン
 	 * 本番環境のドメイン
 	 * (例: www.example.com, 192.168.0.1, www.example.com:8080, etc...)
 	 */
 	$conf->domain = null;
+
 	/** コンテンツルートディレクトリ */
 	$conf->path_controot = '/';
 
@@ -36,12 +40,28 @@ return call_user_func( function(){
 
 	/** トップページのパス(デフォルト "/") */
 	$conf->path_top = '/';
+
 	/** パブリッシュ先ディレクトリパス */
 	$conf->path_publish_dir = './px-files/dist/';
+
 	/** 公開キャッシュディレクトリ */
 	$conf->public_cache_dir = '/common/px_resources/';
-	/** リソースディレクトリ(各コンテンツに対して1:1で関連付けられる)のパス */
+
+	/**
+	 * リソースディレクトリ(各コンテンツに対して1:1で関連付けられる)のパス
+	 *
+	 * 次の部品を組み合わせて、書き換え後のパスの構成規則を指定します。
+	 * - `{$dirname}` = 変換前のパスの、ディレクトリ部分
+	 * - `{$filename}` = 変換前のパスの、拡張子を除いたファイル名部分
+	 * - `{$ext}` = 変換前のパスの、拡張子部分
+	 *
+	 * または次のように、コールバックメソッド名を指定します。
+	 * > 'path_rewrite_rule'=>'functionNameOf::rewrite_smt',
+	 * コールバックメソッドには、 引数 `$path` が渡されます。
+	 * これを加工して、書き換え後のパスを返してください。
+	 */
 	$conf->path_files = '{$dirname}/{$filename}_files/';
+
 	/** Contents Manifesto のパス */
 	$conf->contents_manifesto = '/common/contents_manifesto.ignore.php';
 
@@ -55,7 +75,11 @@ return call_user_func( function(){
 	$conf->commands = new stdClass;
 	$conf->commands->php = 'php';
 
-	/** php.ini のパス。主にパブリッシュ時のサブクエリで使用する。 */
+	/**
+	 * php.ini のパス
+	 *
+	 * 主にパブリッシュ時のサブクエリで使用します。
+	 */
 	$conf->path_phpini = null;
 
 
@@ -172,10 +196,10 @@ return call_user_func( function(){
 		// PX=clearcache
 		'picklesFramework2\commands\clearcache::register' ,
 
-		 // PX=config
+		// PX=config
 		'picklesFramework2\commands\config::register' ,
 
-		 // PX=phpinfo
+		// PX=phpinfo
 		'picklesFramework2\commands\phpinfo::register' ,
 
 		// sitemapExcel
