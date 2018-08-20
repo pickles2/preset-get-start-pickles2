@@ -21,7 +21,8 @@
         "pickles2/px2-path-resolver": "^2.0",
         "pickles2/px2-px2dthelper": "^2.0",
         "pickles2/px2-remove-attr": "^2.0",
-        "pickles2/px2-sitemapexcel": "^2.0"
+        "pickles2/px2-sitemapexcel": "^2.0",
+        "pickles2/px2-publish-ex": "^2.0"
     },
     "require-dev": {
     },

@@ -1,11 +1,8 @@
 @charset 'UTF-8';
 /**
- * module: local:sample/sample2
+ * module: FESS:boxes/aside_box
  */
 .contents {
-  /**
-   * module: FESS:boxes/aside_box
-   */
   /**
    * module: FESS:boxes/attention_box
    */
@@ -86,15 +83,10 @@
    */
   /**
    * module: FESS:units_form/form_error_box
+   */
+  /**
+   * module: local:sample/sample2
    */ }
-  .contents .module_sample_sample2 {
-    margin: 1em auto;
-    padding: 20px;
-    background: #f6f6f6; }
-  .contents .module_sample_sample2__select1 {
-    color: #f00; }
-  .contents .module_sample_sample2__select2 {
-    color: #00f; }
   .contents .aside_box {
     padding: 1em 20px;
     margin: 1em;
@@ -467,3 +459,11 @@
     border-radius: 5px; }
   .contents .form_error_box a {
     color: #f00; }
+  .contents .module_sample_sample2 {
+    margin: 1em auto;
+    padding: 20px;
+    background: #f6f6f6; }
+  .contents .module_sample_sample2__select1 {
+    color: #f00; }
+  .contents .module_sample_sample2__select2 {
+    color: #00f; }

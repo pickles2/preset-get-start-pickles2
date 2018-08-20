@@ -164,22 +164,46 @@ return call_user_func( function(){
 
 	/** ファイルに適用されるデフォルトのパーミッション */
 	$conf->file_default_permission = '775';
+
 	/** ディレクトリに適用されるデフォルトのパーミッション */
 	$conf->dir_default_permission = '775';
+
 	/** ファイルシステムの文字セット。ファイル名にマルチバイト文字を使う場合に参照されます。 */
 	$conf->filesystem_encoding = 'UTF-8';
+
 	/** 出力文字エンコーディング名 */
 	$conf->output_encoding = 'UTF-8';
+
 	/** 出力改行コード名 (cr|lf|crlf) */
 	$conf->output_eol_coding = 'lf';
+
 	/** セッション名 */
 	$conf->session_name = 'PXSID';
+
 	/** セッションの有効期間 */
 	$conf->session_expire = 1800;
-	/** PX Commands のウェブインターフェイスからの実行を許可 */
-	$conf->allow_pxcommands = 0;
+
 	/** タイムゾーン */
 	$conf->default_timezone = 'Asia/Tokyo';
+
+	/**
+	 * PX Commands のウェブインターフェイスからの実行を許可
+	 *
+	 * ※ 注意 :
+	 * PXコマンドは、Pickles 2 を便利に使うためのさまざまな機能を提供します。
+	 * (例：パブリッシュ機能 `?PX=publish`)
+	 * PXコマンドはサーバー内部の情報にアクセスしたり、
+	 * サーバー上のデータを書き換えるインターフェイスを提供する場合があるため、
+	 * 第3者にアクセスされると大変キケンです。
+	 * 
+	 * Pickles 2 をインターネット上のサーバーで動かす場合には、次のことに注意してください。
+	 * 
+	 * - ウェブ制作環境として利用する場合、利用基本認証やIP制限などの処理を施し、
+	 *   一般のユーザーがアクセスできない場所に設置してください。
+	 * - または、Pickles 2 上に構築したウェブアプリケーションをサービスとして公開する場合、
+	 *   この値を 0 に設定し、PXコマンド機能を無効にしてください。(この場合でも、CLIからの実行は許可されます)
+	 */
+	$conf->allow_pxcommands = 0;
 
 
 
@@ -234,8 +258,8 @@ return call_user_func( function(){
 		// PX=api
 		'picklesFramework2\commands\api::register' ,
 
-		// PX=publish
-		'picklesFramework2\commands\publish::register' ,
+		// PX=publish (px2-publish-ex)
+		'tomk79\pickles2\publishEx\publish::register' ,
 
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register' ,
