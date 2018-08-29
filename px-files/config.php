@@ -389,7 +389,7 @@ return call_user_func( function(){
 	 * - `broccoli-html-editor` = NodeJSで実装された broccoli-html-editor を使用。
 	 * - `broccoli-html-editor-php` = PHPで実装された broccoli-html-editor を使用。
 	 */
-	$conf->plugins->px2dt->guiEngine = 'broccoli-html-editor-php';
+	$conf->plugins->px2dt->guiEngine = 'broccoli-html-editor';
 
 	/** broccoliモジュールセットの登録 */
 	$conf->plugins->px2dt->paths_module_template = array(
