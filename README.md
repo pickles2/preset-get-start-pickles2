@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.14 (リリース日未定)
+
+- `composer` が出すエラーが表示されないようになっていた問題を修正。
+
 ### pickles2/preset-get-start-pickles2 v2.0.13 (2018年8月30日)
 
 - パブリッシュプラグインとして、機能拡張版 `pickles2/px2-publish-ex` を導入した。
