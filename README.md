@@ -1,7 +1,7 @@
 Get start "Pickles 2" !
 =========
 
-[Pickles 2](http://pickles2.pxt.jp/) は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。
+[Pickles 2](https://pickles2.pxt.jp/) は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。
 
 - サイトマップ(ページリスト)をCSV形式で管理し、グローバルナビゲーションの生成やカレント処理、パンくず生成、タイトルやメタタグの出力などを自動化します。
 - コンテンツ(ページ固有の内容部分)と、テーマ(ヘッダ、フッタ、ナビゲーションなどの共通部分)に分けてコーディングします。テーマはサイト全体を通して一元化された共通コードから自動生成します。
@@ -57,7 +57,7 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 v2.0.14 (リリース日未定)
+### pickles2/preset-get-start-pickles2 v2.0.14 (2019年1月11日)
 
 - `composer` が出すエラーが表示されないようになっていた問題を修正。
 
@@ -89,12 +89,12 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## ライセンス - License
 
-Copyright (c)2001-2018 Tomoya Koyanagi, and Pickles 2 Project<br />
+Copyright (c)2001-2019 Tomoya Koyanagi, and Pickles 2 Project<br />
 MIT License https://opensource.org/licenses/mit-license.php
 
 
 ## 作者 - Author
 
 - Tomoya Koyanagi <tomk79@gmail.com>
-- website: <http://www.pxt.jp/>
-- Twitter: @tomk79 <http://twitter.com/tomk79/>
+- website: <https://www.pxt.jp/>
+- Twitter: @tomk79 <https://twitter.com/tomk79/>
