@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.15 (リリース日未定)
+
+- `composer.lock` を追加。
+
 ### pickles2/preset-get-start-pickles2 v2.0.14 (2019年1月11日)
 
 - `composer` が出すエラーが表示されないようになっていた問題を修正。

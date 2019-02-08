@@ -1,0 +1,1195 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "fec6219d789c10884242b224e9aad810",
+    "packages": [
+        {
+            "name": "broccoli-html-editor/broccoli-field-table",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-field-table.git",
+                "reference": "168cdaba9a44cac916a33bf1fd415dc3df7aeec3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-field-table/zipball/168cdaba9a44cac916a33bf1fd415dc3df7aeec3",
+                "reference": "168cdaba9a44cac916a33bf1fd415dc3df7aeec3",
+                "shasum": ""
+            },
+            "require": {
+                "leafo/scssphp": "^0.7.6",
+                "michelf/php-markdown": "^1.8",
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "^1.0",
+                "tomk79/php-excel2html": "^0.0.7",
+                "tomk79/request": "^1.0"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-html-editor": "^0.3.0",
+                "phpunit/phpunit": "^4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/excel2html.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "time": "2018-07-27T03:42:30+00:00"
+        },
+        {
+            "name": "broccoli-html-editor/broccoli-html-editor",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
+                "reference": "570e4a2d40768f47ec23eea4bef1fa6803e46dc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/570e4a2d40768f47ec23eea4bef1fa6803e46dc7",
+                "reference": "570e4a2d40768f47ec23eea4bef1fa6803e46dc7",
+                "shasum": ""
+            },
+            "require": {
+                "leafo/scssphp": "^0.7.6",
+                "michelf/php-markdown": "^1.8",
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "^1.0",
+                "tomk79/langbank": "^0.0.3",
+                "twig/twig": "^1.35"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/fieldBase.php",
+                    "php/resourceMgr.php",
+                    "php/classModule.php",
+                    "php/buildModuleResources.php",
+                    "php/buildBowl.php",
+                    "php/gpi.php",
+                    "fields/php/href.php",
+                    "fields/php/html_attr_text.php",
+                    "fields/php/html.php",
+                    "fields/php/image.php",
+                    "fields/php/markdown.php",
+                    "fields/php/multitext.php",
+                    "fields/php/select.php",
+                    "fields/php/text.php",
+                    "php/simple_html_dom.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "GUI HTML Editor Library.",
+            "keywords": [
+                "broccoli-html-editor"
+            ],
+            "time": "2018-08-25T12:41:56+00:00"
+        },
+        {
+            "name": "broccoli-html-editor/broccoli-module-fess",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-module-fess.git",
+                "reference": "0233a8ddf0e5e43911db4397e52a1c80956d42d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-module-fess/zipball/0233a8ddf0e5e43911db4397e52a1c80956d42d6",
+                "reference": "0233a8ddf0e5e43911db4397e52a1c80956d42d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "FESS modues for broccoli-html-editor.",
+            "keywords": [
+                "broccoli-html-editor"
+            ],
+            "time": "2018-05-03T11:41:24+00:00"
+        },
+        {
+            "name": "broccoli-html-editor/broccoli-module-plain-html-elements",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-module-plain-html-elements.git",
+                "reference": "7319d00aadd1562d734832d1741df10d108c4b07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-module-plain-html-elements/zipball/7319d00aadd1562d734832d1741df10d108c4b07",
+                "reference": "7319d00aadd1562d734832d1741df10d108c4b07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Plain HTML Element modules for broccoli-html-editor.",
+            "keywords": [
+                "broccoli-html-editor"
+            ],
+            "time": "2018-05-03T11:40:12+00:00"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "1d656f8c02a3a69404bba6b28ec4e06edddf0f49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/1d656f8c02a3a69404bba6b28ec4e06edddf0f49",
+                "reference": "1d656f8c02a3a69404bba6b28ec4e06edddf0f49",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2018-07-22T01:22:08+00:00"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
+                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Michelf\\": "Michelf/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2018-01-15T00:49:33+00:00"
+        },
+        {
+            "name": "phpoffice/phpexcel",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPExcel.git",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://blog.rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                }
+            ],
+            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "http://phpexcel.codeplex.com",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "abandoned": "phpoffice/phpspreadsheet",
+            "time": "2015-05-01T07:00:55+00:00"
+        },
+        {
+            "name": "pickles2/lib-px2-contents-editor",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/node-pickles2-contents-editor.git",
+                "reference": "aea42ab2565ae3d25fa3bda7c48198b7e03d5e97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/aea42ab2565ae3d25fa3bda7c48198b7e03d5e97",
+                "reference": "aea42ab2565ae3d25fa3bda7c48198b7e03d5e97",
+                "shasum": ""
+            },
+            "require": {
+                "broccoli-html-editor/broccoli-field-table": "^0.2",
+                "broccoli-html-editor/broccoli-html-editor": "^0.3",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "phpunit/phpunit": "^4.1.0",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-dec": "dev-master",
+                "pickles2/px2-multitheme": "dev-develop",
+                "pickles2/px2-path-resolver": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-remove-attr": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/gpi.php",
+                    "php/editor/default.php",
+                    "php/editor/broccoli.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 contents editor library.",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2018-08-25T12:46:36+00:00"
+        },
+        {
+            "name": "pickles2/lib-px2-module-editor",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/node-pickles2-module-editor.git",
+                "reference": "a4270c09cb047b119ccb28eef654e223cc33f3c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-module-editor/zipball/a4270c09cb047b119ccb28eef654e223cc33f3c8",
+                "reference": "a4270c09cb047b119ccb28eef654e223cc33f3c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "pickles2/lib-px2-contents-editor": "*",
+                "tomk79/langbank": "^0.0.3",
+                "twig/twig": "^1.35"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "dev-develop",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
+                "phpunit/phpunit": "^4.1.0",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-dec": "dev-master",
+                "pickles2/px2-multitheme": "dev-develop",
+                "pickles2/px2-path-resolver": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-remove-attr": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/gpi.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 module editor library.",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2018-08-19T17:57:42+00:00"
+        },
+        {
+            "name": "pickles2/px-fw-2.x",
+            "version": "2.0.39",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px-fw-2.x.git",
+                "reference": "c4221fd7e70199d6292a70bc0f86bb7bbc0942b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/c4221fd7e70199d6292a70bc0f86bb7bbc0942b1",
+                "reference": "c4221fd7e70199d6292a70bc0f86bb7bbc0942b1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "ext-pdo_sqlite": "*",
+                "leafo/scssphp": "^0.7.0",
+                "michelf/php-markdown": "^1.6.0",
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "^1.0.0",
+                "tomk79/request": "^1.0.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.9.0",
+                "phpunit/phpunit": "^4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "px-files/_sys/php/pickles.php",
+                    "px-files/_sys/php/px.php",
+                    "px-files/_sys/php/bowl.php",
+                    "px-files/_sys/php/pxcmd.php",
+                    "px-files/_sys/php/site.php",
+                    "px-files/_sys/php/commands/api.php",
+                    "px-files/_sys/php/commands/clearcache.php",
+                    "px-files/_sys/php/commands/config.php",
+                    "px-files/_sys/php/commands/phpinfo.php",
+                    "px-files/_sys/php/commands/publish.php",
+                    "px-files/_sys/php/processors/md.php",
+                    "px-files/_sys/php/processors/scss.php",
+                    "px-files/_sys/php/processors/autoindex.php",
+                    "px-files/_sys/php/processors/encodingconverter.php",
+                    "px-files/_sys/php/processors/ssi.php",
+                    "px-files/themes/pickles2/php/theme.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles Framework(PxFW) は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。",
+            "keywords": [
+                "pickles",
+                "pickles2"
+            ],
+            "time": "2018-10-13T07:11:25+00:00"
+        },
+        {
+            "name": "pickles2/px2-dec",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-dec.git",
+                "reference": "2d2061083a42f089153793ab7864e1624eb9db66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-dec/zipball/2d2061083a42f089153793ab7864e1624eb9db66",
+                "reference": "2d2061083a42f089153793ab7864e1624eb9db66",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/broccoli-module-fess": "dev-develop",
+                "pickles2/broccoli-module-plain-html-elements": "dev-develop",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/dec.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-dec は、Pickles 2 に DEC 拡張機能を追加します。",
+            "keywords": [
+                "pickles"
+            ],
+            "time": "2018-03-13T11:06:27+00:00"
+        },
+        {
+            "name": "pickles2/px2-multitheme",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-multitheme.git",
+                "reference": "7265582cc8e98957a516882082b18162dc0b513e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-multitheme/zipball/7265582cc8e98957a516882082b18162dc0b513e",
+                "reference": "7265582cc8e98957a516882082b18162dc0b513e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.9",
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/broccoli-module-plain-html-elements": "dev-develop",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "tomk79/filesystem": "1.*"
+            },
+            "type": "library",
+            "extra": {
+                "px2package": {
+                    "name": "pickles2/px2-multitheme",
+                    "type": "processor"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "px-files/php/theme.php",
+                    "px-files/php/template_utility.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-multitheme は、複数のテーマを同時に管理する機能を Pickles 2 に追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2018-08-22T13:50:55+00:00"
+        },
+        {
+            "name": "pickles2/px2-path-resolver",
+            "version": "2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-path-resolver.git",
+                "reference": "005b31b9d61f016cb0a34dcab566fe48d44f00b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/005b31b9d61f016cb0a34dcab566fe48d44f00b2",
+                "reference": "005b31b9d61f016cb0a34dcab566fe48d44f00b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/broccoli-module-fess": "dev-master",
+                "pickles2/broccoli-module-plain-html-elements": "dev-master",
+                "pickles2/px-fw-2.x": "dev-master",
+                "pickles2/px2-px2dthelper": "dev-master",
+                "pickles2/px2-sitemapexcel": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/pathResolver.php",
+                    "php/resolveCommonContents.php",
+                    "php/simple_html_dom.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、相対パス・絶対パスでの書き出しオプションを追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2019-01-25T09:52:28+00:00"
+        },
+        {
+            "name": "pickles2/px2-publish-ex",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-publish-ex.git",
+                "reference": "e25a74a1dd1dfb8c266260b765dcadd1b1b60434"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/e25a74a1dd1dfb8c266260b765dcadd1b1b60434",
+                "reference": "e25a74a1dd1dfb8c266260b765dcadd1b1b60434",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "^2.9",
+                "phpunit/phpunit": "^4.8",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-multitheme": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/device_target_path.php",
+                    "php/path_resolver.php",
+                    "php/path_rewriter.php",
+                    "php/publish.php",
+                    "php/tmp_publish_dir.php",
+                    "php/simple_html_dom.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "複数のデバイス向けのバージョンをパブリッシュできる、 Pickles 2 用のパブリッシュプラグイン。",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2019-02-04T08:39:10+00:00"
+        },
+        {
+            "name": "pickles2/px2-px2dthelper",
+            "version": "2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-px2dthelper.git",
+                "reference": "206b53d6354a2888093ef81a1e1b136ce597e32f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/206b53d6354a2888093ef81a1e1b136ce597e32f",
+                "reference": "206b53d6354a2888093ef81a1e1b136ce597e32f",
+                "shasum": ""
+            },
+            "require": {
+                "broccoli-html-editor/broccoli-html-editor": "^0.3",
+                "leafo/scssphp": ">=0.7",
+                "michelf/php-markdown": ">=1.6",
+                "php": ">=5.4.0",
+                "pickles2/lib-px2-contents-editor": "^2.0",
+                "pickles2/lib-px2-module-editor": "^0.2",
+                "tomk79/php-excel2html": "^0.0"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "dev-develop",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
+                "phpdocumentor/phpdocumentor": "^2.7.0",
+                "phpunit/phpunit": "^4.1.0",
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-multitheme": "dev-develop",
+                "pickles2/px2-sitemapexcel": "dev-develop",
+                "tomk79/filesystem": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/broccoli/receive_message.php",
+                    "php/px2ce/apis.php",
+                    "php/px2me/apis.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 用のプラグインです。Pickles 2 アプリケーション と連携させるためのAPIを提供します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2018-11-02T10:22:55+00:00"
+        },
+        {
+            "name": "pickles2/px2-remove-attr",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-remove-attr.git",
+                "reference": "844fc21fa999537e09270a90a0f4c1070a7b6840"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-remove-attr/zipball/844fc21fa999537e09270a90a0f4c1070a7b6840",
+                "reference": "844fc21fa999537e09270a90a0f4c1070a7b6840",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/broccoli-module-fess": "dev-master",
+                "pickles2/broccoli-module-plain-html-elements": "dev-master",
+                "pickles2/px-fw-2.x": "2.0.*",
+                "pickles2/px2-px2dthelper": "dev-master",
+                "pickles2/px2-sitemapexcel": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-remove-attr は、Pickles 2 に、HTMLドキュメントから指定した属性を削除する機能を提供します。",
+            "keywords": [
+                "pickles"
+            ],
+            "time": "2018-08-22T14:15:13+00:00"
+        },
+        {
+            "name": "pickles2/px2-sitemapexcel",
+            "version": "2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-sitemapexcel.git",
+                "reference": "2f0d5eda2829bb40f3add27684775096157f6b6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/2f0d5eda2829bb40f3add27684775096157f6b6d",
+                "reference": "2f0d5eda2829bb40f3add27684775096157f6b6d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "phpoffice/phpexcel": "1.8.1",
+                "tomk79/filesystem": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*",
+                "pickles2/px-fw-2.x": "dev-develop"
+            },
+            "type": "library",
+            "extra": {
+                "px2package": {
+                    "name": "pickles2/px2-sitemapexcel",
+                    "type": "processor"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "php/pickles-sitemap-excel.php",
+                    "php/apis/csv2xlsx.php",
+                    "php/apis/xlsx2csv.php",
+                    "php/helper/PHPExcelHelper.php",
+                    "php/helper/parseSitemapCsv.php",
+                    "php/lock.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、サイトマップをグラフィカルなエクセル形式(xlsx)で編集できる機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "time": "2019-01-07T02:08:24+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "tomk79/filesystem",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/filesystem.git",
+                "reference": "4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/filesystem/zipball/4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea",
+                "reference": "4f4db2af2ebcb1aad29a5bdf6ba5f7349f776aea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.8.*",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/filesystem.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com",
+                    "homepage": "http://www.pxt.jp/"
+                }
+            ],
+            "description": "Simple filesystem utility for PHP.",
+            "keywords": [
+                "filesystem"
+            ],
+            "time": "2018-08-16T01:56:20+00:00"
+        },
+        {
+            "name": "tomk79/langbank",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/node-langbank.git",
+                "reference": "bf87f84f697c92dd02e887b973ba7b18e013aedd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/node-langbank/zipball/bf87f84f697c92dd02e887b973ba7b18e013aedd",
+                "reference": "bf87f84f697c92dd02e887b973ba7b18e013aedd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "tomk79/filesystem": "^1.0",
+                "twig/twig": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "i18n"
+            ],
+            "time": "2018-05-23T17:43:08+00:00"
+        },
+        {
+            "name": "tomk79/php-excel2html",
+            "version": "0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/php-excel2html.git",
+                "reference": "70c019f6c8582b15b6114803d5e97f42393baf2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/php-excel2html/zipball/70c019f6c8582b15b6114803d5e97f42393baf2d",
+                "reference": "70c019f6c8582b15b6114803d5e97f42393baf2d",
+                "shasum": ""
+            },
+            "require": {
+                "michelf/php-markdown": "^1.6.0",
+                "php": ">=5.3.0",
+                "phpoffice/phpexcel": "1.8.*",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Convert Excel(*.xlsx) to HTML table. with PHPExcel.",
+            "time": "2016-10-18T08:03:45+00:00"
+        },
+        {
+            "name": "tomk79/request",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/request.git",
+                "reference": "8fcec933e62dcc08b59f0659db5dcaf0d56186bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/request/zipball/8fcec933e62dcc08b59f0659db5dcaf0d56186bd",
+                "reference": "8fcec933e62dcc08b59f0659db5dcaf0d56186bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.8.*",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/request.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "A request management utilitiy for PHP.",
+            "time": "2018-08-22T09:51:53+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.37.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66be9366c76cbf23e82e7171d47cbfa54a057a62",
+                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.37-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2019-01-14T14:59:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
