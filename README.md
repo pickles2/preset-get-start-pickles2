@@ -60,6 +60,7 @@ $ php ./.px_execute.php "/?PX=clearcache"
 ### pickles2/preset-get-start-pickles2 v2.0.16 (2019年4月19日)
 
 - デフォルトの Broccoliエンジンを `broccoli-html-editor-php` に変更。
+- 文字セットと改行コード変換のプラグイン `picklesFramework2\processors\encodingconverter\encodingconverter::exec` を、 `$conf->funcs->before_output` の中で一括してかけるように設定を変更した。
 
 ### pickles2/preset-get-start-pickles2 v2.0.15 (2019年2月22日)
 
