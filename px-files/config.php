@@ -323,19 +323,12 @@ return call_user_func( function(){
 			'enabled_origin'=>array(
 			)
 		) ).')' ,
-
-		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
-		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
 	);
 
 	$conf->funcs->processor->css = array(
-		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
-		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
 	);
 
 	$conf->funcs->processor->js = array(
-		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
-		'picklesFramework2\processors\encodingconverter\encodingconverter::exec' ,
 	);
 
 	$conf->funcs->processor->md = array(
@@ -376,6 +369,16 @@ return call_user_func( function(){
 		'tomk79\pickles2\pathResolver\main::exec('.json_encode(array(
 			'to' => 'absolute' ,
 			'supply_index_filename' => false
+		)).')' ,
+
+		// output_encoding, output_eol_coding の設定に従ってエンコード変換する。
+		'picklesFramework2\processors\encodingconverter\encodingconverter::exec('.json_encode(array(
+			'ext'=>array( // 対象の拡張子。省略時はすべてのリクエストが適用される。
+				'html',
+				'htm',
+				'css',
+				'js',
+			),
 		)).')' ,
 
 	);
