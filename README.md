@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.16 (2019年4月19日)
+
+- デフォルトの Broccoliエンジンを `broccoli-html-editor-php` に変更。
+
 ### pickles2/preset-get-start-pickles2 v2.0.15 (2019年2月22日)
 
 - `composer.lock` を追加。
