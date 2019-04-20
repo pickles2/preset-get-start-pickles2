@@ -57,6 +57,17 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.17 (2019年4月20日)
+
+- 依存パッケージ更新: pickles2/px-fw-2.x (2.0.39 => 2.0.40)
+- 依存パッケージ更新: pickles2/px2-path-resolver (2.0.10 => 2.0.11)
+- 依存パッケージ更新: phpoffice/phpexcel (1.8.1 => 1.8.2)
+- 依存パッケージ更新: pickles2/px2-sitemapexcel (2.0.9 => 2.0.10)
+- 依存パッケージ更新: pickles2/px2-publish-ex (2.0.1 => 2.0.2)
+- 依存パッケージ更新: symfony/polyfill-ctype (v1.10.0 => v1.11.0)
+- 依存パッケージ更新: twig/twig (v1.37.1 => v1.39.1)
+- 依存パッケージ更新: broccoli-html-editor/broccoli-html-editor (0.3.5 => 0.3.6)
+
 ### pickles2/preset-get-start-pickles2 v2.0.16 (2019年4月19日)
 
 - デフォルトの Broccoliエンジンを `broccoli-html-editor-php` に変更。
