@@ -53,16 +53,16 @@
         },
         {
             "name": "broccoli-html-editor/broccoli-html-editor",
-            "version": "0.3.6",
+            "version": "0.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
-                "reference": "ba4dd0f0abda1b92ba6302a135356fc8d056acb1"
+                "reference": "bbbac78cdf42140df43e012efde414b851a5b9db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/ba4dd0f0abda1b92ba6302a135356fc8d056acb1",
-                "reference": "ba4dd0f0abda1b92ba6302a135356fc8d056acb1",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/bbbac78cdf42140df43e012efde414b851a5b9db",
+                "reference": "bbbac78cdf42140df43e012efde414b851a5b9db",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
             "keywords": [
                 "broccoli-html-editor"
             ],
-            "time": "2019-04-13T00:26:19+00:00"
+            "time": "2019-06-08T03:11:54+00:00"
         },
         {
             "name": "broccoli-html-editor/broccoli-module-fess",
@@ -197,16 +197,16 @@
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.7.7",
+            "version": "v0.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "1d656f8c02a3a69404bba6b28ec4e06edddf0f49"
+                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/1d656f8c02a3a69404bba6b28ec4e06edddf0f49",
-                "reference": "1d656f8c02a3a69404bba6b28ec4e06edddf0f49",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/a384906af3d078e98b089d7d36f6ceab8703f7ff",
+                "reference": "a384906af3d078e98b089d7d36f6ceab8703f7ff",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2018-07-22T01:22:08+00:00"
+            "time": "2019-04-24T18:10:10+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -358,16 +358,16 @@
         },
         {
             "name": "pickles2/lib-px2-contents-editor",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-contents-editor.git",
-                "reference": "aea42ab2565ae3d25fa3bda7c48198b7e03d5e97"
+                "reference": "0ebc7cf7f464878173c8449b8c2ebba8065027f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/aea42ab2565ae3d25fa3bda7c48198b7e03d5e97",
-                "reference": "aea42ab2565ae3d25fa3bda7c48198b7e03d5e97",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/0ebc7cf7f464878173c8449b8c2ebba8065027f8",
+                "reference": "0ebc7cf7f464878173c8449b8c2ebba8065027f8",
                 "shasum": ""
             },
             "require": {
@@ -379,13 +379,13 @@
                 "broccoli-html-editor/broccoli-module-fess": "*",
                 "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
                 "phpunit/phpunit": "^4.1.0",
-                "pickles2/px-fw-2.x": "dev-develop",
-                "pickles2/px2-dec": "dev-master",
-                "pickles2/px2-multitheme": "dev-develop",
-                "pickles2/px2-path-resolver": "dev-develop",
-                "pickles2/px2-px2dthelper": "dev-develop",
-                "pickles2/px2-remove-attr": "dev-develop",
-                "pickles2/px2-sitemapexcel": "dev-develop"
+                "pickles2/px-fw-2.x": "*",
+                "pickles2/px2-dec": "*",
+                "pickles2/px2-multitheme": "*",
+                "pickles2/px2-path-resolver": "*",
+                "pickles2/px2-px2dthelper": "*",
+                "pickles2/px2-remove-attr": "*",
+                "pickles2/px2-sitemapexcel": "*"
             },
             "type": "library",
             "autoload": {
@@ -410,25 +410,25 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2018-08-25T12:46:36+00:00"
+            "time": "2019-06-15T11:23:59+00:00"
         },
         {
             "name": "pickles2/lib-px2-module-editor",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-module-editor.git",
-                "reference": "a4270c09cb047b119ccb28eef654e223cc33f3c8"
+                "reference": "584b7a65a451316471e928a7b5b4d20994d25586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-module-editor/zipball/a4270c09cb047b119ccb28eef654e223cc33f3c8",
-                "reference": "a4270c09cb047b119ccb28eef654e223cc33f3c8",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-module-editor/zipball/584b7a65a451316471e928a7b5b4d20994d25586",
+                "reference": "584b7a65a451316471e928a7b5b4d20994d25586",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "pickles2/lib-px2-contents-editor": "*",
+                "pickles2/lib-px2-contents-editor": "^2.0.5",
                 "tomk79/langbank": "^0.0.3",
                 "twig/twig": "^1.35"
             },
@@ -440,7 +440,7 @@
                 "pickles2/px2-dec": "dev-master",
                 "pickles2/px2-multitheme": "dev-develop",
                 "pickles2/px2-path-resolver": "dev-develop",
-                "pickles2/px2-px2dthelper": "dev-develop",
+                "pickles2/px2-px2dthelper": "^2.0.7",
                 "pickles2/px2-remove-attr": "dev-develop",
                 "pickles2/px2-sitemapexcel": "dev-develop"
             },
@@ -465,20 +465,20 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2018-08-19T17:57:42+00:00"
+            "time": "2019-06-15T11:35:15+00:00"
         },
         {
             "name": "pickles2/px-fw-2.x",
-            "version": "2.0.40",
+            "version": "2.0.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px-fw-2.x.git",
-                "reference": "e055d2709276ea02b48d9cda16c6e51402ad70fc"
+                "reference": "d57af4449c70331862ef943485862c8b70b3d6f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/e055d2709276ea02b48d9cda16c6e51402ad70fc",
-                "reference": "e055d2709276ea02b48d9cda16c6e51402ad70fc",
+                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/d57af4449c70331862ef943485862c8b70b3d6f5",
+                "reference": "d57af4449c70331862ef943485862c8b70b3d6f5",
                 "shasum": ""
             },
             "require": {
@@ -492,6 +492,7 @@
                 "tomk79/request": "^1.0.0"
             },
             "require-dev": {
+                "jms/serializer": "^1.7",
                 "phpdocumentor/phpdocumentor": "^2.9.0",
                 "phpunit/phpunit": "^4.1.0"
             },
@@ -531,7 +532,7 @@
                 "pickles",
                 "pickles2"
             ],
-            "time": "2019-04-13T07:00:06+00:00"
+            "time": "2019-06-08T03:53:05+00:00"
         },
         {
             "name": "pickles2/px2-dec",
@@ -636,16 +637,16 @@
         },
         {
             "name": "pickles2/px2-path-resolver",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-path-resolver.git",
-                "reference": "9f3ae1cc0e9f59a3bd95d5cf26021a1123137ec8"
+                "reference": "089c4f6be93fb2cfd705b83e013a3be0914b059d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/9f3ae1cc0e9f59a3bd95d5cf26021a1123137ec8",
-                "reference": "9f3ae1cc0e9f59a3bd95d5cf26021a1123137ec8",
+                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/089c4f6be93fb2cfd705b83e013a3be0914b059d",
+                "reference": "089c4f6be93fb2cfd705b83e013a3be0914b059d",
                 "shasum": ""
             },
             "require": {
@@ -683,23 +684,24 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-04-13T08:34:03+00:00"
+            "time": "2019-06-08T05:27:56+00:00"
         },
         {
             "name": "pickles2/px2-publish-ex",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-publish-ex.git",
-                "reference": "5b6c375cacb01183f3102bfc111e3bf132f774f5"
+                "reference": "1f82d74ec9809ab1a1d52c2427795085744438bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/5b6c375cacb01183f3102bfc111e3bf132f774f5",
-                "reference": "5b6c375cacb01183f3102bfc111e3bf132f774f5",
+                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/1f82d74ec9809ab1a1d52c2427795085744438bc",
+                "reference": "1f82d74ec9809ab1a1d52c2427795085744438bc",
                 "shasum": ""
             },
             "require-dev": {
+                "jms/serializer": "<1.8",
                 "phpdocumentor/phpdocumentor": "^2.9",
                 "phpunit/phpunit": "^4.8",
                 "pickles2/px-fw-2.x": "dev-develop",
@@ -730,20 +732,20 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-04-13T08:29:54+00:00"
+            "time": "2019-06-08T05:14:55+00:00"
         },
         {
             "name": "pickles2/px2-px2dthelper",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-px2dthelper.git",
-                "reference": "206b53d6354a2888093ef81a1e1b136ce597e32f"
+                "reference": "512b1286d76bac13d2f092480c205db9d3354c98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/206b53d6354a2888093ef81a1e1b136ce597e32f",
-                "reference": "206b53d6354a2888093ef81a1e1b136ce597e32f",
+                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/512b1286d76bac13d2f092480c205db9d3354c98",
+                "reference": "512b1286d76bac13d2f092480c205db9d3354c98",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +760,8 @@
             "require-dev": {
                 "broccoli-html-editor/broccoli-module-fess": "dev-develop",
                 "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
-                "phpdocumentor/phpdocumentor": "^2.7.0",
+                "jms/serializer": "^1.7",
+                "phpdocumentor/phpdocumentor": "^2.9.0",
                 "phpunit/phpunit": "^4.1.0",
                 "pickles2/px-fw-2.x": "dev-develop",
                 "pickles2/px2-multitheme": "dev-develop",
@@ -788,7 +791,7 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2018-11-02T10:22:55+00:00"
+            "time": "2019-06-08T04:15:16+00:00"
         },
         {
             "name": "pickles2/px2-remove-attr",
@@ -839,16 +842,16 @@
         },
         {
             "name": "pickles2/px2-sitemapexcel",
-            "version": "2.0.10",
+            "version": "2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-sitemapexcel.git",
-                "reference": "fbfa207ee9b2e4bd977aadf69a935d3fade51fea"
+                "reference": "5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/fbfa207ee9b2e4bd977aadf69a935d3fade51fea",
-                "reference": "fbfa207ee9b2e4bd977aadf69a935d3fade51fea",
+                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1",
+                "reference": "5ba654fcc4fc25a2aef2f409cabee5c1a7da6aa1",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +894,7 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-04-13T08:38:28+00:00"
+            "time": "2019-05-21T07:09:29+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1123,16 +1126,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.39.1",
+            "version": "v1.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec"
+                "reference": "671347603760a88b1e7288aaa9378f33687d7edf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec",
-                "reference": "23e7b6f0cfa1d7ba3de69f30d8e05cf957412fec",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/671347603760a88b1e7288aaa9378f33687d7edf",
+                "reference": "671347603760a88b1e7288aaa9378f33687d7edf",
                 "shasum": ""
             },
             "require": {
@@ -1142,12 +1145,12 @@
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.39-dev"
+                    "dev-master": "1.42-dev"
                 }
             },
             "autoload": {
@@ -1185,7 +1188,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-04-16T17:12:57+00:00"
+            "time": "2019-06-04T11:31:08+00:00"
         }
     ],
     "packages-dev": [],
