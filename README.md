@@ -57,6 +57,11 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.19 (2019年6月20日)
+
+- 依存パッケージ更新: twig/twig (v1.42.1 => v1.42.2)
+- 依存パッケージ更新: broccoli-html-editor/broccoli-html-editor (0.3.7 => 0.3.8)
+
 ### pickles2/preset-get-start-pickles2 v2.0.18 (2019年6月15日)
 
 - 依存パッケージ更新: leafo/scssphp (v0.7.7 => v0.7.8)
@@ -64,8 +69,8 @@ $ php ./.px_execute.php "/?PX=clearcache"
 - 依存パッケージ更新: pickles2/px2-path-resolver (2.0.11 => 2.0.12)
 - 依存パッケージ更新: twig/twig (v1.39.1 => v1.42.1)
 - 依存パッケージ更新: broccoli-html-editor/broccoli-html-editor (0.3.6 => 0.3.7)
-- 依存パッケージ更新: pickles2/lib-px2-contents-editor (2.0.5 => 2.0.6)     
-- 依存パッケージ更新: pickles2/lib-px2-module-editor (0.2.2 => 0.2.3)     
+- 依存パッケージ更新: pickles2/lib-px2-contents-editor (2.0.5 => 2.0.6)
+- 依存パッケージ更新: pickles2/lib-px2-module-editor (0.2.2 => 0.2.3)
 - 依存パッケージ更新: pickles2/px2-px2dthelper (2.0.11 => 2.0.12)
 - 依存パッケージ更新: pickles2/px2-sitemapexcel (2.0.10 => 2.0.11)
 - 依存パッケージ更新: pickles2/px2-publish-ex (2.0.2 => 2.0.3)

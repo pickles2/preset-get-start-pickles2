@@ -53,16 +53,16 @@
         },
         {
             "name": "broccoli-html-editor/broccoli-html-editor",
-            "version": "0.3.7",
+            "version": "0.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
-                "reference": "bbbac78cdf42140df43e012efde414b851a5b9db"
+                "reference": "9b00ba8c60027cabb6ceeac998748a91e539b055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/bbbac78cdf42140df43e012efde414b851a5b9db",
-                "reference": "bbbac78cdf42140df43e012efde414b851a5b9db",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/9b00ba8c60027cabb6ceeac998748a91e539b055",
+                "reference": "9b00ba8c60027cabb6ceeac998748a91e539b055",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
             "keywords": [
                 "broccoli-html-editor"
             ],
-            "time": "2019-06-08T03:11:54+00:00"
+            "time": "2019-06-19T15:13:20+00:00"
         },
         {
             "name": "broccoli-html-editor/broccoli-module-fess",
@@ -1126,16 +1126,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.1",
+            "version": "v1.42.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf"
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/671347603760a88b1e7288aaa9378f33687d7edf",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21707d6ebd05476854805e4f91b836531941bcd4",
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4",
                 "shasum": ""
             },
             "require": {
@@ -1188,7 +1188,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-04T11:31:08+00:00"
+            "time": "2019-06-18T15:35:16+00:00"
         }
     ],
     "packages-dev": [],
