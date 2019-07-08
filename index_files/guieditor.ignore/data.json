@@ -1,0 +1,165 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "lp:containers/container",
+                        "fields": {
+                            "text-color": "#fff",
+                            "background-color": "",
+                            "background-image": {
+                                "resKey": "c774ba2403d948eb3950d769c829ca11",
+                                "path": "./index_files/resources/photo010.jpg",
+                                "resType": "",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "scroll-fixed",
+                            "min-height": "86vh",
+                            "margin-padding": "",
+                            "fluid-innter": "",
+                            "main": [
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## ようこそ、 Pickles 2 の世界へ！",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "lp:containers/container",
+                        "fields": {
+                            "text-color": "",
+                            "background-color": "",
+                            "background-image": {
+                                "resKey": "",
+                                "path": "about:blank",
+                                "resType": "",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "min-height": "",
+                            "margin-padding": "",
+                            "fluid-innter": "",
+                            "main": [
+                                {
+                                    "modId": "_sys/html",
+                                    "fields": {
+                                        "main": "<?php if( !$px ){ ?>\n<meta charset=\"utf-8\" />\n<div style=\"background-color:#fff; color:#f00; border:2px solid #f00; padding:20px;\">\n\t<p>このメッセージが表示されているということは、インストールが正常に完了していない可能性があります。</p>\n\t<p>次の点を確認してください。</p>\n\t<ul>\n\t\t<li>index.html ファイルを直接ウェブブラウザで開いているかもしれません。ウェブサーバー Apache を経由して表示してください。</li>\n\t\t<li>.htaccess の設定が反映されていない可能性があります。Apache の設定で <code>AllowOverride All</code> などとして、設定の上書きを許可してください。</li>\n\t\t<li>Apache モジュールの mod_rewrite が利用できない可能性があります。有効になるように設定する、またはモジュールのインストールを行ってください。</li>\n\t</ul>\n</div>\n<?php } ?>\n"
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## 次のステップ",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "std-document:grids/grid",
+                                    "fields": {
+                                        "col": [
+                                            {
+                                                "modId": "std-document:grids/grid",
+                                                "fields": {
+                                                    "column-width": "1of3",
+                                                    "main": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "### サイトマップを編集します\n\nはじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
+                                                                    "editor": "markdown"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "col",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "std-document:grids/grid",
+                                                "fields": {
+                                                    "column-width": "1of3",
+                                                    "main": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "### テーマを編集します\n\nテーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
+                                                                    "editor": "markdown"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "col",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "std-document:grids/grid",
+                                                "fields": {
+                                                    "column-width": "1of3",
+                                                    "main": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "### コンテンツを編集します\n\nコンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
+                                                                    "editor": "markdown"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "subModName": "col",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "### パブリッシュします\n\nサイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

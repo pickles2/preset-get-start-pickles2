@@ -160,7 +160,12 @@ p, li, dt, dd {
     margin-left: 20px; }
   .theme-layouts__footer {
     border: 3px solid #036; }
+  .theme-layouts--fullcolumn {
+    padding: 1px 0 0 0; }
   .theme-layouts--fullcolumn .theme-layouts__body {
+    display: block;
+    max-width: none; }
+  .theme-layouts--popup .theme-layouts__body {
     display: block; }
   .theme-layouts--lnavi .theme-layouts__content {
     width: 75%; }
