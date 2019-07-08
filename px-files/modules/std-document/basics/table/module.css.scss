@@ -1,0 +1,27 @@
+table.px2-table {
+	border: none;
+	border-collapse: collapse;
+	text-align: left;
+
+	th,
+	td {
+		border: 1px solid #dee2e6;
+		background: #fff;
+		padding: 0.4em 1em;
+	}
+
+	th {
+		background: #f9f9f9;
+	}
+
+	thead th,
+	tfoot th {
+		background: #eee;
+		text-align: center;
+	}
+
+	thead td,
+	tfoot td {
+		background: #eee;
+	}
+}

@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 dev-feature/new-document-modules (リリース日未定)
+
+- 初期導入の汎用モジュールセットを刷新。より汎用的なサイト制作にすぐに導入できるようになりました。
+
 ### pickles2/preset-get-start-pickles2 v2.0.19 (2019年6月20日)
 
 - 依存パッケージ更新: twig/twig (v1.42.1 => v1.42.2)

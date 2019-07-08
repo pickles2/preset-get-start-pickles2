@@ -1,0 +1,18 @@
+.px2-embedded-media{
+	&__youtube-media{
+		position: relative;
+		margin-top: 1.2em;
+		margin-bottom: 1.2em;
+		padding-top: 69px;
+		padding-bottom: 50%;
+		overflow: hidden;
+
+		iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

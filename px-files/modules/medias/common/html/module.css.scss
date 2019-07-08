@@ -1,0 +1,10 @@
+.px2-embedded-media{
+	&__common-html{
+		overflow: auto;
+		> * {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

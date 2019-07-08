@@ -1,0 +1,3 @@
+{&{"input":{"type":"href","name":"href","hidden":true,"rows":1,"label":"リンク"}}&}
+{&{"input":{"type":"html_attr_text","name":"target","hidden":true,"rows":1,"label":"ターゲットウィンドウ"}}&}
+{&{"if":{"is_set":"href"}}&}<a href="{&{"echo":{"ref":"href"}}&}"{&{"if":{"is_set":"target"}}&} target="{&{"echo":{"ref":"target"}}&}"{&"endif"&}>{&"endif"&}<img src="{&{"input":{"type":"image","name":"image_src", "label":"画像"}}&}" alt="{&{"input":{"type":"html_attr_text","name":"alt_text","label":"代替テキスト","rows":1}}&}" />{&{"if":{"is_set":"href"}}&}</a>{&"endif"&}

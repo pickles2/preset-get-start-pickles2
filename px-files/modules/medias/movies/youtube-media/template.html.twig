@@ -1,0 +1,6 @@
+<figure class="px2-embedded-media">
+	<div class="px2-embedded-media__youtube-media">{% if html|length and youtube_movie_id|length == 0 %}{{ html }}{% else %}<iframe width="951" height="535" src="https://www.youtube.com/embed/{{ youtube_movie_id }}?list={{ youtube_list_id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{% endif %}</div>
+	{% if caption %}
+	<figcaption class="px2-embedded-media__caption">{{ caption }}</figcaption>
+	{% endif %}
+</figure>

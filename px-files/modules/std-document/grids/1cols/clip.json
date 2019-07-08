@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "modId": ":grids/grid",
+      "fields": {
+        "col": [
+          {
+            "modId": ":grids/grid",
+            "fields": {
+              "column-width": "1of1",
+              "main": [
+                {
+                  "modId": ":basics/text",
+                  "fields": {
+                    "main": {
+                      "src": "## Full Column\n\nSingle Column.\n",
+                      "editor": "markdown"
+                    }
+                  },
+                  "anchor": "",
+                  "dec": ""
+                }
+              ]
+            },
+            "subModName": "col",
+            "anchor": "",
+            "dec": ""
+          }
+        ]
+      }
+    }
+  ],
+  "resources": {}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "YouTube",
+	"interface": {
+		"fields": {
+			"youtube_movie_id": {
+				"fieldType": "input",
+				"type": "html_attr_text",
+				"label": "動画のID",
+				"rows": 1
+			},
+			"youtube_list_id": {
+				"fieldType": "input",
+				"type": "html_attr_text",
+				"label": "プレイリストのID",
+				"rows": 1
+			},
+			"html": {
+				"fieldType": "input",
+				"type": "html",
+				"label": "または、コピーしたHTMLコード",
+				"description": "コピーしたHTMLコードを直接使いたい場合はこちらにペーストしてください。"
+			},
+			"caption": {
+				"fieldType": "input",
+				"type": "multitext",
+				"label": "キャプション",
+				"rows": 3
+			}
+		}
+	}
+}

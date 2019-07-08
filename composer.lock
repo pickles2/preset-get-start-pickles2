@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fec6219d789c10884242b224e9aad810",
+    "content-hash": "012a2369e9f17910565ebff3b5648eef",
     "packages": [
         {
             "name": "broccoli-html-editor/broccoli-field-table",
@@ -113,87 +113,6 @@
                 "broccoli-html-editor"
             ],
             "time": "2019-06-19T15:13:20+00:00"
-        },
-        {
-            "name": "broccoli-html-editor/broccoli-module-fess",
-            "version": "0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/broccoli-html-editor/broccoli-module-fess.git",
-                "reference": "0233a8ddf0e5e43911db4397e52a1c80956d42d6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-module-fess/zipball/0233a8ddf0e5e43911db4397e52a1c80956d42d6",
-                "reference": "0233a8ddf0e5e43911db4397e52a1c80956d42d6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "broccoli-html-editor/broccoli-module-plain-html-elements": "dev-develop",
-                "phpunit/phpunit": "4.1.*",
-                "pickles2/px-fw-2.x": "dev-develop",
-                "pickles2/px2-px2dthelper": "dev-develop",
-                "pickles2/px2-sitemapexcel": "dev-develop"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tomoya Koyanagi",
-                    "email": "tomk79@gmail.com"
-                }
-            ],
-            "description": "FESS modues for broccoli-html-editor.",
-            "keywords": [
-                "broccoli-html-editor"
-            ],
-            "time": "2018-05-03T11:41:24+00:00"
-        },
-        {
-            "name": "broccoli-html-editor/broccoli-module-plain-html-elements",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/broccoli-html-editor/broccoli-module-plain-html-elements.git",
-                "reference": "7319d00aadd1562d734832d1741df10d108c4b07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-module-plain-html-elements/zipball/7319d00aadd1562d734832d1741df10d108c4b07",
-                "reference": "7319d00aadd1562d734832d1741df10d108c4b07",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.1.*",
-                "pickles2/px-fw-2.x": "dev-develop",
-                "pickles2/px2-px2dthelper": "dev-develop",
-                "pickles2/px2-sitemapexcel": "dev-develop"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tomoya Koyanagi",
-                    "email": "tomk79@gmail.com"
-                }
-            ],
-            "description": "Plain HTML Element modules for broccoli-html-editor.",
-            "keywords": [
-                "broccoli-html-editor"
-            ],
-            "time": "2018-05-03T11:40:12+00:00"
         },
         {
             "name": "leafo/scssphp",
@@ -953,6 +872,178 @@
                 "portable"
             ],
             "time": "2019-02-06T07:57:58+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-interact",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-interact.git",
+                "reference": "060765b83372be25e288b82be7a604fadea63243"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-interact/zipball/060765b83372be25e288b82be7a604fadea63243",
+                "reference": "060765b83372be25e288b82be7a604fadea63243",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "time": "2019-07-08T17:47:00+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-lp",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-lp.git",
+                "reference": "464544ebffa668c60a04528a048f04183285ddca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/464544ebffa668c60a04528a048f04183285ddca",
+                "reference": "464544ebffa668c60a04528a048f04183285ddca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "tomk79/broccoli-module-std-document": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "fields/cssMarginPadding/backend.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "time": "2019-07-08T17:56:22+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-medias",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-medias.git",
+                "reference": "e62a1a9fb1115991b3a9500a1563265cba3e1214"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-medias/zipball/e62a1a9fb1115991b3a9500a1563265cba3e1214",
+                "reference": "e62a1a9fb1115991b3a9500a1563265cba3e1214",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-multitheme": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "tomk79/broccoli-module-std-document": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "time": "2019-07-08T17:51:07+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-std-document",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-std-document.git",
+                "reference": "d41fcb444becab3f11a22d0c3e0157f18d25fab0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/d41fcb444becab3f11a22d0c3e0157f18d25fab0",
+                "reference": "d41fcb444becab3f11a22d0c3e0157f18d25fab0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "time": "2019-07-08T17:58:44+00:00"
         },
         {
             "name": "tomk79/filesystem",

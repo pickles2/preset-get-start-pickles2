@@ -1,0 +1,9 @@
+.px2-embedded-media{
+	&__twitter-tweet{
+		overflow: auto;
+		> * {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

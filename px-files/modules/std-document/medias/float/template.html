@@ -1,0 +1,21 @@
+<div class="px2-float-media">
+  <div class="px2-float-media__{&{"input":{"type":"select","name":"lr","label":"回り込み方向","options":[
+	{"value":"l", "label":"Float Left"},
+	{"value":"r", "label":"Float Right"},
+	{"value":"c", "label":"Center (回り込まない)"}
+],"default":"r"}}&}{&{"input":{"type":"select","name":"image-size","label":"メディアサイズ","options":[
+	{"value":"1of4", "label":"1/4"},
+	{"value":"1of3", "label":"1/3"},
+	{"value":"1of2", "label":"1/2"},
+	{"value":"2of3", "label":"2/3"},
+	{"value":"1of1", "label":"幅いっぱい"}
+],"default":"1of2"}}&}">
+    {&{"module":{"name":"media", "label":"メディア"}}&}
+  </div>
+  <div class="px2-float-media__body{&{"input":{"type":"select","name":"body_rect","label":"回り込み/矩形維持","options":[
+  {"value":"", "label":"回り込み"},
+  {"value":"-rect", "label":"矩形を維持"}
+]}}&}{&{"if":{"cond":[["is_mode:canvas"]]}}&} px2-float-media__body-rect{&"endif"&}">
+    {&{"module":{"name":"main", "label":"本文"}}&}
+  </div>
+</div><!-- /.px2-float-media -->

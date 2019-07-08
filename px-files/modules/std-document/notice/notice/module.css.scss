@@ -1,0 +1,35 @@
+.px2-notice {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	padding: 0.75em 1.25em;
+	border-radius: 0.25em;
+
+	color: #004085;
+	background-color: #cce5ff;
+	border: 1px solid #b8daff;
+
+	*{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.px2-notice.px2-notice--success{
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+.px2-notice.px2-notice--warning{
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+.px2-notice.px2-notice--danger{
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+.px2-notice.px2-notice--info{
+	color: #0c5460;
+	background-color: #d1ecf1;
+	border-color: #bee5eb;
+}

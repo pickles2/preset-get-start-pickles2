@@ -1,0 +1,34 @@
+<div class="px2-carousel">
+	{&{"if":{"cond":[["is_mode:canvas"]]}}&}
+	<div class="tns-outer">
+		<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" data-vivaldi-spatnav-clickable="1">
+			<button data-controls="prev" tabindex="-1">＜</button>
+			<button data-controls="next" tabindex="-1">＞</button>
+		</div>
+		<div class="tns-nav" aria-label="Carousel Pagination" data-vivaldi-spatnav-clickable="1">
+			<button data-nav="0" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button>
+			<button data-nav="1" aria-label="Carousel Page 2" class="" tabindex="-1"></button>
+			<button data-nav="2" aria-label="Carousel Page 3" class="" tabindex="-1"></button>
+			<button data-nav="3" aria-label="Carousel Page 4" class="" tabindex="-1"></button>
+		</div>
+		<div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">
+			slide <span class="current">1</span>  of 4
+		</div>
+		<div class="tns-ovh">
+			<div class="tns-inner">
+				<div class="px2-carousel__contents tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal">
+		{&"endif"&}
+	<div class="px2-carousel__contents">
+{&{"loop":{"name":"loop","label":"カルーセルコンテンツ"}}&}
+{&{"input":{"type":"href","name":"href","hidden":true,"rows":1,"label":"Link"}}&}
+{&{"input":{"type":"html_attr_text","name":"target","hidden":true,"rows":1,"label":"Target Window"}}&}
+		<div class="px2-carousel__item">{&{"if":{"is_set":"href"}}&}<a href="{&{"echo":{"ref":"href"}}&}"{&{"if":{"is_set":"target"}}&} target="{&{"echo":{"ref":"target"}}&}"{&"endif"&}>{&"endif"&}<img src="{&{"input":{"type":"image","name":"image_src", "label":"Image"}}&}" alt="{&{"input":{"type":"html_attr_text","name":"alt_text","label":"Alt Text","rows":1}}&}" />{&{"if":{"is_set":"href"}}&}</a>{&"endif"&}</div>
+{&"endloop"&}
+	</div>
+		{&{"if":{"cond":[["is_mode:canvas"]]}}&}
+				</div>
+			</div>
+		</div>
+	</div>
+	{&"endif"&}
+</div>

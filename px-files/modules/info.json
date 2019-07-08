@@ -1,7 +1,9 @@
 {
     "sort": [
-        "PlainHTMLElements",
+        "std-document",
         "local",
-        "FESS"
+        "interact",
+        "medias",
+        "lp"
     ]
 }

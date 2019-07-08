@@ -13,8 +13,6 @@
     ],
     "require": {
         "php": ">=5.4.0" ,
-        "broccoli-html-editor/broccoli-module-fess": "^0.1",
-        "broccoli-html-editor/broccoli-module-plain-html-elements": "^0.1",
         "pickles2/px-fw-2.x": "^2.0",
         "pickles2/px2-dec": "^2.0",
         "pickles2/px2-multitheme": "^2.0",
@@ -22,7 +20,11 @@
         "pickles2/px2-px2dthelper": "^2.0",
         "pickles2/px2-remove-attr": "^2.0",
         "pickles2/px2-sitemapexcel": "^2.0",
-        "pickles2/px2-publish-ex": "^2.0"
+        "pickles2/px2-publish-ex": "^2.0",
+        "tomk79/broccoli-module-std-document": "^0.0.5",
+        "tomk79/broccoli-module-interact": "^0.0.2",
+        "tomk79/broccoli-module-medias": "^0.0.2",
+        "tomk79/broccoli-module-lp": "^0.0.2"
     },
     "require-dev": {
     },

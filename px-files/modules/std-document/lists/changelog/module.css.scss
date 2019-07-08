@@ -1,0 +1,33 @@
+.px2-changelog{
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 1rem 0;
+
+	&__header {
+		margin-bottom: 0.5em;
+		*{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	&__row{
+		display: flex;
+		margin-bottom: 0.5em;
+	}
+	&__date{
+		font-weight: bold;
+		white-space: nowrap;
+		padding-right: 1em;
+	}
+	&__contents{
+		width: 100%;
+		>p,
+		>ul,
+		>ol{
+			margin-top: 0;
+			margin-bottom: 0;
+		}    
+	}
+}
