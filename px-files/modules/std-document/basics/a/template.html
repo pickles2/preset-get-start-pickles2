@@ -1,0 +1,12 @@
+{&{"input":{"type":"href","name":"href","hidden":true,"rows":1,"label":"リンク先"}}&}
+{&{"input":{"type":"text","name":"label","hidden":true,"label":"ラベル","rows":1}}&}
+{&{"input":{"type":"select","name":"class","hidden":true,"label":"ビュレットスタイル","options":[
+    {"value":"", "label":"なし"},
+    {"value":"px2-a", "label":"標準ビュレット"}
+]}}&}
+{&{"input":{"type":"html_attr_text","name":"target","hidden":true,"rows":1,"label":"ターゲットウィンドウ"}}&}
+<a href="{&{"echo":{"ref":"href"}}&}"{&{"if":{"is_set":"target"}}&} target="{&{"echo":{"ref":"target"}}&}"{&"endif"&}{&{"if":{"is_set":"href"}}&} class="{&{"echo":{"ref":"class"}}&}"{&"endif"&}>{&{"if":{"cond":[
+    ["target==_blank"]
+]}}&}<span class="px2-open-in-new-window">{&"endif"&}{&{"echo":{"ref":"label"}}&}{&{"if":{"cond":[
+    ["target==_blank"]
+]}}&}</span>{&"endif"&}</a>

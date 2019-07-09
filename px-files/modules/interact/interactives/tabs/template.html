@@ -4,7 +4,7 @@
 {&{"loop":{"name":"loop","label":"タブコンテンツ"}}&}
 {&{"input":{"type":"text","name":"tab-label","label":"ラベル","rows":1,"hidden":true}}&}
 		<div class="px2-tabs__content{&{"if":{"cond":[["is_mode:canvas"]]}}&} px2-tabs--active{&"endif"&}">{&{"if":{"cond":[["is_mode:canvas"]]}}&}
-<div style="padding: 0.2em 1em; background-color: #eee; color:#666; border-bottom:1px dashed #999; font-size:11px;">Tab Name: {&{"echo":{"ref":"tab-label"}}&}</div>
+<div style="display: table; padding: 0.2em 1em; background-color: #f6f6f6; color:#999; border:1px solid #bbb; border-bottom:none; border-radius:0.5em 0.5em 0 0; font-size:11px; margin-right: auto;">{&{"echo":{"ref":"tab-label"}}&}</div>
 {&"endif"&}{&{"module":{"name":"main","label":"タブコンテンツ"}}&}</div>
 {&"endloop"&}
 	</div>

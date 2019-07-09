@@ -1,5 +1,5 @@
 {
-	"name": "汎用HTML埋め込み",
+	"name": "汎用HTMLメディア埋め込み",
 	"interface": {
 		"fields": {
 			"html": {

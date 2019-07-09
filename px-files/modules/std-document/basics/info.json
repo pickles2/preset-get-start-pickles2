@@ -4,6 +4,7 @@
         "text",
         "image",
         "table",
+        "a",
         "hr"
     ]
 }

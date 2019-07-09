@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "012a2369e9f17910565ebff3b5648eef",
+    "content-hash": "b70ad95713b335bf61d9a3c0a1ac5102",
     "packages": [
         {
             "name": "broccoli-html-editor/broccoli-field-table",
@@ -875,16 +875,16 @@
         },
         {
             "name": "tomk79/broccoli-module-interact",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-interact.git",
-                "reference": "060765b83372be25e288b82be7a604fadea63243"
+                "reference": "e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-interact/zipball/060765b83372be25e288b82be7a604fadea63243",
-                "reference": "060765b83372be25e288b82be7a604fadea63243",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-interact/zipball/e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9",
+                "reference": "e9af7a7ee02f20b77a56c46a3c506bfd5acfc4d9",
                 "shasum": ""
             },
             "require": {
@@ -893,7 +893,8 @@
             "require-dev": {
                 "pickles2/px-fw-2.x": "^2.0",
                 "pickles2/px2-multitheme": "^2.0",
-                "pickles2/px2-px2dthelper": "^2.0"
+                "pickles2/px2-px2dthelper": "^2.0",
+                "tomk79/broccoli-module-std-document": "dev-develop"
             },
             "type": "library",
             "autoload": {
@@ -913,20 +914,20 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-08T17:47:00+00:00"
+            "time": "2019-07-09T15:56:49+00:00"
         },
         {
             "name": "tomk79/broccoli-module-lp",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-lp.git",
-                "reference": "464544ebffa668c60a04528a048f04183285ddca"
+                "reference": "013751e73c3aa0917687466d038fef78ea325d4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/464544ebffa668c60a04528a048f04183285ddca",
-                "reference": "464544ebffa668c60a04528a048f04183285ddca",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/013751e73c3aa0917687466d038fef78ea325d4d",
+                "reference": "013751e73c3aa0917687466d038fef78ea325d4d",
                 "shasum": ""
             },
             "require": {
@@ -958,20 +959,20 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-08T17:56:22+00:00"
+            "time": "2019-07-09T17:55:30+00:00"
         },
         {
             "name": "tomk79/broccoli-module-medias",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-medias.git",
-                "reference": "e62a1a9fb1115991b3a9500a1563265cba3e1214"
+                "reference": "0aa21528505f4a3a663a233e4ad9269a59f0255f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-medias/zipball/e62a1a9fb1115991b3a9500a1563265cba3e1214",
-                "reference": "e62a1a9fb1115991b3a9500a1563265cba3e1214",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-medias/zipball/0aa21528505f4a3a663a233e4ad9269a59f0255f",
+                "reference": "0aa21528505f4a3a663a233e4ad9269a59f0255f",
                 "shasum": ""
             },
             "require": {
@@ -1001,20 +1002,20 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-08T17:51:07+00:00"
+            "time": "2019-07-09T18:54:15+00:00"
         },
         {
             "name": "tomk79/broccoli-module-std-document",
-            "version": "0.0.5",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-std-document.git",
-                "reference": "d41fcb444becab3f11a22d0c3e0157f18d25fab0"
+                "reference": "d2e756e31a1bb29c633c0bfef6c1da23f269c594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/d41fcb444becab3f11a22d0c3e0157f18d25fab0",
-                "reference": "d41fcb444becab3f11a22d0c3e0157f18d25fab0",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/d2e756e31a1bb29c633c0bfef6c1da23f269c594",
+                "reference": "d2e756e31a1bb29c633c0bfef6c1da23f269c594",
                 "shasum": ""
             },
             "require": {
@@ -1043,7 +1044,7 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-08T17:58:44+00:00"
+            "time": "2019-07-09T18:58:39+00:00"
         },
         {
             "name": "tomk79/filesystem",
