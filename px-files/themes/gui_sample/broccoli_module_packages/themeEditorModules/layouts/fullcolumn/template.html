@@ -1,4 +1,9 @@
-<div class="theme-layouts theme-layouts--fullcolumn">
+{&{"input":{"type":"select", "name":"inner-width", "label":"内容幅", "display":"select", "options":[
+    {"value":"", "label":"なし"},
+    {"value":"theme-layouts--fluid", "label":"流体的"},
+    {"value":"theme-layouts--fullcolumn", "label":"フルカラム"}
+],"hidden":true}}&}
+<div class="theme-layouts {&{"echo":{"ref":"inner-width"}}&}">
 	<div class="theme-layouts__body">
 {&{"module":{"name":"main"}}&}
 	</div>

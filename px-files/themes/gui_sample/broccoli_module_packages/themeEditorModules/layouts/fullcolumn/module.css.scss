@@ -40,13 +40,8 @@ a{
 	color: $keycolor;
 	text-decoration: none;
 }
-a:hover, a:focus {
+a:hover {
 	text-decoration: underline;
-	outline: none;
-}
-a:focus {
-	outline: 5px auto;
-	outline-offset: -2px;
 }
 p, ul, ol, dl{
 	margin: 1em 0;
@@ -112,11 +107,19 @@ p, li, dt, dd{
 	}
 
 	// レイアウトごとの拡張
-	&--fullcolumn{
+	&--fluid{
+		padding: 1px 0 0 0;
 		.theme-layouts__body{
 			display: block;
+			max-width: none;
 		}
 	}
+	&--fullcolumn{
+		.theme-layouts__body {
+    		display: block;
+		}
+	}
+
 	&--lnavi{
 		.theme-layouts__content{
 			width: 75%;

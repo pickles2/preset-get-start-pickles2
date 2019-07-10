@@ -19,41 +19,7 @@
 
 	</div>
 </header>
-<?php
-	require_once( __DIR__.'/php/top.php' );
-	$theme_top = new pickles2\themes\pickles\theme_top($px, $theme);
-
-	//↓ $page_info にページの情報を格納しています。
-	//	 test::var_dump( $page_info ); で、変数の内容を確認できます。
-	$page_info = $px->site()->get_current_page_info();
-	$colors = $theme_top->get_color_scheme();
-	$test_results = $theme_top->setup_test();
-	$messageBoxSetting = array();
-	$messageBoxSetting['main'] = $colors['main'];
-	$messageBoxSetting['bg'] = '#fff';
-	$messageBoxSetting['radius'] = '1em';
-	if( count($test_results) ){
-		// エラーが検出された場合
-		$messageBoxSetting['main'] = '#ff0000';
-		$messageBoxSetting['bg'] = '#ffeeee';
-		$messageBoxSetting['radius'] = '0px';
-	}
-?>
-
-<div class="theme-welcome">
-	<div class="theme-welcome__inner">
-		<p class="theme-welcome__title"><?= $theme_top->create_src_welcome_svg(); ?></p>
-		<div class="theme-welcome__body clearfix">
-			<div class="theme-welcome__message">
-				<?= $theme_top->mk_setup_test( $test_results ); ?>
-			</div>
-			<?php if( !count($test_results) ){ ?>
-				<div class="theme-welcome__image-everyone"><img src="<?= $theme->files('images/everyone.png'); ?>" alt="" /></div>
-			<?php } ?>
-		</div>
-	</div>
-</div><!-- /.theme-welcome -->
-<div class="theme-layouts theme-layouts--fullcolumn">
+<div class="theme-layouts theme-layouts--fluid">
 	<div class="theme-layouts__body">
 
 <div class="contents" <?= htmlspecialchars($theme->get_attr_bowl_name_by())?>="">
