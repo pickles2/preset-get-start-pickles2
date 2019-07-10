@@ -7,26 +7,62 @@
                     {
                         "modId": "lp:containers/container",
                         "fields": {
-                            "text-color": "#fff",
+                            "text-color": "#00a0e6",
                             "background-color": "",
                             "background-image": {
                                 "resKey": "c774ba2403d948eb3950d769c829ca11",
-                                "path": "./index_files/resources/photo010.jpg",
+                                "path": "./index_files/resources/background.jpg",
                                 "resType": "",
                                 "webUrl": ""
                             },
                             "background-image-effect": "scroll-fixed",
-                            "min-height": "86vh",
-                            "margin-padding": "",
+                            "min-height": "400px",
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "3rem",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
+                            },
                             "fluid-innter": "",
                             "main": [
                                 {
-                                    "modId": "std-document:basics/text",
+                                    "modId": "std-document:utils/p",
                                     "fields": {
-                                        "main": {
-                                            "src": "## ようこそ、 Pickles 2 の世界へ！",
-                                            "editor": "markdown"
-                                        }
+                                        "paragraph": "",
+                                        "text-align": " px2-text-align-center",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/image",
+                                                "fields": {
+                                                    "href": "",
+                                                    "target": "",
+                                                    "image_src": {
+                                                        "resKey": "06ca6ed8bca0381b421041d77fe30dcf",
+                                                        "path": "./index_files/resources/welcome.svg",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "alt_text": "Welcome ! to Pickles 2"
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## ようこそ、 Pickles 2 の世界へ！",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
                                     },
                                     "anchor": "",
                                     "dec": ""
@@ -34,7 +70,7 @@
                             ]
                         },
                         "anchor": "",
-                        "dec": ""
+                        "dec": "背景画像提供元:\nnekogy13991さん (https://www.photo-ac.com/profile/1833559) による写真\n写真AC https://www.photo-ac.com/\n(フリー素材)"
                     },
                     {
                         "modId": "lp:containers/container",
