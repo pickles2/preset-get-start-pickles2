@@ -277,16 +277,16 @@
         },
         {
             "name": "pickles2/lib-px2-contents-editor",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-contents-editor.git",
-                "reference": "0ebc7cf7f464878173c8449b8c2ebba8065027f8"
+                "reference": "6eaecc66dc8182fdf0eee9492ae7174a2154c944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/0ebc7cf7f464878173c8449b8c2ebba8065027f8",
-                "reference": "0ebc7cf7f464878173c8449b8c2ebba8065027f8",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/6eaecc66dc8182fdf0eee9492ae7174a2154c944",
+                "reference": "6eaecc66dc8182fdf0eee9492ae7174a2154c944",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +304,8 @@
                 "pickles2/px2-path-resolver": "*",
                 "pickles2/px2-px2dthelper": "*",
                 "pickles2/px2-remove-attr": "*",
-                "pickles2/px2-sitemapexcel": "*"
+                "pickles2/px2-sitemapexcel": "*",
+                "tomk79/broccoli-module-lp": "dev-develop"
             },
             "type": "library",
             "autoload": {
@@ -329,7 +330,7 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-06-15T11:23:59+00:00"
+            "time": "2019-07-10T04:41:29+00:00"
         },
         {
             "name": "pickles2/lib-px2-module-editor",
@@ -860,7 +861,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
