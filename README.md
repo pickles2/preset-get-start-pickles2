@@ -57,9 +57,20 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 dev-feature/new-document-modules (リリース日未定)
+### pickles2/preset-get-start-pickles2 v2.0.20 (リリース日未定)
 
 - 初期導入の汎用モジュールセットを刷新。より汎用的なサイト制作にすぐに導入できるようになりました。
+- 依存パッケージ更新: pickles2/px-fw-2.x (2.0.41 => 2.0.42)
+- 依存パッケージ更新: pickles2/px2-path-resolver (2.0.12 => 2.0.13)
+- 依存パッケージ更新: symfony/polyfill-ctype (v1.11.0 => v1.12.0)
+- 依存パッケージ更新: twig/twig (v1.42.2 => v1.42.3)
+- 依存パッケージ更新: broccoli-html-editor/broccoli-html-editor (0.3.8 => 0.3.10)
+- 依存パッケージ更新: pickles2/lib-px2-contents-editor (2.0.7 => 2.0.8)
+- 依存パッケージ更新: pickles2/lib-px2-module-editor (0.2.3 => 0.2.4)
+- 依存パッケージ更新: pickles2/px2-px2dthelper (2.0.12 => 2.0.13)
+- 依存パッケージ更新: pickles2/px2-publish-ex (2.0.3 => 2.0.4)
+- 依存パッケージ更新: tomk79/broccoli-module-std-document (0.1.0 => 0.1.1)
+
 
 ### pickles2/preset-get-start-pickles2 v2.0.19 (2019年6月20日)
 

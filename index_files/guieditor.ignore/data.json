@@ -8,15 +8,15 @@
                         "modId": "lp:containers/container",
                         "fields": {
                             "text-color": "#00a0e6",
-                            "background-color": "",
+                            "background-color": "#f6f6f6",
                             "background-image": {
-                                "resKey": "c774ba2403d948eb3950d769c829ca11",
-                                "path": "./index_files/resources/background.jpg",
-                                "resType": "",
+                                "resKey": "8be607047125cb7f621d3bf77ac5787f",
+                                "path": "./index_files/resources/8be607047125cb7f621d3bf77ac5787f.txt",
+                                "resType": "none",
                                 "webUrl": ""
                             },
-                            "background-image-effect": "scroll-fixed",
-                            "min-height": "400px",
+                            "background-image-effect": "",
+                            "min-height": "380px",
                             "margin-padding": {
                                 "marginTop": "",
                                 "marginRight": "",
@@ -32,7 +32,7 @@
                                 {
                                     "modId": "std-document:utils/p",
                                     "fields": {
-                                        "paragraph": "",
+                                        "paragraph": "px2-p",
                                         "text-align": " px2-text-align-center",
                                         "main": [
                                             {
@@ -70,7 +70,7 @@
                             ]
                         },
                         "anchor": "",
-                        "dec": "背景画像提供元:\nnekogy13991さん (https://www.photo-ac.com/profile/1833559) による写真\n写真AC https://www.photo-ac.com/\n(フリー素材)"
+                        "dec": ""
                     },
                     {
                         "modId": "lp:containers/container",
@@ -88,14 +88,6 @@
                             "margin-padding": "",
                             "fluid-innter": "",
                             "main": [
-                                {
-                                    "modId": "_sys/html",
-                                    "fields": {
-                                        "main": "<?php if( !$px ){ ?>\n<meta charset=\"utf-8\" />\n<div style=\"background-color:#fff; color:#f00; border:2px solid #f00; padding:20px;\">\n\t<p>このメッセージが表示されているということは、インストールが正常に完了していない可能性があります。</p>\n\t<p>次の点を確認してください。</p>\n\t<ul>\n\t\t<li>index.html ファイルを直接ウェブブラウザで開いているかもしれません。ウェブサーバー Apache を経由して表示してください。</li>\n\t\t<li>.htaccess の設定が反映されていない可能性があります。Apache の設定で <code>AllowOverride All</code> などとして、設定の上書きを許可してください。</li>\n\t\t<li>Apache モジュールの mod_rewrite が利用できない可能性があります。有効になるように設定する、またはモジュールのインストールを行ってください。</li>\n\t</ul>\n</div>\n<?php } ?>\n"
-                                    },
-                                    "anchor": "",
-                                    "dec": ""
-                                },
                                 {
                                     "modId": "std-document:basics/text",
                                     "fields": {
