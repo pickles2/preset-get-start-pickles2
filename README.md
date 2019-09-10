@@ -57,6 +57,11 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.21 (2019年9月10日)
+
+- 依存パッケージ更新: pickles2/px2-dec (2.0.1 => 2.0.2)
+- 依存パッケージ更新: pickles2/px2-remove-attr (2.0.2 => 2.0.3)
+
 ### pickles2/preset-get-start-pickles2 v2.0.20 (2019年9月4日)
 
 - 初期導入の汎用モジュールセットを刷新。より汎用的なサイト制作にすぐに導入できるようになりました。

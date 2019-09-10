@@ -456,16 +456,16 @@
         },
         {
             "name": "pickles2/px2-dec",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-dec.git",
-                "reference": "2d2061083a42f089153793ab7864e1624eb9db66"
+                "reference": "d8c12ef2c8ecddee50413d1dd31553a9cae81d51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-dec/zipball/2d2061083a42f089153793ab7864e1624eb9db66",
-                "reference": "2d2061083a42f089153793ab7864e1624eb9db66",
+                "url": "https://api.github.com/repos/pickles2/px2-dec/zipball/d8c12ef2c8ecddee50413d1dd31553a9cae81d51",
+                "reference": "d8c12ef2c8ecddee50413d1dd31553a9cae81d51",
                 "shasum": ""
             },
             "require": {
@@ -497,9 +497,9 @@
             ],
             "description": "px2-dec は、Pickles 2 に DEC 拡張機能を追加します。",
             "keywords": [
-                "pickles"
+                "pickles2"
             ],
-            "time": "2018-03-13T11:06:27+00:00"
+            "time": "2019-09-10T05:12:53+00:00"
         },
         {
             "name": "pickles2/px2-multitheme",
@@ -715,16 +715,16 @@
         },
         {
             "name": "pickles2/px2-remove-attr",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px2-remove-attr.git",
-                "reference": "844fc21fa999537e09270a90a0f4c1070a7b6840"
+                "reference": "19a9f7665da34a93600d21594465521e09ee4c11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-remove-attr/zipball/844fc21fa999537e09270a90a0f4c1070a7b6840",
-                "reference": "844fc21fa999537e09270a90a0f4c1070a7b6840",
+                "url": "https://api.github.com/repos/pickles2/px2-remove-attr/zipball/19a9f7665da34a93600d21594465521e09ee4c11",
+                "reference": "19a9f7665da34a93600d21594465521e09ee4c11",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +758,7 @@
             "keywords": [
                 "pickles"
             ],
-            "time": "2018-08-22T14:15:13+00:00"
+            "time": "2019-09-10T05:16:42+00:00"
         },
         {
             "name": "pickles2/px2-sitemapexcel",
