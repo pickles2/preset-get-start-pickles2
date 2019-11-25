@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.22 (リリース日未定)
+
+- プロジェクト固有の設定欄として `$conf->extra` を規定とした。
+
 ### pickles2/preset-get-start-pickles2 v2.0.21 (2019年9月10日)
 
 - 依存パッケージ更新: pickles2/px2-dec (2.0.1 => 2.0.2)

@@ -23,7 +23,7 @@ return call_user_func( function(){
 	 * 本番環境のスキーマ
 	 * (例: http, https)
 	 */
-	$conf->scheme = 'http';
+	$conf->scheme = 'https';
 
 	/**
 	 * ドメイン
@@ -443,6 +443,11 @@ return call_user_func( function(){
 
 	/** GUI編集リソース出力先ディレクトリ */
 	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
+
+
+	// -------- Project Custom Setting --------
+	// プロジェクトが固有に定義する設定を行います。
+	$conf->extra = new stdClass;
 
 
 	// -------- PHP Setting --------
