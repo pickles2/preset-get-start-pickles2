@@ -536,8 +536,21 @@
   .contents ul > li > ul, .contents ul > li > ol, .contents ul > li > p {
     margin-top: 0;
     margin-bottom: 0; }
+  .contents .px2-vertical-list, .contents .px2-vertical-list > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding-left: 0; }
+  .contents .px2-vertical-list > ul > li, .contents .px2-vertical-list > ul > ul > li, .contents .px2-vertical-list > li, .contents .px2-vertical-list > ul > li {
+    list-style-type: none;
+    padding-left: 0; }
+  .contents .px2-vertical-list > ul > li > p, .contents .px2-vertical-list > ul > ul > li > p, .contents .px2-vertical-list > li > p, .contents .px2-vertical-list > ul > li > p {
+    margin: 0; }
   .contents .px2-horizontal-list, .contents .px2-horizontal-list > ul {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 0; }
@@ -547,6 +560,12 @@
     padding-right: 1em; }
   .contents .px2-horizontal-list > ul > li > p, .contents .px2-horizontal-list > ul > ul > li > p, .contents .px2-horizontal-list > li > p, .contents .px2-horizontal-list > ul > li > p {
     margin: 0; }
+  .contents .px2-horizontal-list--left {
+    justify-content: flex-start; }
+  .contents .px2-horizontal-list--center {
+    justify-content: center; }
+  .contents .px2-horizontal-list--right {
+    justify-content: flex-end; }
   .contents .px2-note-list, .contents .px2-note-list > ul {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -719,5 +738,13 @@
     text-align: center; }
   .contents .px2-text-align-right {
     text-align: right; }
+  .contents .px2-font-size-ss {
+    font-size: 74%; }
+  .contents .px2-font-size-s {
+    font-size: 88%; }
+  .contents .px2-font-size-l {
+    font-size: 112%; }
+  .contents .px2-font-size-ll {
+    font-size: 136%; }
   .contents .px2-responsive {
     overflow: auto; }

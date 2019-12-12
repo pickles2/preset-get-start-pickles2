@@ -53,16 +53,16 @@
         },
         {
             "name": "broccoli-html-editor/broccoli-html-editor",
-            "version": "0.3.10",
+            "version": "0.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
-                "reference": "7d2e0e1a17a1189f8b4dff7a68593850bf123bf4"
+                "reference": "540c50ce1c970656bdd370e33c3bec40b4142590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/7d2e0e1a17a1189f8b4dff7a68593850bf123bf4",
-                "reference": "7d2e0e1a17a1189f8b4dff7a68593850bf123bf4",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/540c50ce1c970656bdd370e33c3bec40b4142590",
+                "reference": "540c50ce1c970656bdd370e33c3bec40b4142590",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
             "keywords": [
                 "broccoli-html-editor"
             ],
-            "time": "2019-09-04T12:52:16+00:00"
+            "time": "2019-11-16T04:05:25+00:00"
         },
         {
             "name": "leafo/scssphp",
@@ -168,20 +168,23 @@
         },
         {
             "name": "michelf/php-markdown",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495"
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/01ab082b355bf188d907b9929cd99b2923053495",
-                "reference": "01ab082b355bf188d907b9929cd99b2923053495",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.3 <5.8"
             },
             "type": "library",
             "autoload": {
@@ -210,7 +213,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2018-01-15T00:49:33+00:00"
+            "time": "2019-12-02T02:32:27+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -277,16 +280,16 @@
         },
         {
             "name": "pickles2/lib-px2-contents-editor",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/node-pickles2-contents-editor.git",
-                "reference": "110f3af127178243e0328738a0dfdcd35e06b7a6"
+                "reference": "24a461f0effe6a8db01b7cd3e0c293998ba1e917"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/110f3af127178243e0328738a0dfdcd35e06b7a6",
-                "reference": "110f3af127178243e0328738a0dfdcd35e06b7a6",
+                "url": "https://api.github.com/repos/pickles2/node-pickles2-contents-editor/zipball/24a461f0effe6a8db01b7cd3e0c293998ba1e917",
+                "reference": "24a461f0effe6a8db01b7cd3e0c293998ba1e917",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +333,7 @@
             "keywords": [
                 "pickles2"
             ],
-            "time": "2019-08-11T07:10:52+00:00"
+            "time": "2019-12-12T16:05:43+00:00"
         },
         {
             "name": "pickles2/lib-px2-module-editor",
@@ -389,16 +392,16 @@
         },
         {
             "name": "pickles2/px-fw-2.x",
-            "version": "2.0.42",
+            "version": "2.0.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pickles2/px-fw-2.x.git",
-                "reference": "4f7ac7ee4b302608c13eebd4263ebac9ef5affa8"
+                "reference": "3b702a67c2c7f833bae41e10b4792bf7f7c0ea11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/4f7ac7ee4b302608c13eebd4263ebac9ef5affa8",
-                "reference": "4f7ac7ee4b302608c13eebd4263ebac9ef5affa8",
+                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/3b702a67c2c7f833bae41e10b4792bf7f7c0ea11",
+                "reference": "3b702a67c2c7f833bae41e10b4792bf7f7c0ea11",
                 "shasum": ""
             },
             "require": {
@@ -419,21 +422,21 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "px-files/_sys/php/pickles.php",
-                    "px-files/_sys/php/px.php",
-                    "px-files/_sys/php/bowl.php",
-                    "px-files/_sys/php/pxcmd.php",
-                    "px-files/_sys/php/site.php",
-                    "px-files/_sys/php/commands/api.php",
-                    "px-files/_sys/php/commands/clearcache.php",
-                    "px-files/_sys/php/commands/config.php",
-                    "px-files/_sys/php/commands/phpinfo.php",
-                    "px-files/_sys/php/commands/publish.php",
-                    "px-files/_sys/php/processors/md.php",
-                    "px-files/_sys/php/processors/scss.php",
-                    "px-files/_sys/php/processors/autoindex.php",
-                    "px-files/_sys/php/processors/encodingconverter.php",
-                    "px-files/_sys/php/processors/ssi.php",
+                    "php/pickles.php",
+                    "php/px.php",
+                    "php/bowl.php",
+                    "php/pxcmd.php",
+                    "php/site.php",
+                    "php/commands/api.php",
+                    "php/commands/clearcache.php",
+                    "php/commands/config.php",
+                    "php/commands/phpinfo.php",
+                    "php/commands/publish.php",
+                    "php/processors/md.php",
+                    "php/processors/scss.php",
+                    "php/processors/autoindex.php",
+                    "php/processors/encodingconverter.php",
+                    "php/processors/ssi.php",
                     "px-files/themes/pickles2/php/theme.php"
                 ]
             },
@@ -452,7 +455,7 @@
                 "pickles",
                 "pickles2"
             ],
-            "time": "2019-09-04T11:46:16+00:00"
+            "time": "2019-12-12T15:50:05+00:00"
         },
         {
             "name": "pickles2/px2-dec",
@@ -818,16 +821,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.12.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
                 "shasum": ""
             },
             "require": {
@@ -839,7 +842,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -872,7 +875,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         },
         {
             "name": "tomk79/broccoli-module-interact",
@@ -919,16 +922,16 @@
         },
         {
             "name": "tomk79/broccoli-module-lp",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-lp.git",
-                "reference": "013751e73c3aa0917687466d038fef78ea325d4d"
+                "reference": "a613906b2647004eb23785b9f5f6ec522bb54e70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/013751e73c3aa0917687466d038fef78ea325d4d",
-                "reference": "013751e73c3aa0917687466d038fef78ea325d4d",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-lp/zipball/a613906b2647004eb23785b9f5f6ec522bb54e70",
+                "reference": "a613906b2647004eb23785b9f5f6ec522bb54e70",
                 "shasum": ""
             },
             "require": {
@@ -960,7 +963,7 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-07-09T17:55:30+00:00"
+            "time": "2019-12-12T16:16:41+00:00"
         },
         {
             "name": "tomk79/broccoli-module-medias",
@@ -1007,16 +1010,16 @@
         },
         {
             "name": "tomk79/broccoli-module-std-document",
-            "version": "0.1.1",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomk79/broccoli-module-std-document.git",
-                "reference": "3d0b813676b71845510af6dc3bbf4856950323cb"
+                "reference": "a066bb5068326f23098aa945fc3921145a53208a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/3d0b813676b71845510af6dc3bbf4856950323cb",
-                "reference": "3d0b813676b71845510af6dc3bbf4856950323cb",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-std-document/zipball/a066bb5068326f23098aa945fc3921145a53208a",
+                "reference": "a066bb5068326f23098aa945fc3921145a53208a",
                 "shasum": ""
             },
             "require": {
@@ -1045,7 +1048,7 @@
                 "broccoli",
                 "pickles2"
             ],
-            "time": "2019-09-04T13:10:53+00:00"
+            "time": "2019-12-12T16:12:22+00:00"
         },
         {
             "name": "tomk79/filesystem",
@@ -1219,16 +1222,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.3",
+            "version": "v1.42.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "201baee843e0ffe8b0b956f336dd42b2a92fae4e"
+                "reference": "e587180584c3d2d6cb864a0454e777bb6dcb6152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/201baee843e0ffe8b0b956f336dd42b2a92fae4e",
-                "reference": "201baee843e0ffe8b0b956f336dd42b2a92fae4e",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e587180584c3d2d6cb864a0454e777bb6dcb6152",
+                "reference": "e587180584c3d2d6cb864a0454e777bb6dcb6152",
                 "shasum": ""
             },
             "require": {
@@ -1261,19 +1264,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "role": "Lead Developer",
                     "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org"
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Twig Team",
-                    "role": "Contributors",
-                    "homepage": "https://twig.symfony.com/contributors"
+                    "homepage": "https://twig.symfony.com/contributors",
+                    "role": "Contributors"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "role": "Project Founder",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -1281,7 +1284,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-08-24T12:51:03+00:00"
+            "time": "2019-11-11T16:49:32+00:00"
         }
     ],
     "packages-dev": [],

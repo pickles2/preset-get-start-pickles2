@@ -10,10 +10,31 @@ ul{
 	}
 }
 
+// 垂直リスト
+.px2-vertical-list,
+.px2-vertical-list>ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	padding-left: 0;
+
+	>ul>li ,
+	>li {
+		list-style-type: none;
+		padding-left: 0;
+		>p{
+			margin: 0;
+		}
+	}
+}
+
 // 水平リスト
 .px2-horizontal-list,
 .px2-horizontal-list>ul{
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	padding-left: 0;
@@ -26,6 +47,17 @@ ul{
 		>p{
 			margin: 0;
 		}
+	}
+}
+.px2-horizontal-list{
+	&--left{
+		justify-content: flex-start;
+	}
+	&--center{
+		justify-content: center;
+	}
+	&--right{
+		justify-content: flex-end;
 	}
 }
 
