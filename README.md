@@ -170,7 +170,7 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## ライセンス - License
 
-Copyright (c)2001-2019 Tomoya Koyanagi, and Pickles 2 Project<br />
+Copyright (c)2001-2020 Tomoya Koyanagi, and Pickles 2 Project<br />
 MIT License https://opensource.org/licenses/mit-license.php
 
 
