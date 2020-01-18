@@ -57,6 +57,17 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.23 (2020年1月18日)
+
+- 依存パッケージ更新: pickles2/px-fw-2.x (2.0.43 => 2.0.44)
+- 依存パッケージ更新: twig/twig (v1.42.4 => v3.0.1)
+- 依存パッケージ更新: tomk79/langbank (0.0.3 => 0.0.4)
+- 依存パッケージ更新: broccoli-html-editor/broccoli-html-editor (0.3.11 => 0.3.13)
+- 依存パッケージ更新: pickles2/lib-px2-contents-editor (2.0.9 => 2.0.10)
+- 依存パッケージ更新: pickles2/lib-px2-module-editor (0.2.4 => 0.2.6)
+- 依存パッケージ更新: pickles2/px2-px2dthelper (2.0.13 => 2.0.14)
+- 依存パッケージ更新: pickles2/px2-publish-ex (2.0.4 => 2.0.5)
+
 ### pickles2/preset-get-start-pickles2 v2.0.22 (2019年12月13日)
 
 - プロジェクト固有の設定欄として `$conf->extra` を規定とした。
