@@ -16,7 +16,7 @@ return call_user_func( function(){
 	$conf->name = 'Get start "Pickles 2" !';
 
 	/** コピーライト表記 */
-	$conf->copyright = 'Pickles 2 Project';
+	$conf->copyright = 'Pickles Project';
 
 	/**
 	 * スキーマ
