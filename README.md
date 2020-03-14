@@ -60,6 +60,7 @@ $ php ./.px_execute.php "/?PX=clearcache"
 ### pickles2/preset-get-start-pickles2 v2.0.24 (リリース日未定)
 
 - モジュールパッケージ `tomk79/broccoli-module-std-document` を 0.1.4 に更新。
+- ユーザーの環境に適合しない場合にインストールが失敗する問題を解消するため、 `composer.lock` を削除した。 (ただし、 `.gitignore` には記載しない。ユーザーの環境でセットアップした際に生成される `composer.lock` は プロジェクトにコミットされるべきです)
 
 ### pickles2/preset-get-start-pickles2 v2.0.23 (2020年1月18日)
 
