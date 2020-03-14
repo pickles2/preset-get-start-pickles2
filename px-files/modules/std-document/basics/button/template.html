@@ -1,0 +1,23 @@
+{&{"input":{"type":"text","name":"label","hidden":true,"label":"ラベル","rows":1}}&}
+{&{"input":{"type":"select","name":"intention","hidden":true,"label":"ボタンスタイル","options":[
+    {"value":"", "label":"標準"},
+    {"value":"px2-btn--primary", "label":"プライマリ"},
+    {"value":"px2-btn--secondary", "label":"セカンダリ"},
+    {"value":"px2-btn--danger", "label":"危険"},
+    {"value":"px2-btn--download", "label":"ダウンロード"}
+]}}&}
+{&{"input":{"type":"select","name":"sizing","hidden":true,"label":"ボタンサイズ","options":[
+    {"value":"px-btn--sm", "label":"小さい"},
+    {"value":"", "label":"標準"},
+    {"value":"px2-btn--lg", "label":"大きい"}
+]}}&}
+{&{"input":{"type":"select","name":"display","hidden":true,"label":"ディスプレイタイプ","options":[
+    {"value":"", "label":"標準"},
+    {"value":"px2-btn--block", "label":"ブロック"}
+]}}&}
+{&{"input":{"type":"select","name":"btntype","hidden":true,"label":"ボタンタイプ","options":[
+    {"value":"button", "label":"ボタン"},
+    {"value":"submit", "label":"送信ボタン"}
+]}}&}
+{&{"input":{"type":"script","lang":"javascript","name":"onclick","escape":"html_attr_text","hidden":true,"label":"ボタンアクション"}}&}
+<button{&{"if":{"is_set":"onclick"}}&} onclick="{&{"echo":{"ref":"onclick"}}&}"{&"endif"&}{&{"if":{"is_set":"btntype"}}&} type="{&{"echo":{"ref":"btntype"}}&}"{&"endif"&} class="px2-btn{&{"if":{"is_set":"intention"}}&} {&{"echo":{"ref":"intention"}}&}{&"endif"&}{&{"if":{"is_set":"sizing"}}&} {&{"echo":{"ref":"sizing"}}&}{&"endif"&}{&{"if":{"is_set":"display"}}&} {&{"echo":{"ref":"display"}}&}{&"endif"&}">{&{"echo":{"ref":"label"}}&}</button>

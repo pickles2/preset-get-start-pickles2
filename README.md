@@ -57,6 +57,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.0.24 (リリース日未定)
+
+- モジュールパッケージ `tomk79/broccoli-module-std-document` を 0.1.4 に更新。
+
 ### pickles2/preset-get-start-pickles2 v2.0.23 (2020年1月18日)
 
 - 依存パッケージ更新: pickles2/px-fw-2.x (2.0.43 => 2.0.44)
