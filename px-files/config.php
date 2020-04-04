@@ -341,7 +341,7 @@ return call_user_func( function(){
 
 	$conf->funcs->processor->scss = array(
 		// SCSS文法を処理する
-		'picklesFramework2\processors\scss\ext::exec' ,
+		'tomk79\pickles2\px2scss\scss::processor' ,
 
 		// css のデフォルトの処理を追加
 		$conf->funcs->processor->css ,
