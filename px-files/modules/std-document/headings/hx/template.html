@@ -8,7 +8,8 @@
 {&{"input":{"type":"text","name":"main","label":"見出し","rows":1,"hidden":true}}&}
 {&{"input":{"type":"text","name":"sub","label":"副見出し","rows":1,"hidden":true}}&}
 {&{"module":{"name":"shoulder", "label":"ショルダーメニュー","hidden":true}}&}
-<div class="px2-h{&{"echo":{"ref":"hx"}}&}">
+<div class="px2-h{&{"echo":{"ref":"hx"}}&}">{&{"if":{"cond":[["is_mode:canvas"]]}}&}<div style="height: 3px;"></div>{&"endif"&}
 {& {"if":{"is_set":"shoulder"}} &}<div class="px2-h{&{"echo":{"ref":"hx"}}&}__shoulder">{&{"echo":{"ref":"shoulder"}}&}</div>{& "endif" &}
 <h{&{"echo":{"ref":"hx"}}&}>{&{"echo":{"ref":"main"}}&}{& {"if":{"is_set":"sub"}} &} <small>{&{"echo":{"ref":"sub"}}&}</small>{& "endif" &}</h{&{"echo":{"ref":"hx"}}&}>
+{&{"if":{"cond":[["is_mode:canvas"]]}}&}<div style="height: 0px; clear: both;"></div>{&"endif"&}
 </div>

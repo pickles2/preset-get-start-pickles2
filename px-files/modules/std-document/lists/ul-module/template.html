@@ -9,6 +9,6 @@
 ],"hidden":true}}&}
 <ul{&{"if":{"is_set":"class"}}&} class="{&{"echo":{"ref":"class"}}&}"{&"endif"&}{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>
 {&{"loop":{"name":"loop","label":"リストアイテム"}}&}
-	<li>{&{"input":{"type":"multitext","name":"text","label":"リストアイテム","default":{"editor":"text","src":"List Item"}}}&}</li>
+	<li{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>{&{"module":{"name":"modules","label":"リストアイテム"}}&}</li>
 {&"endloop"&}
 </ul>

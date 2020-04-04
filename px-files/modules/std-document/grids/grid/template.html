@@ -1,4 +1,4 @@
-<div class="px2-grid">
+<div class="px2-grid"{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>
 {&{"loop":{"name":"col", "label":"カラム"}}&}
     <div class="px2-grid__col-{&{"input":{"type":"select", "name":"column-width", "label":"幅", "display":"select", "options":[
     {"value":"1of1", "label":"Full"},
@@ -12,6 +12,6 @@
     {"value":"3of5", "label":"3/5"},
     {"value":"4of5", "label":"4/5"},
     {"value":"1of6", "label":"1/6"}
-]}}&}">{&{"module":{"name":"main","label":"内容"}}&}</div>
+]}}&}"{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>{&{"module":{"name":"main","label":"内容"}}&}</div>
 {&"endloop"&}
 </div>

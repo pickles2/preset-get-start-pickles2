@@ -1,5 +1,5 @@
 {&{"input":{"type":"multitext","name":"header","hidden":true,"label":"リスト見出し","rows":1,"default":{"editor":"markdown","src":"## 更新履歴"}}}&}
-<div class="px2-changelog">
+<div class="px2-changelog">{&{"if":{"cond":[["is_mode:canvas"]]}}&}<div style="height: 3px;"></div>{&"endif"&}
 {&{"if":{"is_set":"header"}}&}
 <div class="px2-changelog__header">{&{"echo":{"ref":"header"}}&}</div>
 {&"endif"&}

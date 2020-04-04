@@ -1,11 +1,11 @@
 @mixin px2-grid__col(){
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 1em 0.5rem;
     box-sizing: border-box;
 }
 .px2-grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em -0.5rem;
+    margin: 1em -0.5rem 0 -0.5rem;
         // 上下のマージンはその場に表示される文字の大きさが基準になるべきなので、 rem ではなく em を採用する。
     box-sizing: border-box;
 

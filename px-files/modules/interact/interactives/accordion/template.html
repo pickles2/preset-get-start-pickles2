@@ -1,8 +1,8 @@
-<div class="px2-accordion">
+<div class="px2-accordion"{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>
 {&{"loop":{"name":"loop","label":"アコーディオンコンテンツ"}}&}
 	<div class="px2-accordion__unit{&{"if":{"cond":[["is_mode:canvas"]]}}&} px2-accordion--active{&"endif"&}">
 		<div class="px2-accordion__label"><a href="javascript:;">{&{"input":{"type":"text","name":"accordion-label","label":"ラベル","rows":1}}&}</a></div>
-		<div class="px2-accordion__content">{&{"module":{"name":"main","label":"アコーディオンコンテンツ"}}&}</div>
+		<div class="px2-accordion__content"{&{"if":{"cond":[["is_mode:canvas"]]}}&} style="padding-top: 3px;"{&"endif"&}>{&{"module":{"name":"main","label":"アコーディオンコンテンツ"}}&}</div>
 	</div>
 {&"endloop"&}
 </div>

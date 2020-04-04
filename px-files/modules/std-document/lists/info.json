@@ -2,7 +2,9 @@
     "name": "リスト - Lists",
     "sort": [
         "ul",
+        "ul-module",
         "ul-html",
+        "ul-links",
         "dl"
     ]
 }

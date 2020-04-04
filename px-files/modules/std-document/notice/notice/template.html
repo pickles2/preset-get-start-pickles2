@@ -5,6 +5,6 @@
     {"value":"px2-notice--danger", "label":"エラー・危険"},
     {"value":"px2-notice--info", "label":"情報"}
 ],"hidden":true}}&}
-<div class="px2-notice{&{"if":{"is_set":"type"}}&} {&{"echo":{"ref":"type"}}&}{&"endif"&}">
+<div class="px2-notice{&{"if":{"is_set":"type"}}&} {&{"echo":{"ref":"type"}}&}{&"endif"&}">{&{"if":{"cond":[["is_mode:canvas"]]}}&}<div style="height: 3px;"></div>{&"endif"&}
 	{&{"module":{"name":"main","label":"内容"}}&}
 </div><!-- /.px2-notice -->
