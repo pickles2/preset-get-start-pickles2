@@ -46,12 +46,33 @@ $ php ./.px_execute.php "/?PX=clearcache"
 ## システム要件 - System Requirement
 
 - Linux系サーバ または Windowsサーバ
-- Apache1.3以降
+- Apache
   - mod_rewrite が利用可能であること
   - .htaccess が利用可能であること
-- PHP5.4以上
-  - mb_string が有効に設定されていること
-  - safe_mode が無効に設定されていること
+- PHP 5.4 以上
+  - [mbstring](https://www.php.net/manual/ja/book.mbstring.php) PHP Extension
+  - [ZipArchive](https://www.php.net/manual/ja/class.ziparchive.php) PHP Extension
+  - [JSON](https://www.php.net/manual/ja/book.json.php) PHP Extension
+  - [PDO](https://www.php.net/manual/ja/book.pdo.php) PHP Extension
+  - [PDO SQLite (PDO_SQLITE)](https://www.php.net/manual/ja/ref.pdo-sqlite.php) PHP Extension
+  - [XML Parser](https://www.php.net/manual/ja/book.xml.php) PHP Extension
+  - [XMLWriter](https://www.php.net/manual/ja/book.xmlwriter.php) PHP Extension
+
+### 推奨環境
+
+- PHP 7.2 以上
+  - [Ctype](https://www.php.net/manual/ja/book.ctype.php) PHP Extension
+  - [DOM](https://www.php.net/manual/ja/book.dom.php) PHP Extension
+  - [Fileinfo](https://www.php.net/manual/ja/book.fileinfo.php) PHP Extension
+  - [GD](https://www.php.net/manual/ja/book.image.php) PHP Extension
+  - [iconv](https://www.php.net/manual/ja/book.iconv.php) PHP Extension
+  - [libxml](https://www.php.net/manual/ja/book.libxml.php) PHP Extension
+  - [SimpleXML](https://www.php.net/manual/ja/book.simplexml.php) PHP Extension
+  - [XMLReader](https://www.php.net/manual/ja/book.xmlreader.php) PHP Extension
+  - [Zlib](https://www.php.net/manual/ja/book.zlib.php) PHP Extension
+
+プラグインなど他のパッケージとの構成によって、いくつかの要件が追加される場合があります。
+依存パッケージのシステム要件も確認してください。
 
 
 
