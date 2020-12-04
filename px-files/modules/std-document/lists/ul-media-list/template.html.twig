@@ -1,0 +1,17 @@
+<div class="px2-medialist{% if _ENV.vars.class %} px2-medialist--list-style-{{ class }}{% endif %}{% if _ENV.vars["list-item-width"] %} px2-medialist--list-item-width-{{ _context["list-item-width"] }}{% endif %}{% if _ENV.vars["list-item-width-lg"] %} px2-medialist--list-item-width-lg-{{ _context["list-item-width-lg"] }}{% endif %}{% if _ENV.vars["list-item-width-md"] %} px2-medialist--list-item-width-md-{{ _context["list-item-width-md"] }}{% endif %}{% if _ENV.vars["list-item-width-sm"] %} px2-medialist--list-item-width-sm-{{ _context["list-item-width-sm"] }}{% endif %}"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+<ul>
+
+{% for row in loop %}
+{{ loopitem_start('loop') }}
+	<li>{% if row.href %}<a href="{{ row.href }}"{% if row.target %} target="{{ row.target }}"{% endif %}>{% endif %}
+<div class="px2-medialist__list-item">
+  <div class="px2-medialist__image"><img src="{{ row.image }}" alt="" /></div>
+  <div class="px2-medialist__body">
+    <div class="px2-medialist__label">{{ row.label }}</div>
+    <div class="px2-medialist__description">{{ row.description }}</div>
+  </div>
+</div>
+{% if row.href %}</a>{% endif %}</li>
+{{ loopitem_end() }}{% endfor %}{{ appender('loop') }}
+</ul>
+</div>

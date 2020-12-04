@@ -1,0 +1,30 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "std-document:basics/table",
+                        "fields": {
+                            "table": {
+                                "resKey": "18f1c722fc16e649cbec2675d2f80d6b",
+                                "header_row": "1",
+                                "header_col": "1",
+                                "cell_renderer": "text",
+                                "renderer": "simplify",
+                                "output": "<colgroup>\n<col style=\"width:14.285714285714%;\" />\n<col style=\"width:24.489795918367%;\" />\n<col style=\"width:24.489795918367%;\" />\n<col style=\"width:36.734693877551%;\" />\n</colgroup>\n<thead>\n<tr>\n<th>test1</th>\n<th>test2</th>\n<th>test3</th>\n<th>test4</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th>1</th>\n<td>a</td>\n<td>A</td>\n<td>a</td>\n</tr>\n<tr>\n<th>2</th>\n<td>b</td>\n<td>B</td>\n<td>I</td>\n</tr>\n<tr>\n<th>3</th>\n<td>c</td>\n<td>C</td>\n<td>u</td>\n</tr>\n<tr>\n<th>4</th>\n<td>d</td>\n<td>D</td>\n<td>e</td>\n</tr>\n<tr>\n<th>5</th>\n<td>e</td>\n<td>E</td>\n<td>o</td>\n</tr>\n<tr>\n<th>6</th>\n<td>f</td>\n<td>F</td>\n<td>ka</td>\n</tr>\n<tr>\n<th>7</th>\n<td>g</td>\n<td>G</td>\n<td>ki</td>\n</tr>\n<tr>\n<th>8</th>\n<td>h</td>\n<td>H</td>\n<td>ku</td>\n</tr>\n<tr>\n<th>9</th>\n<td>I</td>\n<td>I</td>\n<td>ke</td>\n</tr>\n<tr>\n<th>10</th>\n<td>j</td>\n<td>J</td>\n<td>ko</td>\n</tr>\n</tbody>\n"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

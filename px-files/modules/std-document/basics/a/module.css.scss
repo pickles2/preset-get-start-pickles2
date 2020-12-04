@@ -12,6 +12,10 @@
 		border-top-color:transparent;
 		border-bottom-color:transparent;
 	}
+	&--block {
+		display: block;
+		width: 100%;
+	}
 }
 .px2-open-in-new-window{
 	&:after {

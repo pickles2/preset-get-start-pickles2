@@ -1,0 +1,6 @@
+<div{% if
+    _ENV.vars.align
+    or _ENV.vars.paragraph
+%} class="{% if _ENV.vars.paragraph %}{{ paragraph }}{% endif %}{% if _ENV.vars.align %} px2-text-align-{{ align }}{% endif %}"{% endif %}>
+<a href="{{ href }}"{% if _ENV.vars.target %} target="{{ target }}"{% endif %}{% if _ENV.vars.class or _ENV.vars.display %} class="{{ class }}{% if _ENV.vars.display %} px2-a--{{ display }}{% endif %}"{% endif %}>{% if _ENV.vars.target == "_blank" %}<span class="px2-open-in-new-window">{% endif %}{{ label }}{% if _ENV.vars.target == "_blank" %}</span>{% endif %}</a>
+</div>

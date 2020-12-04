@@ -1,0 +1,6 @@
+<ul{% if _ENV.vars.class %} class="{{ class }}"{% endif %}{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% for row in loop %}
+{{ loopitem_start('loop') }}
+	<li{% if _ENV.mode == 'canvas' %} style="padding-top: 6px;"{% endif %}>{{ row.modules }}</li>
+{{ loopitem_end() }}{% endfor %}{{ appender('loop') }}
+</ul>

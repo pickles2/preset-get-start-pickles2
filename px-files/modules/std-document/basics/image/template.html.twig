@@ -1,0 +1,3 @@
+<div class="px2-image{% if _ENV.vars.framed %} px2-image--framed{% endif %}{% if _ENV.vars.align %} px2-text-align-{{ align }}{% endif %}{% if _ENV.vars.paragraph %} {{ paragraph }}{% endif %}">
+{% if _ENV.vars.href %}<a href="{{ href }}"{% if _ENV.vars.target %} target="{{ target }}"{% endif %}>{% endif %}<img src="{{ image_src }}" alt="{{ alt_text }}" />{% if _ENV.vars.href %}</a>{% endif %}
+</div>

@@ -1,0 +1,112 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "2",
+                            "main": "見出し レベル2",
+                            "sub": "副見出し",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "3",
+                            "main": "見出し レベル3",
+                            "sub": "副見出し",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "4",
+                            "main": "見出し レベル4",
+                            "sub": "副見出し",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "5",
+                            "main": "見出し レベル5",
+                            "sub": "副見出し",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "6",
+                            "main": "見出し レベル6",
+                            "sub": "副見出し",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:headings/hx",
+                        "fields": {
+                            "hx": "2",
+                            "main": "ショルダーメニューのサンプル",
+                            "sub": "副見出し",
+                            "shoulder": [
+                                {
+                                    "modId": "std-document:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "std-document:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "std-document:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

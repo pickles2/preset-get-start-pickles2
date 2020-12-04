@@ -1,3 +1,11 @@
 {
-    "name": "レスポンシブ - Responsive Block"
+    "name": "レスポンシブ - Responsive Block",
+    "interface": {
+        "fields": {
+            "main": {
+                "fieldType": "module",
+                "label": "コンテンツ"
+            }
+        }
+    }
 }

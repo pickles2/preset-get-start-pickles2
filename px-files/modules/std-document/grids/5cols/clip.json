@@ -1,122 +1,62 @@
 {
-  "data": [
-    {
-      "modId": ":grids/grid",
-      "fields": {
-        "col": [
-          {
+    "data": [
+        {
             "modId": ":grids/grid",
             "fields": {
-              "column-width": "1of5",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 1\n\n1/5 Column.\n",
-                      "editor": "markdown"
+                "col": [
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of5",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of5",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of5",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of5",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of5",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
                     }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of5",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 2\n\n2/5 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of5",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 3\n\n3/5 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of5",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 4\n\n4/5 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of5",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 5\n\n5/5 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          }
-        ]
-      }
-    }
-  ],
-  "resources": {}
+                ]
+            }
+        }
+    ],
+    "resources": {}
 }

@@ -1,6 +1,7 @@
 table.px2-table {
 	border: none;
 	border-collapse: collapse;
+	margin: 0;
 	text-align: left;
 
 	th,
@@ -23,5 +24,15 @@ table.px2-table {
 	thead td,
 	tfoot td {
 		background: #eee;
+	}
+
+	&--left{
+		margin: 0 auto 0 0;
+	}
+	&--center{
+		margin: 0 auto 0 auto;
+	}
+	&--right{
+		margin: 0 0 0 auto;
 	}
 }

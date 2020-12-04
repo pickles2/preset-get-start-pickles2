@@ -1,0 +1,9 @@
+<div class="px2-linklist"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+<ul{% if _ENV.vars.class %} class="{{ class }}"{% endif %}>
+
+{% for row in loop %}
+{{ loopitem_start('loop') }}
+	<li><a href="{{ row.href }}"{% if row.target %} target="{{ row.target }}"{% endif %}>{% if row.target == "_blank" %}<span class="px2-open-in-new-window">{% endif %}{{ row.label }}{% if row.target == "_blank" %}</span>{% endif %}</a></li>
+{{ loopitem_end() }}{% endfor %}{{ appender('loop') }}
+</ul>
+</div>

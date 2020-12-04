@@ -5,6 +5,8 @@
         "ul-module",
         "ul-html",
         "ul-links",
-        "dl"
+        "ul-media-list",
+        "dl",
+        "dl-module"
     ]
 }

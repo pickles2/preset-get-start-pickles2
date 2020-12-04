@@ -1,0 +1,68 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "std-document:lists/dl",
+                        "fields": {
+                            "dl-loop": [
+                                {
+                                    "modId": "std-document:lists/dl",
+                                    "fields": {
+                                        "dt": {
+                                            "src": "説明用語1",
+                                            "editor": "markdown"
+                                        },
+                                        "dd": {
+                                            "src": "説明本文1。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "dl-loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "std-document:lists/dl",
+                                    "fields": {
+                                        "dt": {
+                                            "src": "説明用語2",
+                                            "editor": "markdown"
+                                        },
+                                        "dd": {
+                                            "src": "説明本文2。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "dl-loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "std-document:lists/dl",
+                                    "fields": {
+                                        "dt": {
+                                            "src": "説明用語3",
+                                            "editor": "markdown"
+                                        },
+                                        "dd": {
+                                            "src": "説明本文3。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "dl-loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "std-document:basics/image",
+                        "fields": {
+                            "href": "",
+                            "target": "",
+                            "image_src": {
+                                "resKey": "d220660d7fd25e323823ea005796afd7",
+                                "resType": "",
+                                "webUrl": "",
+                                "path": "./default_files/resources/photo009_thumb.jpg"
+                            },
+                            "alt_text": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

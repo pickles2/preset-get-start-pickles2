@@ -1,0 +1,6 @@
+<div{% if
+    _ENV.vars.align
+    or _ENV.vars.paragraph
+%} class="{% if _ENV.vars.paragraph %}{{ paragraph }}{% endif %}{% if _ENV.vars.align %} px2-text-align-{{ align }}{% endif %}"{% endif %}>
+<button{% if _ENV.vars.onclick %} onclick="{{ onclick }}"{% endif %}{% if _ENV.vars.btntype %} type="{{ btntype }}"{% endif %} class="px2-btn{% if _ENV.vars.intention %} {{ intention }}{% endif %}{% if _ENV.vars.sizing %} {{ sizing }}{% endif %}{% if _ENV.vars.display %} {{ display }}{% endif %}">{{ label }}</button>
+</div>

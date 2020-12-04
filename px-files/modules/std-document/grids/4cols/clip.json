@@ -1,100 +1,52 @@
 {
-  "data": [
-    {
-      "modId": ":grids/grid",
-      "fields": {
-        "col": [
-          {
+    "data": [
+        {
             "modId": ":grids/grid",
             "fields": {
-              "column-width": "1of4",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 1\n\n1/4 Column.\n",
-                      "editor": "markdown"
+                "col": [
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of4",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of4",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of4",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": ":grids/grid",
+                        "fields": {
+                            "column-width": "1of4",
+                            "main": []
+                        },
+                        "subModName": "col",
+                        "anchor": "",
+                        "dec": ""
                     }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of4",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 2\n\n2/4 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of4",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 3\n\n3/4 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          },
-          {
-            "modId": ":grids/grid",
-            "fields": {
-              "column-width": "1of4",
-              "main": [
-                {
-                  "modId": ":basics/text",
-                  "fields": {
-                    "main": {
-                      "src": "## Column 4\n\n4/4 Column.\n",
-                      "editor": "markdown"
-                    }
-                  },
-                  "anchor": "",
-                  "dec": ""
-                }
-              ]
-            },
-            "subModName": "col",
-            "anchor": "",
-            "dec": ""
-          }
-        ]
-      }
-    }
-  ],
-  "resources": {}
+                ]
+            }
+        }
+    ],
+    "resources": {}
 }

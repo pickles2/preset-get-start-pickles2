@@ -1,0 +1,6 @@
+<div class="px2-grid"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% for row in col %}
+{{ loopitem_start('col') }}
+    <div class="px2-grid__col-{{ row["column-width"] }}{% if row["column-width-lg"] %} px2-grid__col-lg-{{ row["column-width-lg"] }}{% endif %}{% if row["column-width-md"] %} px2-grid__col-md-{{ row["column-width-md"] }}{% endif %}{% if row["column-width-sm"] %} px2-grid__col-sm-{{ row["column-width-sm"] }}{% endif %}"{% if _ENV.mode == 'canvas' %} style="padding-top: 3px;"{% endif %}>{{ row.main }}</div>
+{{ loopitem_end() }}{% endfor %}{{ appender('col') }}
+</div>

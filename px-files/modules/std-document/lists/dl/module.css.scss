@@ -1,8 +1,11 @@
 // 通常のリスト
 dl{
-    dl,
-    dd{
-        >p{
+    dt {
+        font-weight: bold;
+    }
+    dt ,
+    dd {
+        >p {
             margin-top: 0;
             margin-bottom: 0;
         }

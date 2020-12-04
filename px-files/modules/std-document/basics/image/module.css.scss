@@ -1,0 +1,13 @@
+.px2-image{
+	img{
+		max-width: 100%;
+	}
+	&--framed img{
+		display: inline-block;
+		box-sizing: border-box;
+		border: 1px solid #bbb;
+		padding: 5px;
+		border-radius: 3px;
+		background-color: #f9f9f9;
+	}
+}

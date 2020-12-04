@@ -1,0 +1,7 @@
+<dl{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% for row in _context['dl-loop'] %}
+{{ loopitem_start('dl-loop') }}
+<dt>{{ row.dt }}</dt>
+<dd> {{ row.dd }} </dd>
+{{ loopitem_end() }}{% endfor %}{{ appender('dl-loop') }}
+</dl>

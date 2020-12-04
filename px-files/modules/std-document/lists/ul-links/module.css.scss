@@ -1,15 +1,16 @@
 .px2-linklist{
 	padding: 0;
 	margin: 1em 0;
-	> ul{
+	position: relative;
+	ul{
 		padding: 0;
 		margin: 0;
 		border-bottom: 1px solid #ddd;
-		> li{
+		li{
 			list-style-type: none;
 			border-top: 1px solid #ddd;
 			padding: 0;
-			margin: 0;
+			margin: 0 2px;
 
 			a {
 				display: block;
@@ -26,8 +27,37 @@
 					border-top-color:transparent;
 					border-bottom-color:transparent;
 				}
+				&:hover{
+					background-color: #f9f9f9;
+				}
+			}
+			ul{
+				border-bottom: none;
+				li {
+					border-top: 1px dashed #eee;
+				}
+				a {
+					padding-left: 2em;
+				}
+			}
+			ul ul a {
+				padding-left: 3em;
+			}
+			ul ul ul a {
+				padding-left: 4em;
+			}
+			ul ul ul ul a {
+				padding-left: 5em;
 			}
 		}
+	}
+	&__description {
+		font-size: 86%;
+		color: #999;
+		text-decoration: none;
+	}
+	a &__description {
+		text-decoration: none;
 	}
 }
 

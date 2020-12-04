@@ -1,3 +1,28 @@
 {
-    "name": "説明リスト - Term Description Groups"
+    "name": "説明リスト - Term Description Groups",
+    "interface": {
+        "fields": {
+            "dl-loop": {
+                "fieldType": "loop",
+                "label": "説明リストアイテム"
+            }
+        },
+        "subModule": {
+            "dl-loop": {
+                "fields": {
+                    "dt": {
+                        "fieldType": "input",
+                        "type": "multitext",
+                        "label": "用語",
+                        "rows": 1
+                    },
+                    "dd": {
+                        "fieldType": "input",
+                        "type": "multitext",
+                        "label": "説明"
+                    }
+                }
+            }
+        }
+    }
 }

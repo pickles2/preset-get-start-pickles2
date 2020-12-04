@@ -1,0 +1,104 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "標準的なリンクスタイル",
+                            "class": "",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "標準的なビュレットスタイルのリンク",
+                            "class": "px2-a",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "ボタン風リンクスタイル",
+                            "class": "px2-btn",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "プライマリボタン風リンクスタイル",
+                            "class": "px2-btn px2-btn--primary",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "セカンダリボタン風リンクスタイル",
+                            "class": "px2-btn px2-btn--secondary",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "危険ボタン風リンクスタイル",
+                            "class": "px2-btn px2-btn--danger",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "std-document:basics/a",
+                        "fields": {
+                            "href": "javascript:alert('clicked');",
+                            "label": "ダウンロードボタン風リンクスタイル",
+                            "class": "px2-btn px2-btn--download",
+                            "target": "",
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}
