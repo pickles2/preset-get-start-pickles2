@@ -78,6 +78,10 @@ $ php ./.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.1.0 (リリース日未定)
+
+- ディレクトリ構成を変更。プレビュー環境のドキュメントルートが `src_px2/` に、 パブリッシュ先ディレクトリが `dist/` に変更されました。
+
 ### pickles2/preset-get-start-pickles2 v2.0.26 (2020年12月10日)
 
 - ライブラリ更新 - jQuery to v3.5.1。

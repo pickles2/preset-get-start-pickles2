@@ -10,5 +10,5 @@ px-files/_sys/ram/
 !px-files/_sys/ram/caches/.gitkeep
 !px-files/_sys/ram/data/.gitkeep
 !px-files/_sys/ram/publish/.gitkeep
-common/px_resources/
-!common/px_resources/.gitkeep
+src_px2/common/px_resources/
+!src_px2/common/px_resources/.gitkeep
