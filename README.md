@@ -16,31 +16,31 @@ Get start "Pickles 2" !
 Pickles 2 プロジェクトのセットアップは、`composer` コマンドを使用します。
 
 ```bash
-$ cd {$documentRoot}
+$ cd {$yourProjectRoot}
 $ composer create-project pickles2/preset-get-start-pickles2 ./
 $ chmod -R 777 ./px-files/_sys
-$ chmod -R 777 ./common/px_resources
+$ chmod -R 777 ./src_px2/common/px_resources
 ```
 
 ウェブサーバーにブラウザでアクセスして、トップページが表示されるか、または、次のコマンドで設定情報が表示されれば成功です。
 
 ```bash
-$ php ./.px_execute.php "/?PX=config"
+$ php ./src_px2/.px_execute.php "/?PX=config"
 ```
 
 ## パブリッシュ手順 - Publish
 
 ```bash
-$ php ./.px_execute.php "/?PX=publish.run"
+$ php ./src_px2/.px_execute.php "/?PX=publish.run"
 ```
 
-`./px-files/dist/` に、スタティックなHTMLとして出力されます。
+`dist/` に、スタティックなHTMLとして出力されます。
 
 
 ## キャッシュを消去する手順 - Clear caches
 
 ```bash
-$ php ./.px_execute.php "/?PX=clearcache"
+$ php ./src_px2/.px_execute.php "/?PX=clearcache"
 ```
 
 ## システム要件 - System Requirement
