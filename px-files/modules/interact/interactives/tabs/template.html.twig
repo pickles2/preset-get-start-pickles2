@@ -1,0 +1,11 @@
+<div class="px2-tabs">
+	<div class="px2-tabs__tabs"></div>
+	<div class="px2-tabs__contents">
+{% for loopRow in loop %}{{ loopitem_start('loop') }}
+		<div class="px2-tabs__content{% if _ENV.mode == 'canvas' %} px2-tabs--active{% endif %}">{% if _ENV.mode == 'canvas' %}
+<div style="display: table; padding: 0.2em 1em; background-color: #f6f6f6; color:#999; border:1px solid #bbb; border-bottom:none; border-radius:0.5em 0.5em 0 0; font-size:11px; margin-right: auto;">{{ loopRow["tab-label"] }}</div>
+{% endif %}{{ loopRow.main }}</div>
+{{ loopitem_end() }}{% endfor %}
+{{ appender('loop') }}
+	</div>
+</div>

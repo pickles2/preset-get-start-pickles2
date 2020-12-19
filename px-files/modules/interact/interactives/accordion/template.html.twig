@@ -1,0 +1,9 @@
+<div class="px2-accordion"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% for loopRow in loop %}{{ loopitem_start('loop') }}
+	<div class="px2-accordion__unit{% if _ENV.mode == 'canvas' %} px2-accordion--active{% endif %}">
+		<div class="px2-accordion__label"><a href="javascript:;">{{ loopRow["accordion-label"] }}</a></div>
+		<div class="px2-accordion__content"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>{{ loopRow["main"] }}</div>
+	</div>
+{{ loopitem_end() }}{% endfor %}
+{{ appender('loop') }}
+</div>
