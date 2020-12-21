@@ -78,6 +78,10 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
+### pickles2/preset-get-start-pickles2 v2.1.1 (リリース日未定)
+
+- Broccoli の imageフィールドで、画像ファイル名をランダムに自動命名するように設定した。
+
 ### pickles2/preset-get-start-pickles2 v2.1.0 (2020年12月19日)
 
 - ディレクトリ構成を変更。プレビュー環境のドキュメントルートが `src_px2/` に、 パブリッシュ先ディレクトリが `dist/` に変更されました。
