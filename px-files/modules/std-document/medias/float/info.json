@@ -2,6 +2,12 @@
     "name": "フロートメディア - Floating Media",
     "interface": {
         "fields": {
+            "heading": {
+                "fieldType": "input",
+                "type": "multitext",
+                "label": "見出しエリア",
+                "description": "このエリアは、スクリーン幅が狭いとき、画像メディアよりも先に表示されます。"
+            },
             "lr": {
                 "fieldType": "input",
                 "type": "select",

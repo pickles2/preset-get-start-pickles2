@@ -6,7 +6,15 @@ return function( $html, $supply ){
     $data = $supply['data']; // モジュールに入力されたデータが供給される。
     $src_tabs = '';
     foreach($data->fields->loop as $loop){
-        $src_tabs .= '<div><a href="javascript:;">'.htmlspecialchars($loop->fields->{'tab-label'}).'</a></div>';
+        $tabLabel = null;
+        if( is_object($loop->fields->{'tab-label'}) && is_string($loop->fields->{'tab-label'}->src) && strlen($loop->fields->{'tab-label'}->src) ){
+            // Broccoli v0.4.0〜 への対応
+            $tabLabel = $loop->fields->{'tab-label'}->src;
+        }elseif( is_string($loop->fields->{'tab-label'}) && strlen($loop->fields->{'tab-label'}) ){
+            // それより古い Broccoli への対応
+            $tabLabel = $loop->fields->{'tab-label'};
+        }
+        $src_tabs .= '<div><a href="javascript:;">'.htmlspecialchars($tabLabel).'</a></div>';
     }
 
     // 置換
