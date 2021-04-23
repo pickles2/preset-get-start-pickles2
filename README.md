@@ -78,7 +78,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 v2.1.1 (リリース日未定)
+### pickles2/preset-get-start-pickles2 v2.1.1 (2021年4月24日)
 
 - ライブラリ更新 - jQuery to v3.6.0。
 - Broccoli の imageフィールドで、画像ファイル名をランダムに自動命名するように設定した。
@@ -219,7 +219,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ## ライセンス - License
 
-Copyright (c)2001-2020 Tomoya Koyanagi, and Pickles Project<br />
+Copyright (c)2001-2021 Tomoya Koyanagi, and Pickles Project<br />
 MIT License https://opensource.org/licenses/mit-license.php
 
 
