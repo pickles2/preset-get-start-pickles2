@@ -80,7 +80,9 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ### pickles2/preset-get-start-pickles2 v2.1.1 (リリース日未定)
 
+- ライブラリ更新 - jQuery to v3.6.0。
 - Broccoli の imageフィールドで、画像ファイル名をランダムに自動命名するように設定した。
+- モジュールパッケージを更新。
 
 ### pickles2/preset-get-start-pickles2 v2.1.0 (2020年12月19日)
 
