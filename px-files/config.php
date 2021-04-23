@@ -444,6 +444,15 @@ return call_user_func( function(){
 	/** GUI編集リソース出力先ディレクトリ */
 	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
 
+	/** Broccoliフィールドの初期設定 */
+	$conf->plugins->px2dt->guieditor->field_config = array(
+
+		// image フィールドを設定
+		'image' => array(
+			'filenameAutoSetter' => 'random', // random = 画像ファイル名をランダムに自動命名する。
+		),
+
+	);
 
 	// -------- Project Custom Setting --------
 	// プロジェクトが固有に定義する設定を行います。
