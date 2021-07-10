@@ -1,6 +1,5 @@
 {
-    "name": "見出し (ショルダーメニュー付き)",
-    "deprecated": true,
+    "name": "見出し",
     "interface": {
         "fields": {
             "hx": {
@@ -42,10 +41,6 @@
                 "type": "text",
                 "label": "副見出し",
                 "rows": 1
-            },
-            "shoulder": {
-                "fieldType": "module",
-                "label": "ショルダーメニュー"
             }
         }
     }

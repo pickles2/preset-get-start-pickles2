@@ -6,8 +6,13 @@
 		display: inline-block;
 		box-sizing: border-box;
 		border: 1px solid #bbb;
-		padding: 5px;
-		border-radius: 3px;
+		padding: 8px;
+		border-radius: 5px;
 		background-color: #f9f9f9;
 	}
+
+	&--width-1of1 img { width: 100%; }
+	&--width-3of4 img { width: 75%; }
+	&--width-2of3 img { width: 67%; }
+	&--width-1of2 img { width: 50%; }
 }

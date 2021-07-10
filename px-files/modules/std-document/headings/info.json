@@ -1,3 +1,6 @@
 {
-    "name": "見出し"
+    "name": "見出し",
+    "sort": [
+        "hx-simple"
+    ]
 }

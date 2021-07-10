@@ -1,0 +1,5 @@
+<div class="px2-h{{ hx }}">
+{% if _ENV.mode == 'canvas' %}<div style="height: 6px;"></div>{% endif %}
+<h{{ hx }}>{{ main }}{% if _ENV.vars.sub %} <small>{{ sub }}</small>{% endif %}</h{{ hx }}>
+{% if _ENV.mode == 'canvas' %}<div style="height: 0px; clear: both;"></div>{% endif %}
+</div>

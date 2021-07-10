@@ -67,6 +67,34 @@
                 ],
                 "default": "px2-p"
             },
+            "width": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "画像の幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "画像のサイズに従う"
+                    },
+                    {
+                        "value": "1of1",
+                        "label": "親要素の幅いっぱいに拡がる"
+                    },
+                    {
+                        "value": "3of4",
+                        "label": "3/4幅"
+                    },
+                    {
+                        "value": "2of3",
+                        "label": "2/3幅"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2幅"
+                    }
+                ]
+            },
             "align": {
                 "fieldType": "input",
                 "type": "select",

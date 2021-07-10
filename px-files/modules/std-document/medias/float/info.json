@@ -6,7 +6,7 @@
                 "fieldType": "input",
                 "type": "multitext",
                 "label": "見出しエリア",
-                "description": "このエリアは、スクリーン幅が狭いとき、画像メディアよりも先に表示されます。"
+                "description": "このエリアは、スクリーン幅が狭いとき、画像メディアよりも先に表示されます。<br /><br />\nMarkdownで見出しを表現するには、行の先頭に「##」を書いてください。<br/>\n例: <code>## 見出し</code>"
             },
             "lr": {
                 "fieldType": "input",
