@@ -12,7 +12,7 @@
     "repositories": [
     ],
     "require": {
-        "php": ">=5.4.0" ,
+        "php": ">=7.3.0" ,
         "pickles2/px-fw-2.x": "^2.0",
         "pickles2/px2-dec": "^2.0",
         "pickles2/px2-multitheme": "^2.0",

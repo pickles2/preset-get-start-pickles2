@@ -49,7 +49,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 - Apache
   - mod_rewrite が利用可能であること
   - .htaccess が利用可能であること
-- PHP 5.4 以上
+- PHP 7.3 以上
   - [mbstring](https://www.php.net/manual/ja/book.mbstring.php) PHP Extension
   - [ZipArchive](https://www.php.net/manual/ja/class.ziparchive.php) PHP Extension
   - [JSON](https://www.php.net/manual/ja/book.json.php) PHP Extension
@@ -60,7 +60,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ### 推奨環境
 
-- PHP 7.2 以上
+- PHP 7.4 以上
   - [Ctype](https://www.php.net/manual/ja/book.ctype.php) PHP Extension
   - [DOM](https://www.php.net/manual/ja/book.dom.php) PHP Extension
   - [Fileinfo](https://www.php.net/manual/ja/book.fileinfo.php) PHP Extension
@@ -77,6 +77,10 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 
 ## 更新履歴 - Change log
+
+### pickles2/preset-get-start-pickles2 v2.2.0 (リリース日未定)
+
+- サポートするPHPのバージョンを PHP 7.3 以上 に変更。
 
 ### pickles2/preset-get-start-pickles2 v2.1.2 (2021年7月10日)
 
