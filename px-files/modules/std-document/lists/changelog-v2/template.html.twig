@@ -1,0 +1,12 @@
+<div class="px2-changelog">{% if _ENV.mode == 'canvas' %}<div style="height: 12px;"></div>{% endif %}
+{% if _ENV.vars.header %}
+<div class="px2-changelog__header">{{ header }}</div>
+{% endif %}
+{% for row in _context['loop'] %}
+{{ loopitem_start('loop') }}
+	<div class="px2-changelog__row">
+		<div class="px2-changelog__date">{{ row.date }}</div>
+		<div class="px2-changelog__contents">{{ row.contents }}</div>
+	</div>
+{{ loopitem_end() }}{% endfor %}{{ appender('loop') }}
+</div><!-- /.px2-changelog -->

@@ -1,0 +1,27 @@
+{
+    "name": "タブ - Tabs",
+    "interface": {
+        "fields": {
+            "loop": {
+                "fieldType": "loop",
+                "label": "タブコンテンツ"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "tab-label":{
+                       "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    },
+                    "main":{
+                       "fieldType": "module",
+                        "label": "タブコンテンツ"
+                    }
+                }
+            }
+        }
+    }
+}

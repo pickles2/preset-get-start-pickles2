@@ -1,0 +1,13 @@
+<div class="px2-float-media"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% if heading %}
+  <div class="px2-float-media__heading-{{ lr }}{{ _context["image-size"] }}">
+    {{ heading }}
+  </div>
+{% endif %}
+  <div class="px2-float-media__{{ lr }}{{ _context["image-size"] }}">
+    {{ media }}
+  </div>
+  <div class="px2-float-media__body{{ body_rect }}{% if _ENV.mode == 'canvas' %} px2-float-media__body-rect{% endif %}">
+    {{ main }}
+  </div>
+</div><!-- /.px2-float-media -->

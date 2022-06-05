@@ -1,0 +1,29 @@
+<div class="px2-viewport-fit"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+	<div class="px2-viewport-fit__inner"{%
+	if attribute(_ENV.vars, "margin-padding")
+		or attribute(_ENV.vars, "background-image")
+		or attribute(_ENV.vars, "background-color")
+		or attribute(_ENV.vars, "min-height")
+		or attribute(_ENV.vars, "text-color")
+%} style="{{ attribute(_ENV.vars, "margin-padding") }}{%
+	if attribute(_ENV.vars, "background-image")
+		%} background-image: url(&quot;{{ attribute(_ENV.vars, "background-image") }}&quot;); background-size: cover; background-repeat: no-repeat;{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "background-color")
+		%} background-color: {{ attribute(_ENV.vars, "background-color") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "min-height")
+		%} min-height: {{ attribute(_ENV.vars, "min-height") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "text-color")
+		%} color: {{ attribute(_ENV.vars, "text-color") }};{%
+	endif
+%}"{% endif %}>
+		<div class="px2-viewport-fit__contents{% if attribute(_ENV.vars, "fluid-contents") %} px2-viewport-fit__contents--fluid{% endif %}">
+{{ main }}
+		</div>
+	</div>
+</div>

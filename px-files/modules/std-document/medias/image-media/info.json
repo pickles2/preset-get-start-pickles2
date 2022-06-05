@@ -34,6 +34,22 @@
                         "label": "枠で囲う"
                     }
                 ]
+            },
+            "imagescope": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "拡大表示",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "拡大しない"
+                    },
+                    {
+                        "value": "onclick",
+                        "label": "クリックで拡大表示する"
+                    }
+                ]
             }
         }
     }

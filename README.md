@@ -81,6 +81,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 ### pickles2/preset-get-start-pickles2 v2.2.0 (リリース日未定)
 
 - サポートするPHPのバージョンを PHP 7.3 以上 に変更。
+- モジュールパッケージを更新。
 
 ### pickles2/preset-get-start-pickles2 v2.1.2 (2021年7月10日)
 

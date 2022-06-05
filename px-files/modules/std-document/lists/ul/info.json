@@ -1,5 +1,6 @@
 {
-    "name": "リスト - List",
+    "name": "リスト - List (テキスト入力)",
+    "deprecated": true,
     "interface": {
         "fields": {
             "class": {

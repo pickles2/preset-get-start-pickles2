@@ -1,0 +1,22 @@
+.px2-viewport-fit {
+	box-sizing: border-box;
+	width: 0;
+	margin: 0 auto;
+	position: relative;
+
+	&__inner {
+		box-sizing: border-box;
+		width: calc(100vw - 50px);
+		position: relative;
+		left: calc(-50vw + 25px);
+	}
+	&__contents {
+		margin: 0 auto;
+		width: 1024px;
+		max-width: calc(100% - 40px);
+		&--fluid {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}

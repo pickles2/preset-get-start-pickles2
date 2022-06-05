@@ -1,5 +1,6 @@
 {
-    "name": "ボタン - Button",
+    "name": "汎用ボタン - Button",
+    "id": ":basics/button",
     "interface": {
         "fields": {
             "label": {

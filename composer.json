@@ -21,7 +21,7 @@
         "pickles2/px2-remove-attr": "^2.0",
         "pickles2/px2-sitemapexcel": "^2.0",
         "pickles2/px2-publish-ex": "^2.0",
-        "tomk79/broccoli-module-std-document": "^0.2",
+        "tomk79/broccoli-module-std-document": "^0.3",
         "tomk79/broccoli-module-interact": "^0.1",
         "tomk79/broccoli-module-medias": "^0.1",
         "tomk79/broccoli-module-lp": "^0.1",

@@ -1,6 +1,12 @@
 {
-    "name": "Standard Document Modules",
+    "name": "Basics",
     "sort": [
-        "basic"
+        "basics",
+        "headings",
+        "medias",
+        "grids",
+        "lists",
+        "notice",
+        "interactives"
     ]
 }

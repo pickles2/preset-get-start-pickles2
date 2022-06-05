@@ -1,5 +1,5 @@
 {
-    "name": "更新履歴 - Change Log",
+    "name": "更新履歴 - Change Log (v1)",
     "interface": {
         "fields": {
             "header": {
@@ -35,5 +35,6 @@
                 }
             }
         }
-    }
+    },
+    "deprecated": true
 }

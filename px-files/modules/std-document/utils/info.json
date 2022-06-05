@@ -1,3 +1,7 @@
 {
-    "name": "ユーティリティ - Utilities"
+    "name": "ユーティリティ - Utilities",
+    "sort": [
+        "p",
+        "responsive"
+    ]
 }

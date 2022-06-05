@@ -1,0 +1,7 @@
+,"ja","en"
+"name","カルーセル","Carousel"
+"fields.loop:label","カルーセルコンテンツ","Carousel contents"
+"subModule.loop.href:label","リンク","Link"
+"subModule.loop.target:label","ターゲットウィンドウ","Target window"
+"subModule.loop.image_src:label","画像","Image"
+"subModule.loop.alt_text:label","代替テキスト","Alternate text"

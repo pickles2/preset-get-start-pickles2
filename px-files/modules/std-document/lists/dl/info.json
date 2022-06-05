@@ -1,5 +1,6 @@
 {
-    "name": "説明リスト - Term Description Groups",
+    "name": "説明リスト - Term Description Groups (テキスト入力)",
+    "deprecated": true,
     "interface": {
         "fields": {
             "dl-loop": {

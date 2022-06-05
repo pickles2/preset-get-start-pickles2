@@ -1,1 +1,30 @@
-<div class="{{ paragraph }}{{ _context["text-align"] }}{{ _context["font-size"] }}"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>{{ main }}</div>
+<div class="{{ paragraph }}{{ _context["text-align"] }}{{ _context["font-size"] }}"{%
+	if _ENV.mode == 'canvas'
+		or attribute(_ENV.vars, "margin-padding")
+		or attribute(_ENV.vars, "background-image")
+		or attribute(_ENV.vars, "background-color")
+		or attribute(_ENV.vars, "min-height")
+		or attribute(_ENV.vars, "text-color")
+%} style="{{ attribute(_ENV.vars, "margin-padding") }}{%
+	if attribute(_ENV.vars, "background-image")
+		%} background-image: url(&quot;{{ attribute(_ENV.vars, "background-image") }}&quot;); background-size: cover; background-repeat: no-repeat;{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "background-color")
+		%} background-color: {{ attribute(_ENV.vars, "background-color") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "min-height")
+		%} min-height: {{ attribute(_ENV.vars, "min-height") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "text-color")
+		%} color: {{ attribute(_ENV.vars, "text-color") }};{%
+	endif
+%}{%
+	if _ENV.mode == 'canvas'
+		%} padding-top: 12px;{%
+	endif
+%}"{% endif %}>
+{{ main }}
+</div>

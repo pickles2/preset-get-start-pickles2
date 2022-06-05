@@ -1,0 +1,33 @@
+<div class="px2-carousel"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% if _ENV.mode == 'canvas' %}
+	<div class="tns-outer">
+		<div class="tns-controls" aria-label="Carousel Navigation" tabindex="0" data-vivaldi-spatnav-clickable="1">
+			<button data-controls="prev" tabindex="-1"></button>
+			<button data-controls="next" tabindex="-1"></button>
+		</div>
+		<div class="tns-nav" aria-label="Carousel Pagination" data-vivaldi-spatnav-clickable="1">
+			<button data-nav="0" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button>
+			<button data-nav="1" aria-label="Carousel Page 2" class="" tabindex="-1"></button>
+			<button data-nav="2" aria-label="Carousel Page 3" class="" tabindex="-1"></button>
+			<button data-nav="3" aria-label="Carousel Page 4" class="" tabindex="-1"></button>
+		</div>
+		<div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">
+			slide <span class="current">1</span>  of 4
+		</div>
+		<div class="tns-ovh">
+			<div class="tns-inner">
+				<div class="px2-carousel__contents tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal">
+{% endif %}
+	<div class="px2-carousel__contents">
+{% for loopRow in loop %}{{ loopitem_start('loop') }}
+		<div class="px2-carousel__item">{% if loopRow.href %}<a href="{{ loopRow.href }}"{% if loopRow.target %} target="{{ loopRow.target }}"{% endif %}>{% endif %}<img src="{{ loopRow.image_src }}" alt="{{ loopRow.alt_text }}" />{% if loopRow.href %}</a>{% endif %}</div>
+{{ loopitem_end() }}{% endfor %}
+{{ appender('loop') }}
+	</div>
+{% if _ENV.mode == 'canvas' %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}
+</div>

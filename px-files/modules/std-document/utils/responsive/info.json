@@ -4,7 +4,7 @@
         "fields": {
             "main": {
                 "fieldType": "module",
-                "label": "コンテンツ"
+                "label": "内容"
             }
         }
     }

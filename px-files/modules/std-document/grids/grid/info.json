@@ -1,5 +1,6 @@
 {
     "name": "グリッド - Grid",
+    "hidden": true,
     "interface": {
         "fields": {
             "col": {

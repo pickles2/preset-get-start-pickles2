@@ -1,5 +1,5 @@
 {
-    "name": "説明リスト - Term Description Groups (モジュール挿入)",
+    "name": "説明リスト - Term Description Groups",
     "interface": {
         "fields": {
             "dl-loop": {

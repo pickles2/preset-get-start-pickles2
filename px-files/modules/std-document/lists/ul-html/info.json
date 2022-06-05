@@ -1,5 +1,6 @@
 {
     "name": "リスト - List (ソースコード)",
+    "deprecated": true,
     "interface": {
         "fields": {
             "class": {

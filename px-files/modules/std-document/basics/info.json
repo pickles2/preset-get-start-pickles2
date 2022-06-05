@@ -5,6 +5,7 @@
         "image",
         "table",
         "a",
-        "hr"
+        "hr",
+        "blockquote"
     ]
 }

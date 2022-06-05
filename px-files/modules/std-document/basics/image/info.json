@@ -34,6 +34,12 @@
                 "label": "代替テキスト",
                 "rows": 1
             },
+            "caption": {
+                "fieldType": "input",
+                "type": "multitext",
+                "label": "キャプション",
+                "rows": 3
+            },
             "framed": {
                 "fieldType": "input",
                 "type": "select",
@@ -116,6 +122,22 @@
                     {
                         "value": "right",
                         "label": "右揃え"
+                    }
+                ]
+            },
+            "imagescope": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "拡大表示",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "拡大しない"
+                    },
+                    {
+                        "value": "onclick",
+                        "label": "クリックで拡大表示する"
                     }
                 ]
             }

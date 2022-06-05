@@ -5,6 +5,15 @@
 		width: 100%;
 		height: auto;
 	}
+
+	&--framed {
+		box-sizing: border-box;
+		border: 1px solid #bbb;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #f9f9f9;
+	}
+
 	&__caption{
 		font-size: 0.77em;
 		margin-top: 0.5em;
@@ -15,11 +24,8 @@
 			margin-bottom: 0;
 		}
 	}
-	&--framed {
-		box-sizing: border-box;
-		border: 1px solid #bbb;
-		padding: 8px;
-		border-radius: 5px;
-		background-color: #f9f9f9;
+
+	&--imagescope img {
+		cursor: pointer;
 	}
 }
