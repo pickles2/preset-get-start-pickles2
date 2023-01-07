@@ -4,6 +4,11 @@
  */
 return call_user_func( function(){
 
+	if( is_file(__DIR__.'/../.env') ){
+		$dotenv = \Dotenv\Dotenv::createImmutable( __DIR__.'/../' );
+		$dotenv->load();
+	}
+
 	// initialize
 
 	/** コンフィグオブジェクト */
@@ -78,7 +83,7 @@ return call_user_func( function(){
 	 * コマンドのパスが通っていない場合は、絶対パスで設定してください。
 	 */
 	$conf->commands = new stdClass;
-	$conf->commands->php = 'php';
+	$conf->commands->php = ($_ENV['CMD_PHP'] ?? 'php');
 
 	/**
 	 * php.ini のパス
