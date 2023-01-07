@@ -125,8 +125,6 @@ return call_user_func( function(){
 		'/.htaccess' => 'ignore' ,
 		'/.px_execute.php' => 'ignore' ,
 		'/px-files/*' => 'ignore' ,
-		'*.ignore/*' => 'ignore' ,
-		'*.ignore.*' => 'ignore' ,
 		'/composer.json' => 'ignore' ,
 		'/composer.lock' => 'ignore' ,
 		'/README.md' => 'ignore' ,
@@ -136,6 +134,13 @@ return call_user_func( function(){
 		'*/.svn/*' => 'ignore' ,
 		'*/.git/*' => 'ignore' ,
 		'*/.gitignore' => 'ignore' ,
+
+		'*.ignore/*' => 'ignore' ,
+		'*.ignore.*' => 'ignore' ,
+		'*.pass/*' => 'pass' ,
+		'*.pass.*' => 'pass' ,
+		'*.direct/*' => 'direct' ,
+		'*.direct.*' => 'direct' ,
 
 		'*.html' => 'html' ,
 		'*.htm' => 'html' ,
