@@ -257,6 +257,10 @@ return call_user_func( function(){
 				// 'no_convert'=>'pass',
 			),
 		)).')' ,
+
+		// px2-serve
+		\tomk79\pickles2\px2serve\serve::register(),
+
 	);
 
 	/**

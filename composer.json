@@ -9,6 +9,17 @@
             "email": "tomk79@gmail.com"
         }
     ],
+    "config": {
+        "process-timeout": 0
+    },
+	"scripts": {
+		"start": [
+			"@php ./src_px2/.px_execute.php \"/?PX=serve\""
+		],
+		"start-pub": [
+			"@php ./src_px2/.px_execute.php \"/?PX=serve.pub\""
+		]
+	},
     "repositories": [
     ],
     "require": {
@@ -25,7 +36,8 @@
         "tomk79/broccoli-module-interact": "^0.1",
         "tomk79/broccoli-module-medias": "^0.1",
         "tomk79/broccoli-module-lp": "^0.1",
-        "tomk79/px2-scss": "^0.1.0"
+        "tomk79/px2-scss": "^0.1.0",
+        "tomk79/px2-serve": "~0.1.3"
     },
     "require-dev": {
     },
