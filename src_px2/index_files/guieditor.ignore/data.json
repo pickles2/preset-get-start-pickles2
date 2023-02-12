@@ -5,7 +5,7 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "lp:containers/container",
+                        "modId": "px2style:utils/viewport-fit",
                         "fields": {
                             "text-color": "#00a0e6",
                             "background-color": "#f6f6f6",
@@ -30,13 +30,13 @@
                             "fluid-innter": "",
                             "main": [
                                 {
-                                    "modId": "std-document:utils/p",
+                                    "modId": "px2style:utils/p",
                                     "fields": {
                                         "paragraph": "px2-p",
                                         "text-align": " px2-text-align-center",
                                         "main": [
                                             {
-                                                "modId": "std-document:basics/image",
+                                                "modId": "px2style:basics/image",
                                                 "fields": {
                                                     "href": "",
                                                     "target": "",
@@ -46,13 +46,34 @@
                                                         "resType": "",
                                                         "webUrl": ""
                                                     },
-                                                    "alt_text": "Welcome ! to Pickles 2"
+                                                    "alt_text": {
+                                                        "src": "Welcome ! to Pickles 2"
+                                                    },
+                                                    "caption": {
+                                                        "src": "",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "framed": {
+                                                        "src": ""
+                                                    },
+                                                    "width": {
+                                                        "src": "1of1"
+                                                    },
+                                                    "align": {
+                                                        "src": "center"
+                                                    },
+                                                    "imagescope": {
+                                                        "src": ""
+                                                    },
+                                                    "paragraph": {
+                                                        "src": "px2-p"
+                                                    }
                                                 },
                                                 "anchor": "",
                                                 "dec": ""
                                             },
                                             {
-                                                "modId": "std-document:basics/text",
+                                                "modId": "px2style:basics/text",
                                                 "fields": {
                                                     "main": {
                                                         "src": "## ようこそ、 Pickles 2 の世界へ！",
@@ -73,7 +94,7 @@
                         "dec": ""
                     },
                     {
-                        "modId": "lp:containers/container",
+                        "modId": "px2style:utils/viewport-fit",
                         "fields": {
                             "text-color": "",
                             "background-color": "",
@@ -89,7 +110,7 @@
                             "fluid-innter": "",
                             "main": [
                                 {
-                                    "modId": "std-document:basics/text",
+                                    "modId": "px2style:basics/text",
                                     "fields": {
                                         "main": {
                                             "src": "## 次のステップ",
@@ -100,16 +121,16 @@
                                     "dec": ""
                                 },
                                 {
-                                    "modId": "std-document:grids/grid",
+                                    "modId": "px2style:grids/grid",
                                     "fields": {
                                         "col": [
                                             {
-                                                "modId": "std-document:grids/grid",
+                                                "modId": "px2style:grids/grid",
                                                 "fields": {
                                                     "column-width": "1of3",
                                                     "main": [
                                                         {
-                                                            "modId": "std-document:basics/text",
+                                                            "modId": "px2style:basics/text",
                                                             "fields": {
                                                                 "main": {
                                                                     "src": "### サイトマップを編集します\n\nはじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
@@ -126,12 +147,12 @@
                                                 "dec": ""
                                             },
                                             {
-                                                "modId": "std-document:grids/grid",
+                                                "modId": "px2style:grids/grid",
                                                 "fields": {
                                                     "column-width": "1of3",
                                                     "main": [
                                                         {
-                                                            "modId": "std-document:basics/text",
+                                                            "modId": "px2style:basics/text",
                                                             "fields": {
                                                                 "main": {
                                                                     "src": "### テーマを編集します\n\nテーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
@@ -148,12 +169,12 @@
                                                 "dec": ""
                                             },
                                             {
-                                                "modId": "std-document:grids/grid",
+                                                "modId": "px2style:grids/grid",
                                                 "fields": {
                                                     "column-width": "1of3",
                                                     "main": [
                                                         {
-                                                            "modId": "std-document:basics/text",
+                                                            "modId": "px2style:basics/text",
                                                             "fields": {
                                                                 "main": {
                                                                     "src": "### コンテンツを編集します\n\nコンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
@@ -173,7 +194,7 @@
                                     }
                                 },
                                 {
-                                    "modId": "std-document:basics/text",
+                                    "modId": "px2style:basics/text",
                                     "fields": {
                                         "main": {
                                             "src": "### パブリッシュします\n\nサイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",

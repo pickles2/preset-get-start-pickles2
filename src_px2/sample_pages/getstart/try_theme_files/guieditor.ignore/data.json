@@ -5,7 +5,7 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "std-document:basics/text",
+                        "modId": "px2style:basics/text",
                         "fields": {
                             "main": {
                                 "src": "## テーマはどこにあるか？\n\nテーマは、次のフォルダに格納されています。\n\n- `./px-files/themes/{$theme_id}/*`\n\nこのフォルダには、テンプレートとなるHTMLファイルが置かれています。\n",

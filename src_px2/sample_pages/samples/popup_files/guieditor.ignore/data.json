@@ -5,7 +5,7 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "std-document:basics/text",
+                        "modId": "px2style:basics/text",
                         "fields": {
                             "main": {
                                 "src": "これは、ポップアップウィンドウで開くページのサンプルです。\n\n`layout` が `popup` で始まる場合、新しいウィンドウとして開くように振る舞います。\n",
