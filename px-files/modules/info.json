@@ -1,9 +1,5 @@
 {
     "sort": [
-        "std-document",
-        "local",
-        "interact",
-        "medias",
-        "lp"
+        "px2style"
     ]
 }
