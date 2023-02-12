@@ -78,7 +78,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 
 ## 更新履歴 - Change log
 
-### pickles2/preset-get-start-pickles2 v2.2.1 (リリース日未定)
+### pickles2/preset-get-start-pickles2 v2.3.0 (2023年2月12日)
 
 - `$conf->paths_proc_type` に、新しい慣例として `*.direct/*`, `*.direct.*` と `*.pass/*`, `*.pass.*` を追加した。
 - `px2-serve` を導入した。
