@@ -5,11 +5,36 @@
             "fields": {
                 "main": [
                     {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "テーマはどこにあるか？"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
                         "modId": "px2style:basics/text",
                         "fields": {
                             "main": {
-                                "src": "## テーマはどこにあるか？\n\nテーマは、次のフォルダに格納されています。\n\n- `./px-files/themes/{$theme_id}/*`\n\nこのフォルダには、テンプレートとなるHTMLファイルが置かれています。\n",
+                                "src": "テーマは、次のフォルダに格納されています。\n\n- `./px-files/themes/{$theme_id}/*`\n\nこのフォルダには、テンプレートとなるHTMLファイルが置かれています。\n",
                                 "editor": "markdown"
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            },
+                            "paragraph": {
+                                "src": "px2-p"
                             }
                         },
                         "anchor": "",
