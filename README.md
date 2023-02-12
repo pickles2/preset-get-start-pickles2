@@ -83,7 +83,7 @@ $ php ./src_px2/.px_execute.php "/?PX=clearcache"
 - `$conf->paths_proc_type` に、新しい慣例として `*.direct/*`, `*.direct.*` と `*.pass/*`, `*.pass.*` を追加した。
 - `px2-serve` を導入した。
 - `.env` を導入した。
-- `px2style` を導入し、モジュールセットを刷新した。
+- `px2style` と Summernote フィールド を導入し、モジュールセットを刷新した。
 - テーマコレクションを整理した。
 
 ### pickles2/preset-get-start-pickles2 v2.2.0 (2022年6月5日)

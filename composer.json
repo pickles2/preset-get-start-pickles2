@@ -24,6 +24,7 @@
     ],
     "require": {
         "php": ">=7.3.0" ,
+		"broccoli-html-editor/broccoli-field-summernote": "~0.3",
         "pickles2/px-fw-2.x": "^2.0",
         "pickles2/px2-dec": "^2.0",
         "pickles2/px2-multitheme": "^2.0",

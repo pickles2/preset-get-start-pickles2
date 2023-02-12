@@ -458,6 +458,12 @@ return call_user_func( function(){
 	/** GUI編集リソース出力先ディレクトリ */
 	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
 
+	/** カスタムフィールド */
+	$conf->plugins->px2dt->guieditor->custom_fields = array(
+		'multitext' => "broccoli-field-summernote",
+		'image' => "px2style__image",
+	);
+
 	/** Broccoliフィールドの初期設定 */
 	$conf->plugins->px2dt->guieditor->field_config = array(
 
