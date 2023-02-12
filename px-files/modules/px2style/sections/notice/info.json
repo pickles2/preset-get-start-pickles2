@@ -1,0 +1,40 @@
+{
+    "id": ":sections/notice",
+    "name": "お知らせ - Notice",
+    "interface": {
+        "fields": {
+            "type": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "お知らせの種類",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "お知らせ"
+                    },
+                    {
+                        "value": "px2-notice--success",
+                        "label": "成功"
+                    },
+                    {
+                        "value": "px2-notice--warning",
+                        "label": "警告"
+                    },
+                    {
+                        "value": "px2-notice--danger",
+                        "label": "エラー・危険"
+                    },
+                    {
+                        "value": "px2-notice--info",
+                        "label": "情報"
+                    }
+                ]
+            },
+            "main": {
+                "fieldType": "module",
+                "label": "内容"
+            }
+        }
+    }
+}

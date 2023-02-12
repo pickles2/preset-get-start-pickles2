@@ -1,0 +1,130 @@
+{
+    "id": ":basics/image",
+    "name": "画像 - Image",
+    "interface": {
+        "fields": {
+            "image_src": {
+                "fieldType": "input",
+                "type": "image",
+                "label": "画像"
+            },
+            "alt_text": {
+                "fieldType": "input",
+                "type": "html_attr_text",
+                "label": "代替テキスト",
+                "rows": 1
+            },
+            "caption": {
+                "fieldType": "input",
+                "type": "multitext",
+                "label": "キャプション",
+                "rows": 3
+            },
+            "framed": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "枠で囲う",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "枠で囲わない"
+                    },
+                    {
+                        "value": "framed",
+                        "label": "枠で囲う"
+                    }
+                ],
+                "default": "framed"
+            },
+            "width": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "画像の幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "画像のサイズに従う"
+                    },
+                    {
+                        "value": "1of1",
+                        "label": "親要素の幅いっぱいに拡がる"
+                    },
+                    {
+                        "value": "3of4",
+                        "label": "3/4幅"
+                    },
+                    {
+                        "value": "2of3",
+                        "label": "2/3幅"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2幅"
+                    }
+                ],
+                "default": ""
+            },
+            "align": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "揃え位置",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "指定しない (親要素の組み方に従う)"
+                    },
+                    {
+                        "value": "left",
+                        "label": "左揃え"
+                    },
+                    {
+                        "value": "center",
+                        "label": "中央揃え"
+                    },
+                    {
+                        "value": "right",
+                        "label": "右揃え"
+                    }
+                ],
+                "default": "center"
+            },
+            "imagescope": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "拡大表示",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "拡大しない"
+                    },
+                    {
+                        "value": "onclick",
+                        "label": "クリックで拡大表示する"
+                    }
+                ]
+            },
+            "paragraph": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "前後の自然なマージン",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "なし"
+                    },
+                    {
+                        "value": "px2-p",
+                        "label": "前後の自然なマージン"
+                    }
+                ],
+                "default": "px2-p"
+            }
+        }
+    },
+    "areaSizeDetection": "deep"
+}

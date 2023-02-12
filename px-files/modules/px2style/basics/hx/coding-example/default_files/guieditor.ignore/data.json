@@ -1,0 +1,93 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:sections/hx-simple",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "見出し レベル2"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-simple",
+                        "fields": {
+                            "hx": {
+                                "src": "3"
+                            },
+                            "main": {
+                                "src": "見出し レベル3"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-simple",
+                        "fields": {
+                            "hx": {
+                                "src": "4"
+                            },
+                            "main": {
+                                "src": "見出し レベル4"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-simple",
+                        "fields": {
+                            "hx": {
+                                "src": "5"
+                            },
+                            "main": {
+                                "src": "見出し レベル5"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-simple",
+                        "fields": {
+                            "hx": {
+                                "src": "6"
+                            },
+                            "main": {
+                                "src": "見出し レベル6"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

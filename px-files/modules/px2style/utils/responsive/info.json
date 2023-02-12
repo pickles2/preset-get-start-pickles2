@@ -1,0 +1,12 @@
+{
+    "id": ":utils/responsive",
+    "name": "レスポンシブ - Responsive Block",
+    "interface": {
+        "fields": {
+            "main": {
+                "fieldType": "module",
+                "label": "内容"
+            }
+        }
+    }
+}

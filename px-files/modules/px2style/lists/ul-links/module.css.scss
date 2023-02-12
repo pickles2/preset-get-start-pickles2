@@ -1,0 +1,240 @@
+.px2-linklist {
+	padding: 0;
+	margin: 1em 0;
+	position: relative;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		border: 1px solid #e5e5e5;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+
+		li {
+			list-style-type: none;
+			border-top: 1px solid #e5e5e5;
+			padding: 0;
+			margin: 0;
+			&:first-child {
+				border-top: none;
+			}
+
+			> a {
+				display: block;
+				position: relative;
+				padding: 20px 45px 20px 30px;
+				background-color: #fff;
+				color: #000;
+				&::before {
+					content: none;
+				}
+				&::after {
+					content: '';
+					width: 14px;
+					height: 14px;
+					display: inline-block;
+					border-top: 1px solid #000;
+					border-right: 1px solid #000;
+					border-bottom: none;
+					border-left: none;
+					position: absolute;
+					right: 20px;
+					top: calc(50% - 8px);
+					transform:rotate(45deg);
+				}
+				&:hover {
+					background-color: #f5faff;
+					text-decoration: none;
+				}
+			}
+			> span {
+				display: block;
+				padding: 20px 30px;
+				background-color: #fff;
+				color: #333;
+			}
+			ul {
+				border: none;
+				border-radius: 0px;
+				overflow: auto;
+				box-shadow: none;
+				li,
+				li:first-child {
+					border-top: 1px dashed #e5e5e5;
+				}
+			}
+			ul li>a,
+			ul li>span {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 55px;
+				&::after {
+					content: '';
+					width: 14px;
+					height: 14px;
+					display: inline-block;
+					border-top: 1.4px solid #000;
+					border-right: 1.4px solid #000;
+					border-bottom: none;
+					border-left: none;
+					position: absolute;
+					right: 20px;
+					top: calc(50% - 8px);
+					transform:rotate(45deg);
+				}
+			}
+			ul ul li>a,
+			ul ul li>span {
+				padding-left: 70px;
+			}
+			ul ul ul li>a,
+			ul ul ul li>span {
+				padding-left: 85px;
+			}
+			ul ul ul ul li>a,
+			ul ul ul ul li>span {
+				padding-left: 100px;
+			}
+			ul li>a,
+			ul li>span,
+			ul ul ul li>a,
+			ul ul ul li>span,
+			ul ul ul ul li>a,
+			ul ul ul ul li>span {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&::after {
+					content: '';
+					width: 10px;
+					height: 10px;
+					border-top: 0.5px solid #0006;
+					border-right: 0.5px solid #0006;
+					top: calc(50% - 5px);
+				}
+			}
+		}
+	}
+	&__description {
+		font-size: 74%;
+		color: #999;
+		text-decoration: none;
+	}
+	a &__description {
+		text-decoration: none;
+	}
+}
+
+// 垂直リスト
+.px2-linklist {
+	ul.px2-linklist__vertical {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-top: 0.2em;
+		margin-bottom: 0.2em;
+		padding-left: 0;
+
+		>ul>li ,
+		>li {
+			list-style-type: none;
+			padding-left: 0;
+			>p{
+				margin: 0;
+			}
+		}
+	}
+}
+
+// 水平リスト
+.px2-linklist {
+	ul.px2-linklist__horizontal {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		padding-left: 0;
+		border: none;
+		box-shadow: none;
+
+		li>a {
+			&::before,
+			&::after {
+				content: none;
+			}
+		}
+
+		>ul>li ,
+		>li {
+			list-style-type: none;
+			border-top: none;
+			>p{
+				margin: 0;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&--left {
+			justify-content: flex-start;
+		}
+		&--center {
+			justify-content: center;
+		}
+		&--right {
+			justify-content: flex-end;
+		}
+	}
+}
+
+// 他のモジュールとの関係を解決
+h1, .px2-h1,
+h2, .px2-h2,
+h3, .px2-h3,
+h4, .px2-h4,
+h5, .px2-h5,
+h6, .px2-h6 {
+	.px2-linklist {
+		padding: 0;
+		margin: 0;
+		> ul {
+			padding: 0;
+			margin: 0;
+			border-bottom: none;
+			> li {
+				padding: 0;
+				margin: 0;
+				border-top: none;
+				a {
+					padding: 0.1em 0.5em;
+				}
+			}
+		}
+	}
+}
+
+// --------------------------------------
+// 後方互換性維持のための対応
+// NOTE: v3.0.1 まで、`.px2-horizontal-list` をネストする作りになっていました。
+.px2-linklist {
+	ul.px2-horizontal-list {
+		border: none;
+		gap: 10px;
+		box-shadow: none;
+		> li{
+			list-style-type: none;
+			border: none;
+			>a {
+				&::before,
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+}

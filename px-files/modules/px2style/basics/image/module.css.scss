@@ -1,0 +1,80 @@
+.px2-image {
+	img {
+		width: 100%;
+		max-width: 100%;
+	}
+	&__img {
+		display: inline-block;
+		img,
+		a {
+			display: block;
+		}
+	}
+	&--framed > img,
+	&--framed &__img {
+		box-sizing: border-box;
+		border: 1px solid #bbb;
+		padding: 8px;
+		border-radius: 5px;
+		background-color: #f9f9f9;
+	}
+
+	&--width-1of1 &__img { width: 100%; }
+	&--width-3of4 &__img { width: 75%; }
+	&--width-2of3 &__img { width: 67%; }
+	&--width-1of2 &__img { width: 50%; }
+
+	&--width-1of1 > img { width: 100%; } // <- fallback
+	&--width-3of4 > img { width: 75%; } // <- fallback
+	&--width-2of3 > img { width: 67%; } // <- fallback
+	&--width-1of2 > img { width: 50%; } // <- fallback
+
+	// キャプション
+	&__caption {
+		font-size: 0.77em;
+		margin-top: 0.5em;
+		line-height: 1.3;
+		color: #999;
+		text-align: left;
+		* {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	// 拡大画像
+	&--imagescope img {
+		cursor: pointer;
+	}
+}
+
+// 拡大時のモーダルウィンドウ
+.px2-image-scope {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	&__inner {
+		position: relative;
+		width: 100%;
+		margin: auto;
+		box-sizing: border-box;
+		padding: 20px 0;
+	}
+	&__img {
+		object-fit: contain;
+		max-height: calc(100vh - 50px - 30px);
+
+		img {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	img {
+		width: 100%;
+		max-width: 100%;
+		cursor: default !important;
+	}
+}

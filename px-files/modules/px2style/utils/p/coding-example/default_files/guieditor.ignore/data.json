@@ -1,0 +1,37 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:utils/p",
+                        "fields": {
+                            "paragraph": "px2-p",
+                            "text-align": "",
+                            "font-size": "",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "ユーティリティブロックでは、内側全体に対して、マージンや文字組みなどの基本的な設定を加えることができます。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "px2-p",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

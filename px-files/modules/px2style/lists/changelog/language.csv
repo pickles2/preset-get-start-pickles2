@@ -1,0 +1,6 @@
+,"ja","en"
+"name","更新履歴","Change Log"
+"fields.header:label","リスト見出しエリア","List heading area"
+"fields.loop:label","履歴情報","List items"
+"subModule.loop.date:label","日付","Date"
+"subModule.loop.contents:label","内容","Contents"

@@ -1,0 +1,34 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:utils/responsive",
+                        "fields": {
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "レスポンシブブロック内では、内容が折り返せず、横に長い場合に、スクロールバーを表示して隠れた部分を表示できるようになります。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "px2-p",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

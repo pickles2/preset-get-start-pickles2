@@ -1,0 +1,54 @@
+{
+    "id": ":basics/table",
+    "name": "表組み - Table",
+    "interface": {
+        "fields": {
+            "table": {
+                "fieldType": "input",
+                "type": "table",
+                "label": "テーブル"
+            },
+            "align": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "揃え位置",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "指定しない (親要素の組み方に従う)"
+                    },
+                    {
+                        "value": "left",
+                        "label": "左揃え"
+                    },
+                    {
+                        "value": "center",
+                        "label": "中央揃え"
+                    },
+                    {
+                        "value": "right",
+                        "label": "右揃え"
+                    }
+                ]
+            },
+            "paragraph": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "前後の自然なマージン",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "なし"
+                    },
+                    {
+                        "value": "px2-p",
+                        "label": "前後の自然なマージン"
+                    }
+                ],
+                "default": "px2-p"
+            }
+        }
+    }
+}

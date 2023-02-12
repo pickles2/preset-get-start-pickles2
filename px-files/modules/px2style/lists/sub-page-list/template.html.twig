@@ -1,0 +1,84 @@
+<div class="px2-linklist"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% if _ENV.mode == 'canvas' %}
+
+<div style="background-color:#f9f9f9ee; color:#aaa; padding: 10px; font-size: 11px; position: absolute; right: 5px; top: 5px; z-index: 10000;">
+<div style="text-align: center;">【下層ページリスト (自動生成)】</div>
+スタイル: {% if style == '' %}リンクリスト{% else %}説明付き{% endif %}<br />
+{% if _ENV.vars.parent %}
+親ページ: <code>{{ parent }}</code><br />
+{% endif %}
+一覧に表示しないページの扱い: {% if list_flg == 'show' %}含める{% else %}含めない{% endif %}<br />
+深さ: <code>{{ depth }}</code><br />
+</div>
+
+<ul>
+<li><a href="#">下層ページのリンク {% if style == 'withdescription' %} <div class="px2-linklist__description">ページ情報の description を表示します。</div> {% endif %}</a></li>
+{% if list_flg != 'hide' %}
+<li><a href="#">一覧表示がオフのページ {% if style == 'withdescription' %} <div class="px2-linklist__description">一覧表示フラグ list_flg がオフのページも表示します。</div> {% endif %}</a></li>
+{% endif %}
+<li><a href="#">下層ページのリンク {% if style == 'withdescription' %} <div class="px2-linklist__description">ページ情報の description を表示します。</div> {% endif %}</a>
+{% if depth > 1 %}
+    <ul>
+    <li><a href="#">深い下層ページのリンク {% if style == 'withdescription' %} <div class="px2-linklist__description">{{ depth }}階層下のページまで表示します。</div> {% endif %}</a></li>
+    {% if depth > 2 %}
+        <ul>
+        <li><a href="#">深い下層ページのリンク {% if style == 'withdescription' %} <div class="px2-linklist__description">{{ depth }}階層下のページまで表示します。</div> {% endif %}</a>
+        </li>
+        </ul>
+    {% endif %}
+    </li>
+    </ul>
+{% endif %}
+</li>
+<li><a href="#">下層ページのリンク {% if style == 'withdescription' %} <div class="px2-linklist__description">ページ情報の description を表示します。</div> {% endif %}</a></li>
+</ul>
+{% else %}
+
+<?php
+(function($px){
+    $parent = "{{ parent }}";
+    if( !strlen(''.$parent) ){
+        $parent = null;
+    }
+    $list_flg = "{{ list_flg }}";
+    if($list_flg == 'hide'){
+        $list_flg = true;
+    }else{
+        $list_flg = false;
+    }
+    $depth = intval("{{ depth }}");
+    if( !$depth ){
+        $depth = 1;
+    }
+    $style = "{{ style }}";
+
+    $fnc_children_gen = function( $current_page_id, $depth ) use ( &$fnc_children_gen, $px, $list_flg, $style ){
+        $depth --;
+        $children = $px->site()->get_children($current_page_id, array('filter'=>$list_flg));
+        $rtn = '';
+        $rtn .= '<ul>'."\n";
+        foreach( $children as $pid ){
+            $page_info = $px->site()->get_page_info($pid);
+            $description = '';
+            if( array_key_exists('description', $page_info) ){
+                $description = $page_info['description'];
+            }
+
+            $rtn .= '<li><a href="'.$px->href($pid).'">'.htmlspecialchars($page_info['title_label']);
+            if( $style == 'withdescription' ){
+                $rtn .= '<div class="px2-linklist__description">'.htmlspecialchars( $description ).'</div>';
+            }
+            $rtn .= '</a>'."\n";
+            if($depth){
+                $rtn .= $fnc_children_gen($pid, $depth);
+            }
+            $rtn .= '</li>'."\n";
+        }
+        $rtn .= '</ul>'."\n";
+        return $rtn;
+    };
+    echo $fnc_children_gen($parent, $depth);
+})($px);
+?>
+{% endif %}
+</div>

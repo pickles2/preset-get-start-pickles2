@@ -1,0 +1,103 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:basics/button",
+                        "fields": {
+                            "label": "標準ボタン",
+                            "intention": "",
+                            "sizing": "",
+                            "display": "",
+                            "btntype": "button",
+                            "onclick": {
+                                "src": "alert('clicked');",
+                                "lang": "javascript"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/button",
+                        "fields": {
+                            "label": "プライマリボタン",
+                            "intention": "px2-btn--primary",
+                            "sizing": "",
+                            "display": "",
+                            "btntype": "button",
+                            "onclick": {
+                                "src": "alert('clicked');",
+                                "lang": "javascript"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/button",
+                        "fields": {
+                            "label": "セカンダリボタン",
+                            "intention": "px2-btn--secondary",
+                            "sizing": "",
+                            "display": "",
+                            "btntype": "button",
+                            "onclick": {
+                                "src": "alert('clicked');",
+                                "lang": "javascript"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/button",
+                        "fields": {
+                            "label": "危険ボタン",
+                            "intention": "px2-btn--danger",
+                            "sizing": "",
+                            "display": "",
+                            "btntype": "button",
+                            "onclick": {
+                                "src": "alert('clicked');",
+                                "lang": "javascript"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/button",
+                        "fields": {
+                            "label": "ダウンロードボタン",
+                            "intention": "px2-btn--download",
+                            "sizing": "",
+                            "display": "",
+                            "btntype": "button",
+                            "onclick": {
+                                "src": "alert('clicked');",
+                                "lang": "javascript"
+                            },
+                            "paragraph": "px2-p",
+                            "align": ""
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

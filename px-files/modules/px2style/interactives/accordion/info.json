@@ -1,0 +1,28 @@
+{
+    "id": ":interactives/accordion",
+    "name": "アコーディオン - Accordion",
+    "interface": {
+        "fields": {
+            "loop": {
+                "fieldType": "loop",
+                "label":"アコーディオンコンテンツ"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "accordion-label": {
+                        "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    },
+                    "main": {
+                        "fieldType": "module",
+                        "label": "アコーディオンコンテンツ"
+                    }
+                }
+            }
+        }
+    }
+}

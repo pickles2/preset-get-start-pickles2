@@ -1,0 +1,1 @@
+Represents update history.

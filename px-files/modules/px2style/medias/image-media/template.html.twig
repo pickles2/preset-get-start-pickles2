@@ -1,0 +1,6 @@
+<figure class="px2-embedded-media{% if _ENV.vars.framed %} px2-embedded-media--framed{% endif %}{% if _ENV.vars.imagescope %} px2-embedded-media--imagescope{% endif %}">
+  <div class="px2-embedded-media__image-media"><img src="{{ image_src }}" alt="{{ alt_text }}"{% if _ENV.vars.imagescope %} onclick="Px2broccoliModulePx2Style_ImageScope(this);"{% endif %} /></div>
+  {% if _ENV.vars.caption %}
+  <figcaption class="px2-embedded-media__caption">{{ caption }}</figcaption>
+  {% endif %}
+</figure>

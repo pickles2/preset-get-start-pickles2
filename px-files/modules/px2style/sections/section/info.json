@@ -1,0 +1,58 @@
+{
+    "id": ":sections/section",
+    "name": "セクション - Section",
+    "hidden": false,
+    "interface": {
+        "fields": {
+            "style": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "スタイル",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "プレーン"
+                    },
+                    {
+                        "value": "framed",
+                        "label": "枠で囲う"
+                    }
+                ],
+                "default": "framed"
+            },
+            "section_type": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "セクションの種類",
+                "options": [
+                    {
+                        "value": "div",
+                        "label": "なし"
+                    },
+                    {
+                        "value": "",
+                        "label": "セクション"
+                    },
+                    {
+                        "value": "article",
+                        "label": "記事"
+                    },
+                    {
+                        "value": "aside",
+                        "label": "余談"
+                    }
+                ],
+                "default": ""
+            },
+            "heading": {
+                "fieldType": "module",
+                "label": "見出しエリア"
+            },
+            "main": {
+                "fieldType": "module",
+                "label": "本文"
+            }
+        }
+    }
+}

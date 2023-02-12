@@ -1,0 +1,70 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of2",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 1\n\nLeft Column.\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of2",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 2\n\nRight Column.\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

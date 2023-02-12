@@ -1,0 +1,54 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:lists/ul-links",
+                        "fields": {
+                            "class": "",
+                            "loop": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "リストアイテム1",
+                                        "target": ""
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "リストアイテム2",
+                                        "target": ""
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "リストアイテム3",
+                                        "target": ""
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

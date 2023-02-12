@@ -1,0 +1,120 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 1\n\nColumn 1.",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 2\n\nColumn 2.",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 3\n\nColumn 3.",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Column 4\n\nColumn 4.",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "paragraph": "px2-p",
+                                                    "text-align": "",
+                                                    "font-size": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

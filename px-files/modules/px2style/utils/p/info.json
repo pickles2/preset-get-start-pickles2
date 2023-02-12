@@ -1,0 +1,110 @@
+{
+    "id": ":utils/p",
+    "name": "ユーティリティブロック - Utility Block",
+    "interface": {
+        "fields": {
+            "text-align": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "行の揃え位置",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "指定しない (親要素の組み方に従う)"
+                    },
+                    {
+                        "value": " px2-text-align-left",
+                        "label": "左揃え"
+                    },
+                    {
+                        "value": " px2-text-align-center",
+                        "label": "中央揃え"
+                    },
+                    {
+                        "value": " px2-text-align-right",
+                        "label": "右揃え"
+                    }
+                ]
+            },
+            "font-size": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "文字サイズ",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": " px2-font-size-ll",
+                        "label": "とても大きい"
+                    },
+                    {
+                        "value": " px2-font-size-l",
+                        "label": "大きい"
+                    },
+                    {
+                        "value": "",
+                        "label": "指定なし"
+                    },
+                    {
+                        "value": " px2-font-size-s",
+                        "label": "小さい"
+                    },
+                    {
+                        "value": " px2-font-size-ss",
+                        "label": "とても小さい"
+                    }
+                ]
+            },
+            "text-color":{
+                "fieldType": "input",
+                "type": "color",
+                "label": "文字色",
+                "rows": 1
+            },
+            "background-color":{
+                "fieldType": "input",
+                "type": "color",
+                "label": "背景色",
+                "rows": 1
+            },
+            "background-image":{
+                "fieldType": "input",
+                "type": "image",
+                "label": "背景画像"
+            },
+            "min-height":{
+                "fieldType": "input",
+                "type":"text",
+                "label":"高さ",
+                "description":"最低限確保する高さを指定します。単位を含めて入力してください。 (例: 600px)",
+                "rows": 1
+            },
+            "margin-padding":{
+                "fieldType": "input",
+                "type":"px2style__css-margin-padding",
+                "label":"ボックス内、ボックス外の隙間"
+            },
+            "main": {
+                "fieldType": "module",
+                "label": "内容"
+            },
+            "paragraph": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "前後の自然なマージン",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "なし"
+                    },
+                    {
+                        "value": "px2-p",
+                        "label": "前後の自然なマージン"
+                    }
+                ],
+                "default": "px2-p"
+            }
+        }
+    }
+}

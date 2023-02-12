@@ -1,0 +1,9 @@
+{
+    "name": "リスト - Lists",
+    "sort": [
+        "ul",
+        "ul-links",
+        "ul-media-list",
+        "dl"
+    ]
+}

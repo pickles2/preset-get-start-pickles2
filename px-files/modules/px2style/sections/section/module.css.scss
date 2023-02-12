@@ -1,0 +1,35 @@
+.px2-section {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.px2-section.px2-section--framed {
+	border: 1px solid #f0f0f0;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #fff;
+
+	.px2-section__heading {
+		padding: 0.5em 1em;
+		box-sizing: border-box;
+		border-bottom: 1px solid #f0f0f0;
+
+		*,
+		.px2-h2, h2,
+		.px2-h3, h3,
+		.px2-h4, h4,
+		.px2-h5, h5,
+		.px2-h6, h6 {
+			margin: 0px;
+		}
+	}
+	.px2-section__body {
+		padding: 0.5em 1em;
+		box-sizing: border-box;
+		> *:first-child {
+			margin-top: 0px;
+		}
+		> *:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}

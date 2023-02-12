@@ -1,0 +1,59 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:medias/float",
+                        "fields": {
+                            "lr": "r",
+                            "image-size": "1of3",
+                            "media": [
+                                {
+                                    "modId": "px2style:medias/image-media",
+                                    "fields": {
+                                        "image_src": {
+                                            "resKey": "83245ffae55a0786d097d3d3ea20d05c",
+                                            "path": "./default_files/resources/teabug.gif",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "alt_text": "ティーバッグ",
+                                        "caption": {
+                                            "src": "ティーバッグの袋のサンプル",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "body_rect": "",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## Float Media Block\n\nこのモジュールは、テキストを回り込むメディア表示領域を作成します。\n\n回り込む方向を右か左のいずれかで選択します。 メディアの大きさは、幅 1/2、1/3、1/4 のサイズから選択することができます。\n\nまた、テキスト領域を回り込むか、矩形とするかを選択することもできます。\n",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "px2-p",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

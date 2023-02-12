@@ -1,0 +1,243 @@
+// Links
+.px2-a {
+	&:before {
+		content:' ';
+		width:0;
+		height:0;
+		display: inline-block;
+		margin-right: 0.2em;
+		border-width:0.35em 0 0.35em 0.6em;
+		border-style:solid;
+		border-color:#00a0e6;
+		border-top-color:transparent;
+		border-bottom-color:transparent;
+	}
+	&--block {
+		display: block;
+		width: 100%;
+	}
+}
+.px2-open-in-new-window {
+	&:after {
+		content: '';
+		background-image: url("./resources/link.png");
+		width: 0.8em;
+		height: 0.8em;
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: 0.3em;
+	}
+}
+
+// Buttons
+.px2-btn {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #e5e5e5;
+    padding: .375rem .75rem;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.5;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	align-items: stretch;
+	transition:
+		color 0.1s,
+		background-color 0.1s
+	;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+		font-weight: normal;
+		color: #333;
+		border-color: #333;
+		background-color: #f0f0f0;
+	}
+	&:focus {
+		color: #333;
+		border-color: #333;
+		background-color: #f0f0f0;
+	}
+	&:hover {
+		border-color: #333;
+		background-color: #f0f0f0;
+	}
+	&:active {
+		background-color: #e6e6e6;
+		color: #333;
+		box-shadow: inset 0 3px 15px rgba(0,0,0,0.3);
+	}
+}
+
+// Intention
+.px2-btn {
+
+	&.px2-btn--primary {
+		border-color: #00a0e6;
+		background-color: #00a0e6;
+		color: #fff;
+		&:focus,
+		&:hover {
+			border-color: #3ac4ff;
+			background-color: #3ac4ff;
+		}
+		&:hover {
+			border-color: #3ac4ff;
+			background-color: #3ac4ff;
+		}
+		&:active {
+			border-color: #0c6e98;
+			background-color: #0c6e98;
+		}
+	}
+	&.px2-btn--secondary {
+		border-color: #00a0e6;
+		background-color: #fff;
+		color: #00a0e6;
+		&:focus,
+		&:hover {
+			border-color: #3ac4ff;
+			background-color: #eefaff;
+			color: #3ac4ff;
+		}
+		&:hover {
+			border-color: #3ac4ff;
+			background-color: #eefaff;
+			color: #3ac4ff;
+		}
+		&:active {
+			border-color: #3ac4ff;
+			background-color: #eefaff;
+			color: #3ac4ff;
+		}
+	}
+	&.px2-btn--danger {
+		border-color: #e86a60;
+		background-color: #e86a60;
+		color: #fff;
+		&:focus,
+		&:hover {
+			border-color: #ff928a;
+			background-color: #ff928a;
+		}
+		&:hover {
+			border-color: #ff928a;
+			background-color: #ff928a;
+		}
+		&:active {
+			border-color: #d71f12;
+			background-color: #d71f12;
+		}
+	}
+	&.px2-btn--download {
+		border-color: #4ad64d;
+		background-color: #4ad64d;
+		color: #fff;
+		&:focus,
+		&:hover {
+			border-color: #75ef77;
+			background-color: #75ef77;
+		}
+		&:hover {
+			border-color: #75ef77;
+			background-color: #75ef77;
+		}
+		&:active {
+			border-color: #24b827;
+			background-color: #24b827;
+		}
+	}
+
+	&[disabled] {
+		border-color: #ddd;
+		background-color: #ddd;
+		color: #fff;
+		cursor: default;
+
+		&:focus,
+		&:hover,
+		&:active {
+			border-color: #ddd;
+			background-color: #ddd;
+			color: #fff;
+			cursor: default;
+			box-shadow: none;
+		}
+	}
+}
+
+
+// Toggle ON
+.px2-btn {
+	&--toggle-on {
+		box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.25);
+		border-color: #000;
+		background-color: #000;
+		color: #fff;
+
+		&:focus,
+		&:hover {
+			box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.25);
+			border-color: #666;
+			background-color: #666;
+			color: #fff;
+		}
+		&:active {
+			box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.25);
+			border-color: #111;
+			background-color: #111;
+			color: #ddd;
+		}
+
+		&[disabled] {
+			border-color: #ddd;
+			background-color: #ddd;
+			color: #fff;
+			cursor: default;
+			box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.25);
+
+			&:focus,
+			&:hover,
+			&:active {
+				border-color: #ddd;
+				background-color: #ddd;
+				color: #fff;
+				cursor: default;
+				box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.25);
+			}
+		}
+
+		&.px2-btn--secondary {
+			&:active {
+				color: #00a0e6;
+			}
+			&[disabled] {
+				&:active {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+// Sizing
+.px2-btn {
+
+	&--sm {
+		font-size:0.8em;
+	}
+	&--lg {
+		font-size:1.2em;
+	}
+	&--block {
+		display: block;
+		width: 100%;
+	}
+
+}

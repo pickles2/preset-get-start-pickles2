@@ -1,0 +1,10 @@
+<{% if section_type %}{{ section_type }}{% else %}section{% endif %} class="px2-section{% if style %} px2-section--{{ style }}{% endif %}"{% if _ENV.mode == 'canvas' %} style="padding-top: 12px;"{% endif %}>
+{% if heading %}
+  <div class="px2-section__heading">
+    {{ heading }}
+  </div>
+{% endif %}
+  <div class="px2-section__body">
+    {{ main }}
+  </div>
+</{% if section_type %}{{ section_type }}{% else %}section{% endif %}><!-- /.px2-section -->

@@ -1,0 +1,210 @@
+{
+    "id": ":lists/ul-media-list",
+    "name": "メディアリスト - Media List",
+    "interface": {
+        "fields": {
+            "class": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "リストスタイル",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "標準"
+                    },
+                    {
+                        "value": "card",
+                        "label": "カードスタイル"
+                    }
+                ]
+            },
+            "list-item-width": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "1of1",
+                        "label": "フルカラム"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2 幅"
+                    },
+                    {
+                        "value": "1of3",
+                        "label": "1/3 幅"
+                    },
+                    {
+                        "value": "1of4",
+                        "label": "1/4 幅"
+                    },
+                    {
+                        "value": "1of5",
+                        "label": "1/5 幅"
+                    },
+                    {
+                        "value": "1of6",
+                        "label": "1/6 幅"
+                    }
+                ]
+            },
+            "list-item-width-lg": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "PCサイズのときの幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": ""
+                    },
+                    {
+                        "value": "1of1",
+                        "label": "フルカラム"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2 幅"
+                    },
+                    {
+                        "value": "1of3",
+                        "label": "1/3 幅"
+                    },
+                    {
+                        "value": "1of4",
+                        "label": "1/4 幅"
+                    },
+                    {
+                        "value": "1of5",
+                        "label": "1/5 幅"
+                    },
+                    {
+                        "value": "1of6",
+                        "label": "1/6 幅"
+                    }
+                ]
+            },
+            "list-item-width-md": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "タブレットサイズのときの幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": ""
+                    },
+                    {
+                        "value": "1of1",
+                        "label": "フルカラム"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2 幅"
+                    },
+                    {
+                        "value": "1of3",
+                        "label": "1/3 幅"
+                    },
+                    {
+                        "value": "1of4",
+                        "label": "1/4 幅"
+                    },
+                    {
+                        "value": "1of5",
+                        "label": "1/5 幅"
+                    },
+                    {
+                        "value": "1of6",
+                        "label": "1/6 幅"
+                    }
+                ]
+            },
+            "list-item-width-sm": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "スマートフォンサイズのときの幅",
+                "display": "select",
+                "options": [
+                    {
+                        "value": "",
+                        "label": ""
+                    },
+                    {
+                        "value": "1of1",
+                        "label": "フルカラム"
+                    },
+                    {
+                        "value": "1of2",
+                        "label": "1/2 幅"
+                    },
+                    {
+                        "value": "1of3",
+                        "label": "1/3 幅"
+                    },
+                    {
+                        "value": "1of4",
+                        "label": "1/4 幅"
+                    },
+                    {
+                        "value": "1of5",
+                        "label": "1/5 幅"
+                    },
+                    {
+                        "value": "1of6",
+                        "label": "1/6 幅"
+                    }
+                ]
+            },
+            "loop": {
+                "fieldType": "loop",
+                "label": "リストアイテム"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "href": {
+                        "fieldType": "input",
+                        "type": "href",
+                        "rows": 1,
+                        "label": "リンク先"
+                    },
+                    "label": {
+                        "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    },
+                    "target": {
+                        "fieldType": "input",
+                        "type": "select",
+                        "label": "リンク先の表示方法",
+                        "options": [
+                            {
+                                "value": "",
+                                "label": "デフォルト"
+                            },
+                            {
+                                "value": "_blank",
+                                "label": "新規ウィンドウ (_blank)"
+                            }
+                        ]
+                    },
+                    "image": {
+                        "fieldType": "input",
+                        "type": "image",
+                        "label": "画像メディア"
+                    },
+                    "description": {
+                        "fieldType": "input",
+                        "type": "multitext",
+                        "label": "リンクの説明"
+                    }
+                }
+            }
+        }
+    }
+}

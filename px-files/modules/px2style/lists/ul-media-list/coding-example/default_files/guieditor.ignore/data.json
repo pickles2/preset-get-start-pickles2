@@ -1,0 +1,134 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:lists/ul-media-list",
+                        "fields": {
+                            "class": "",
+                            "list-item-width": "",
+                            "list-item-width-lg": "",
+                            "list-item-width-md": "",
+                            "list-item-width-sm": "",
+                            "loop": [
+                                {
+                                    "modId": "px2style:lists/ul-media-list",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "メディアリストアイテム1",
+                                        "target": "",
+                                        "image": {
+                                            "resKey": "978923d983deca57face85be66d4bb17",
+                                            "path": "./default_files/resources/teabug1.gif",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "description": {
+                                            "src": "ティーバッグのスナップショットです。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:lists/ul-media-list",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "メディアリストアイテム2",
+                                        "target": "",
+                                        "image": {
+                                            "resKey": "5dcbbbf2319aef08e7d33cf9756780dd",
+                                            "path": "./default_files/resources/teabug2.gif",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "description": {
+                                            "src": "ティーバッグの画像をリストするサンプルです。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": "2",
+                            "main": "カードスタイル",
+                            "sub": "",
+                            "shoulder": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:lists/ul-media-list",
+                        "fields": {
+                            "class": "card",
+                            "list-item-width": "1of3",
+                            "list-item-width-lg": "",
+                            "list-item-width-md": "",
+                            "list-item-width-sm": "",
+                            "loop": [
+                                {
+                                    "modId": "px2style:lists/ul-media-list",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "メディアリストアイテム1",
+                                        "target": "",
+                                        "image": {
+                                            "resKey": "fafc02038784ea067a59ce7f555fbb35",
+                                            "path": "./default_files/resources/teabug-card-1.gif",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "description": {
+                                            "src": "ティーバッグのイメージサンプルです。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:lists/ul-media-list",
+                                    "fields": {
+                                        "href": "javascript:alert('clicked');",
+                                        "label": "メディアリストアイテム2",
+                                        "target": "",
+                                        "image": {
+                                            "resKey": "f9b49f2cb325be04ab09d55ceffa7e40",
+                                            "path": "./default_files/resources/teabug-card-2.gif",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "description": {
+                                            "src": "メディアリストアイテムのサンプル2です。",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "subModName": "loop",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

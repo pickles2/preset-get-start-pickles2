@@ -1,0 +1,43 @@
+{
+    "id": ":interactives/carousel",
+    "name": "カルーセル - Carousel",
+    "interface": {
+        "fields": {
+            "loop": {
+                "fieldType": "loop",
+                "label": "カルーセルコンテンツ"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "href": {
+                        "fieldType": "input",
+                        "type": "href",
+                        "hidden": true,
+                        "rows": 1,
+                        "label": "リンク"
+                    },
+                    "target": {
+                        "fieldType": "input",
+                        "type": "html_attr_text",
+                        "hidden": true,
+                        "rows": 1,
+                        "label": "ターゲットウィンドウ"
+                    },
+                    "image_src": {
+                        "fieldType": "input",
+                        "type": "image",
+                        "label": "画像"
+                    },
+                    "alt_text": {
+                        "fieldType": "input",
+                        "type": "html_attr_text",
+                        "label": "代替テキスト",
+                        "rows": 1
+                    }
+                }
+            }
+        }
+    }
+}

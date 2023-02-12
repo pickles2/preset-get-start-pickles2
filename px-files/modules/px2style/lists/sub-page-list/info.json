@@ -1,0 +1,57 @@
+{
+    "id": ":lists/sub-page-list",
+    "name": "下層ページリスト - Sub Pages",
+    "interface": {
+        "fields": {
+            "style": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "スタイル",
+                "options": [
+                    {
+                        "label": "リンクリスト",
+                        "value": ""
+                    },
+                    {
+                        "label": "説明付き",
+                        "value": "withdescription"
+                    }
+                ]
+            },
+            "parent": {
+                "fieldType": "input",
+                "type": "text",
+                "label": "親ページ",
+                "description": "サイトマップに記載されたパスまたはページIDを指定してください。省略時はカレントページが親ページになります。",
+                "rows": 1
+            },
+            "list_flg": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "一覧に表示しないページの扱い",
+                "options": [
+                    {
+                        "label": "含めない",
+                        "value": "hide"
+                    },
+                    {
+                        "label": "含める",
+                        "value": "show"
+                    }
+                ],
+                "description": "サイトマップでリストフラグ(list_flg)が有効なページを含めるかどうかを設定します。"
+            },
+            "depth": {
+                "fieldType": "input",
+                "type": "text",
+                "label": "深さ",
+                "description": "何階層下まで表示するかを決めます。デフォルトは1階層(子階層まで)です。",
+                "default": "1",
+                "rows": 1,
+                "validate": [
+                    "integer"
+                ]
+            }
+        }
+    }
+}

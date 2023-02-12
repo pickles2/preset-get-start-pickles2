@@ -1,0 +1,12 @@
+{
+    "id": ":basics/blockquote",
+    "name": "引用 - Block Quotation",
+    "interface": {
+        "fields": {
+            "main": {
+                "fieldType": "module",
+                "label": "引用文"
+            }
+        }
+    }
+}

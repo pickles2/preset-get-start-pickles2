@@ -1,0 +1,8 @@
+<div class="px2-image{% if _ENV.vars.framed %} px2-image--framed{% endif %}{% if _ENV.vars.align %} px2-text-align-{{ align }}{% endif %}{% if _ENV.vars.width %} px2-image--width-{{ width }}{% endif %}{% if _ENV.vars.paragraph %} {{ paragraph }}{% endif %}{% if _ENV.vars.imagescope %} px2-embedded-media--imagescope{% endif %}">
+<div class="px2-image__img">
+{% if _ENV.vars.href %}<a href="{{ href }}"{% if _ENV.vars.target %} target="{{ target }}"{% endif %}>{% endif %}<img src="{{ image_src }}" alt="{{ alt_text }}"{% if _ENV.vars.imagescope %} onclick="window.px2style.basicsImageScope(this);"{% endif %} />{% if _ENV.vars.href %}</a>{% endif %}
+{% if _ENV.vars.caption %}
+<div class="px2-image__caption">{{ caption }}</div>
+{% endif %}
+</div>
+</div>

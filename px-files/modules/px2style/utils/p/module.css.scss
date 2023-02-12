@@ -1,0 +1,44 @@
+// ユーティリティブロック
+// これらのユーティリティクラスは、他のブロックと併記される可能性があります。
+
+// 上下の自然なマージン
+.px2-p {
+	// 上下のマージンはその場に表示される文字の大きさが基準になるべきなので、 rem ではなく em を採用する。
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+// 水平方向の文字揃え
+.px2-text-align-left {
+	text-align: left;
+}
+.px2-text-align-center {
+	text-align: center;
+}
+.px2-text-align-right {
+	text-align: right;
+}
+
+// 文字サイズ
+.px2-font-size-ss {
+	font-size: 74%;
+}
+.px2-font-size-s {
+	font-size: 88%;
+}
+.px2-font-size-l {
+	font-size: 112%;
+}
+.px2-font-size-ll {
+	font-size: 136%;
+}
+
+// エラー
+.px2-error {
+	color: #e00;
+}
+
+// 注釈
+.px2-note {
+	color: #999;
+}

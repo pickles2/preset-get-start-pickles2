@@ -1,0 +1,35 @@
+{
+    "id": ":lists/changelog",
+    "name": "更新履歴 - Change Log",
+    "interface": {
+        "fields": {
+            "header": {
+                "fieldType": "module",
+                "label": "リスト見出しエリア"
+            },
+            "loop": {
+                "fieldType": "loop",
+                "label": "履歴情報"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "date": {
+                        "fieldType": "input",
+                        "type": "datetime",
+                        "label": "日付",
+                        "step": "date",
+                        "format": "Y年n月j日",
+                        "description": "例: 2019年1月30日"
+                    },
+                    "contents": {
+                        "fieldType": "input",
+                        "type": "multitext",
+                        "label": "内容"
+                    }
+                }
+            }
+        }
+    }
+}

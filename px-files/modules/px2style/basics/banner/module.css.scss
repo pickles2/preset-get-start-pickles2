@@ -1,0 +1,57 @@
+.px2-image-banner-link {
+	img {
+		width: 100%;
+		max-width: 100%;
+	}
+	&__img {
+		display: inline-block;
+		max-width: 100%;
+		img,
+		a {
+			display: block;
+		}
+	}
+
+	&--width-1of1 &__img { width: 100%; }
+	&--width-3of4 &__img { width: 75%; }
+	&--width-2of3 &__img { width: 67%; }
+	&--width-1of2 &__img { width: 50%; }
+
+    // 大きい画面(PCサイズ)
+    @media all and (min-width: 993px) {
+	}
+
+    // 小さい画面(スマートフォンサイズ)
+    @media all and (max-width: 768px) {
+		&--width-1of1 &__img { width: 100%; }
+		&--width-3of4 &__img { width: 75%; }
+		&--width-2of3 &__img { width: 75%; }
+		&--width-1of2 &__img { width: 75%; }
+	}
+
+    // さらに小さい画面
+    @media all and (max-width: 440px) {
+		&--width-1of1 &__img { width: 100%; }
+		&--width-3of4 &__img { width: 100%; }
+		&--width-2of3 &__img { width: 100%; }
+		&--width-1of2 &__img { width: 100%; }
+	}
+
+	// 最大幅固定
+	&--width-180px &__img { width: 180px; }
+	&--width-320px &__img { width: 320px; }
+	&--width-640px &__img { width: 640px; }
+
+	// キャプション
+	&__caption {
+		font-size: 0.77em;
+		margin-top: 0.5em;
+		line-height: 1.3;
+		color: #999;
+		text-align: left;
+		* {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}

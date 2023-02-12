@@ -1,0 +1,76 @@
+{
+    "id": ":lists/ul-links",
+    "name": "リンクリスト - Link List",
+    "interface": {
+        "fields": {
+            "class": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "リストスタイル",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "標準リスト"
+                    },
+                    {
+                        "value": "px2-linklist__vertical",
+                        "label": "垂直リスト"
+                    },
+                    {
+                        "value": "px2-linklist__horizontal",
+                        "label": "水平リスト"
+                    },
+                    {
+                        "value": "px2-linklist__horizontal px2-linklist__horizontal--left",
+                        "label": "水平リスト (左寄せ)"
+                    },
+                    {
+                        "value": "px2-linklist__horizontal px2-linklist__horizontal--center",
+                        "label": "水平リスト (中央寄せ)"
+                    },
+                    {
+                        "value": "px2-linklist__horizontal px2-linklist__horizontal--right",
+                        "label": "水平リスト (右寄せ)"
+                    }
+                ]
+            },
+            "loop": {
+                "fieldType": "loop",
+                "label": "リストアイテム"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "href": {
+                        "fieldType": "input",
+                        "type": "href",
+                        "rows": 1,
+                        "label": "リンク先"
+                    },
+                    "label": {
+                        "fieldType": "input",
+                        "type": "text",
+                        "label": "ラベル",
+                        "rows": 1
+                    },
+                    "target": {
+                        "fieldType": "input",
+                        "type": "select",
+                        "label": "リンク先の表示方法",
+                        "options": [
+                            {
+                                "value": "",
+                                "label": "デフォルト"
+                            },
+                            {
+                                "value": "_blank",
+                                "label": "新規ウィンドウ (_blank)"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

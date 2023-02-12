@@ -1,0 +1,137 @@
+.px2-medialist{
+	padding: 0;
+	margin: 1em 0;
+	> ul{
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		> li{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			width: 100%;
+			display: flex;
+			align-items: stretch;
+
+			> a {
+				display: block;
+				padding: 0;
+				text-decoration: none;
+				box-sizing: border-box;
+				width: 100%;
+				display: flex;
+				align-items: stretch;
+				:hover {
+					background-color: #f5faff;
+				}
+			}
+		}
+	}
+
+	&__list-item{
+		padding: 1em;
+		display: flex;
+		width: 100%;
+	}
+	&__image{
+		width: 30%;
+		margin-right: 5%;
+		img {
+			width: 100%;
+		}
+	}
+	&__body{
+		width: 65%;
+	}
+	&__label{
+		font-weight: bold;
+	}
+	&__description{
+		font-weight: normal;
+		color: #666;
+		p, .px2-p {
+			margin-top: 0.1em;
+			margin-bottom: 0.1em;
+		}
+	}
+
+	// カードスタイル
+	&--list-style-card {
+		.px2-medialist {
+			&__list-item {
+				flex-direction: column;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				margin: 10px;
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+			}
+			&__image{
+				width: 100%;
+				margin-right: 0;
+			}
+			&__body{
+				width: 100%;
+			}
+		}
+	}
+
+	// カラムサイズ
+	&--list-item-width-1of1 > ul >li { width: 100%; }
+	&--list-item-width-1of2 > ul >li { width: 50%; }
+	&--list-item-width-1of3 > ul >li { width: 33.33%; }
+	&--list-item-width-1of4 > ul >li { width: 25%; }
+	&--list-item-width-1of5 > ul >li { width: 20%; }
+	&--list-item-width-1of6 > ul >li { width: 16.66%; }
+
+	@media all and (max-width: 768px) {
+		// "sm" on Bootstrap 4
+		&--list-item-width-1of3 > ul >li { width: 50%; }
+		&--list-item-width-1of4 > ul >li { width: 33.33%; }
+		&--list-item-width-1of5 > ul >li { width: 25%; }
+		&--list-item-width-1of6 > ul >li { width: 25%; }
+	}
+	@media all and (max-width: 440px) {
+		&--list-item-width-1of2 > ul >li { width: 100%; }
+		&--list-item-width-1of3 > ul >li { width: 100%; }
+		&--list-item-width-1of4 > ul >li { width: 100%; }
+		&--list-item-width-1of5 > ul >li { width: 50%; }
+		&--list-item-width-1of6 > ul >li { width: 50%; }
+	}
+
+
+
+	// 大きい画面(PCサイズ)
+	@media all and (min-width: 993px) {
+		&--list-item-width-lg-1of1 > ul >li { width: 100%; }
+		&--list-item-width-lg-1of2 > ul >li { width: 50%; }
+		&--list-item-width-lg-1of3 > ul >li { width: 33.33%; }
+		&--list-item-width-lg-1of4 > ul >li { width: 25%; }
+		&--list-item-width-lg-1of5 > ul >li { width: 20%; }
+		&--list-item-width-lg-1of6 > ul >li { width: 16.66%; }
+	}
+
+	// 中サイズの画面(タブレットサイズ)
+	@media all and (min-width: 769px) and (max-width: 992px) {
+		&--list-item-width-md-1of1 > ul >li { width: 100%; }
+		&--list-item-width-md-1of2 > ul >li { width: 50%; }
+		&--list-item-width-md-1of3 > ul >li { width: 33.33%; }
+		&--list-item-width-md-1of4 > ul >li { width: 25%; }
+		&--list-item-width-md-1of5 > ul >li { width: 20%; }
+		&--list-item-width-md-1of6 > ul >li { width: 16.66%; }
+	}
+
+	// 小さい画面(スマートフォンサイズ)
+	@media all and (max-width: 768px) {
+		// "sm" on Bootstrap 4
+
+		&--list-item-width-sm-1of1 > ul >li { width: 100%; }
+		&--list-item-width-sm-1of2 > ul >li { width: 50%; }
+		&--list-item-width-sm-1of3 > ul >li { width: 33.33%; }
+		&--list-item-width-sm-1of4 > ul >li { width: 25%; }
+		&--list-item-width-sm-1of5 > ul >li { width: 20%; }
+		&--list-item-width-sm-1of6 > ul >li { width: 16.66%; }
+	}
+}

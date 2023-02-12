@@ -1,0 +1,5 @@
+,"ja","en"
+"name","説明リスト","Term Description Groups"
+"fields.dl-loop:label","説明リストアイテム","Description list item"
+"subModule.dl-loop.dt:label","用語","Term"
+"subModule.dl-loop.dd:label","説明","Description"

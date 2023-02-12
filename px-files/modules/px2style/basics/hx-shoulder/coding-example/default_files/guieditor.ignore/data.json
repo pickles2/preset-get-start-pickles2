@@ -1,0 +1,257 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:sections/hx-shoulder",
+                        "fields": {
+                            "hx": "2",
+                            "main": "ショルダーメニューのサンプル",
+                            "sub": "副見出し",
+                            "shoulder": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-shoulder",
+                        "fields": {
+                            "hx": {
+                                "src": "3"
+                            },
+                            "main": {
+                                "src": "ショルダーメニューのサンプル"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            },
+                            "shoulder": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-shoulder",
+                        "fields": {
+                            "hx": {
+                                "src": "4"
+                            },
+                            "main": {
+                                "src": "ショルダーメニューのサンプル"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            },
+                            "shoulder": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-shoulder",
+                        "fields": {
+                            "hx": {
+                                "src": "5"
+                            },
+                            "main": {
+                                "src": "ショルダーメニューのサンプル"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            },
+                            "shoulder": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx-shoulder",
+                        "fields": {
+                            "hx": {
+                                "src": "6"
+                            },
+                            "main": {
+                                "src": "ショルダーメニューのサンプル"
+                            },
+                            "sub": {
+                                "src": "副見出し"
+                            },
+                            "shoulder": [
+                                {
+                                    "modId": "px2style:lists/ul-links",
+                                    "fields": {
+                                        "class": "px2-horizontal-list",
+                                        "loop": [
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー1",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:lists/ul-links",
+                                                "fields": {
+                                                    "href": "javascript:alert('clicked');",
+                                                    "label": "ショルダーメニュー2",
+                                                    "target": ""
+                                                },
+                                                "subModName": "loop",
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of1",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "## Full Column\n\nSingle Column.\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "font-size": "",
+                                                    "paragraph": "px2-p",
+                                                    "text-align": ""
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

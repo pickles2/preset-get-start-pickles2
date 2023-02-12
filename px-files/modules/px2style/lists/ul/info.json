@@ -1,0 +1,57 @@
+{
+    "id": ":lists/ul",
+    "name": "リスト - List",
+    "interface": {
+        "fields": {
+            "class": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "リストスタイル",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "標準リスト"
+                    },
+                    {
+                        "value": "px2-vertical-list",
+                        "label": "垂直リスト"
+                    },
+                    {
+                        "value": "px2-horizontal-list",
+                        "label": "水平リスト"
+                    },
+                    {
+                        "value": "px2-horizontal-list px2-horizontal-list--left",
+                        "label": "水平リスト (左寄せ)"
+                    },
+                    {
+                        "value": "px2-horizontal-list px2-horizontal-list--center",
+                        "label": "水平リスト (中央寄せ)"
+                    },
+                    {
+                        "value": "px2-horizontal-list px2-horizontal-list--right",
+                        "label": "水平リスト (右寄せ)"
+                    },
+                    {
+                        "value": "px2-note-list",
+                        "label": "注釈リスト"
+                    }
+                ]
+            },
+            "loop": {
+                "fieldType": "loop",
+                "label": "リストアイテム"
+            }
+        },
+        "subModule": {
+            "loop": {
+                "fields": {
+                    "modules": {
+                        "fieldType": "module",
+                        "label": "リストアイテム"
+                    }
+                }
+            }
+        }
+    }
+}

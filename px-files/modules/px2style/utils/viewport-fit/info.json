@@ -1,0 +1,52 @@
+{
+    "id": ":utils/viewport-fit",
+    "name": "ビューポート幅に合わせる",
+    "areaSizeDetection": "deep",
+    "interface": {
+        "fields": {
+            "text-color":{
+                "fieldType": "input",
+                "type": "color",
+                "label": "文字色",
+                "rows": 1
+            },
+            "background-color":{
+                "fieldType": "input",
+                "type": "color",
+                "label": "背景色",
+                "rows": 1
+            },
+            "background-image":{
+                "fieldType": "input",
+                "type": "image",
+                "label": "背景画像"
+            },
+            "min-height":{
+                "fieldType": "input",
+                "type":"text",
+                "label":"高さ",
+                "description":"最低限確保する高さを指定します。単位を含めて入力してください。 (例: 600px)",
+                "rows": 1
+            },
+            "margin-padding":{
+                "fieldType": "input",
+                "type":"px2style__css-margin-padding",
+                "label":"ボックス内、ボックス外の隙間"
+            },
+            "fluid-contents":{
+                "fieldType": "input",
+                "type":"select",
+                "label":"コンテンツ領域幅",
+                "display":"radio",
+                "options":[
+                    {"value":"", "label":"固定幅"},
+                    {"value":"fluid", "label":"流動幅"}
+                ]
+            },
+            "main": {
+                "fieldType": "module",
+                "label": "内容"
+            }
+        }
+    }
+}

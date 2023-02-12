@@ -1,0 +1,133 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:sections/notice",
+                        "fields": {
+                            "type": "",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "お知らせします。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/notice",
+                        "fields": {
+                            "type": "px2-notice--success",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "成功しました。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/notice",
+                        "fields": {
+                            "type": "px2-notice--warning",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "警告します。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/notice",
+                        "fields": {
+                            "type": "px2-notice--danger",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "エラー、または危険な操作をお知らせします。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/notice",
+                        "fields": {
+                            "type": "px2-notice--info",
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "情報欄です。",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": "",
+                                        "text-align": "",
+                                        "font-size": ""
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            },
+            "anchor": "",
+            "dec": ""
+        }
+    }
+}

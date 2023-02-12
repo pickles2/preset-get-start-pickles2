@@ -1,0 +1,142 @@
+{
+    "id": ":basics/button",
+    "name": "汎用ボタン - Button",
+    "interface": {
+        "fields": {
+            "label": {
+                "fieldType": "input",
+                "type": "text",
+                "label": "ラベル",
+                "rows": 1
+            },
+            "intention": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "ボタンスタイル",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "標準ボタン"
+                    },
+                    {
+                        "value": "px2-btn--primary",
+                        "label": "プライマリボタン"
+                    },
+                    {
+                        "value": "px2-btn--secondary",
+                        "label": "セカンダリボタン"
+                    },
+                    {
+                        "value": "px2-btn--danger",
+                        "label": "危険ボタン"
+                    },
+                    {
+                        "value": "px2-btn--download",
+                        "label": "ダウンロードボタン"
+                    }
+                ]
+            },
+            "sizing": {
+                "fieldType": "input",
+                "type": "select",
+                "name": "sizing",
+                "label": "ボタンサイズ",
+                "options": [
+                    {
+                        "value": "px-btn--sm",
+                        "label": "小さい"
+                    },
+                    {
+                        "value": "",
+                        "label": "標準"
+                    },
+                    {
+                        "value": "px2-btn--lg",
+                        "label": "大きい"
+                    }
+                ]
+            },
+            "display": {
+                "fieldType": "input",
+                "type": "select",
+                "name": "display",
+                "label": "ディスプレイタイプ",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "標準"
+                    },
+                    {
+                        "value": "px2-btn--block",
+                        "label": "ブロック"
+                    }
+                ]
+            },
+            "btntype": {
+                "fieldType": "input",
+                "type": "select",
+                "name": "btntype",
+                "label": "ボタンタイプ",
+                "options": [
+                    {
+                        "value": "button",
+                        "label": "ボタン"
+                    },
+                    {
+                        "value": "submit",
+                        "label": "送信ボタン"
+                    }
+                ]
+            },
+            "onclick": {
+                "fieldType": "input",
+                "type": "script",
+                "lang": "javascript",
+                "name": "onclick",
+                "escape": "html_attr_text",
+                "label": "ボタンアクション"
+            },
+            "align": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "揃え位置",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "指定しない (親要素の組み方に従う)"
+                    },
+                    {
+                        "value": "left",
+                        "label": "左揃え"
+                    },
+                    {
+                        "value": "center",
+                        "label": "中央揃え"
+                    },
+                    {
+                        "value": "right",
+                        "label": "右揃え"
+                    }
+                ]
+            },
+            "paragraph": {
+                "fieldType": "input",
+                "type": "select",
+                "label": "前後の自然なマージン",
+                "display": "radio",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "なし"
+                    },
+                    {
+                        "value": "px2-p",
+                        "label": "前後の自然なマージン"
+                    }
+                ],
+                "default": "px2-p"
+            }
+        }
+    }
+}
