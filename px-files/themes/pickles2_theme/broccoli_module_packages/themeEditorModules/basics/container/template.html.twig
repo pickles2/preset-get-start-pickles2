@@ -1,0 +1,33 @@
+<div class="theme-contents-container{%
+	if attribute(_ENV.vars, "background-image-effect") == "scroll-fixed"
+%} theme-contents-container--bg-scroll-fixed{%
+	endif
+%}"{%
+	if attribute(_ENV.vars, "margin-padding")
+		or attribute(_ENV.vars, "background-image")
+		or attribute(_ENV.vars, "background-color")
+		or attribute(_ENV.vars, "min-height")
+		or attribute(_ENV.vars, "text-color")
+%} style="{{ attribute(_ENV.vars, "margin-padding") }}{%
+	if attribute(_ENV.vars, "background-image")
+		%} background-image:url(&quot;{{ attribute(_ENV.vars, "background-image") }}&quot;);{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "background-color")
+		%} background-color: {{ attribute(_ENV.vars, "background-color") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "min-height")
+		%} min-height:{{ attribute(_ENV.vars, "min-height") }};{%
+	endif
+%}{%
+	if attribute(_ENV.vars, "text-color")
+		%} color:{{ attribute(_ENV.vars, "text-color") }};{%
+	endif
+%}"{%
+	endif
+%}>
+{% if _ENV.mode == "canvas" %}<div style="height: 12px;"></div>{% endif %}
+	<div class="theme-contents-container__inner{% if attribute(_ENV.vars, "fluid-innter") %} theme-contents-container__inner--fluid{% endif %}">
+{{ main }}</div>
+</div>

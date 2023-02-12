@@ -7,8 +7,12 @@
                     {
                         "modId": "px2style:utils/viewport-fit",
                         "fields": {
-                            "text-color": "#00a0e6",
-                            "background-color": "#f6f6f6",
+                            "text-color": {
+                                "src": "#00a0e6"
+                            },
+                            "background-color": {
+                                "src": "#f6f6f6"
+                            },
                             "background-image": {
                                 "resKey": "8be607047125cb7f621d3bf77ac5787f",
                                 "path": "./index_files/resources/8be607047125cb7f621d3bf77ac5787f.txt",
@@ -16,7 +20,9 @@
                                 "webUrl": ""
                             },
                             "background-image-effect": "",
-                            "min-height": "380px",
+                            "min-height": {
+                                "src": "380px"
+                            },
                             "margin-padding": {
                                 "marginTop": "",
                                 "marginRight": "",
@@ -32,8 +38,12 @@
                                 {
                                     "modId": "px2style:utils/p",
                                     "fields": {
-                                        "paragraph": "px2-p",
-                                        "text-align": " px2-text-align-center",
+                                        "paragraph": {
+                                            "src": "px2-p"
+                                        },
+                                        "text-align": {
+                                            "src": " px2-text-align-center"
+                                        },
                                         "main": [
                                             {
                                                 "modId": "px2style:basics/image",
@@ -88,234 +98,246 @@
                                                 "anchor": "",
                                                 "dec": ""
                                             }
-                                        ]
+                                        ],
+                                        "font-size": {
+                                            "src": ""
+                                        },
+                                        "text-color": {
+                                            "src": ""
+                                        },
+                                        "background-color": {
+                                            "src": ""
+                                        },
+                                        "background-image": {
+                                            "resKey": "944b0822714c542b056ed7b316f548b7",
+                                            "resType": "none",
+                                            "webUrl": "",
+                                            "path": "./index_files/resources/944b0822714c542b056ed7b316f548b7.unknown"
+                                        },
+                                        "min-height": {
+                                            "src": ""
+                                        },
+                                        "margin-padding": {
+                                            "marginTop": "",
+                                            "marginRight": "",
+                                            "marginBottom": "",
+                                            "marginLeft": "",
+                                            "paddingTop": "",
+                                            "paddingRight": "",
+                                            "paddingBottom": "",
+                                            "paddingLeft": ""
+                                        }
                                     },
                                     "anchor": "",
                                     "dec": ""
                                 }
-                            ]
+                            ],
+                            "fluid-contents": {
+                                "src": ""
+                            }
                         },
                         "anchor": "",
                         "dec": ""
                     },
                     {
-                        "modId": "px2style:utils/viewport-fit",
+                        "modId": "px2style:sections/hx",
                         "fields": {
-                            "text-color": "",
-                            "background-color": "",
-                            "background-image": {
-                                "resKey": "",
-                                "path": "about:blank",
-                                "resType": "",
-                                "webUrl": ""
+                            "hx": {
+                                "src": "2"
                             },
-                            "background-image-effect": "",
-                            "min-height": "",
-                            "margin-padding": "",
-                            "fluid-innter": "",
-                            "main": [
+                            "main": {
+                                "src": "次のステップ"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
                                 {
-                                    "modId": "px2style:sections/hx",
+                                    "modId": "px2style:grids/grid",
                                     "fields": {
-                                        "hx": {
-                                            "src": "2"
-                                        },
-                                        "main": {
-                                            "src": "次のステップ"
-                                        },
-                                        "sub": {
-                                            "src": ""
-                                        }
+                                        "column-width": "1of3",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:sections/hx",
+                                                "fields": {
+                                                    "hx": {
+                                                        "src": "3"
+                                                    },
+                                                    "main": {
+                                                        "src": "サイトマップを編集します"
+                                                    },
+                                                    "sub": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "はじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    },
+                                                    "paragraph": {
+                                                        "src": "px2-p"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
                                     },
+                                    "subModName": "col",
                                     "anchor": "",
                                     "dec": ""
                                 },
                                 {
                                     "modId": "px2style:grids/grid",
                                     "fields": {
-                                        "col": [
+                                        "column-width": "1of3",
+                                        "main": [
                                             {
-                                                "modId": "px2style:grids/grid",
+                                                "modId": "px2style:sections/hx",
                                                 "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "px2style:sections/hx",
-                                                            "fields": {
-                                                                "hx": {
-                                                                    "src": "3"
-                                                                },
-                                                                "main": {
-                                                                    "src": "サイトマップを編集します"
-                                                                },
-                                                                "sub": {
-                                                                    "src": ""
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        },
-                                                        {
-                                                            "modId": "px2style:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "はじめに、サイト全体の構造をサイトマップに登録します。1行が1ページで表現されるCSV形式のファイルです。\n\nサイトマップCSVは次のパスに置かれています。\n\n```\n./px-files/sitemaps/\n```\n",
-                                                                    "editor": "markdown"
-                                                                },
-                                                                "text-align": {
-                                                                    "src": ""
-                                                                },
-                                                                "font-size": {
-                                                                    "src": ""
-                                                                },
-                                                                "paragraph": {
-                                                                    "src": "px2-p"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
+                                                    "hx": {
+                                                        "src": "3"
+                                                    },
+                                                    "main": {
+                                                        "src": "テーマを編集します"
+                                                    },
+                                                    "sub": {
+                                                        "src": ""
+                                                    }
                                                 },
-                                                "subModName": "col",
                                                 "anchor": "",
                                                 "dec": ""
                                             },
                                             {
-                                                "modId": "px2style:grids/grid",
+                                                "modId": "px2style:basics/text",
                                                 "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "px2style:sections/hx",
-                                                            "fields": {
-                                                                "hx": {
-                                                                    "src": "3"
-                                                                },
-                                                                "main": {
-                                                                    "src": "テーマを編集します"
-                                                                },
-                                                                "sub": {
-                                                                    "src": ""
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        },
-                                                        {
-                                                            "modId": "px2style:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "テーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
-                                                                    "editor": "markdown"
-                                                                },
-                                                                "text-align": {
-                                                                    "src": ""
-                                                                },
-                                                                "font-size": {
-                                                                    "src": ""
-                                                                },
-                                                                "paragraph": {
-                                                                    "src": "px2-p"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
+                                                    "main": {
+                                                        "src": "テーマは、コンテンツエリア以外のHTMLソースを生成するPHPテンプレートです。\n\n次のパスに置かれています。\n\n```\n./px-files/themes/\n```\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    },
+                                                    "paragraph": {
+                                                        "src": "px2-p"
+                                                    }
                                                 },
-                                                "subModName": "col",
-                                                "anchor": "",
-                                                "dec": ""
-                                            },
-                                            {
-                                                "modId": "px2style:grids/grid",
-                                                "fields": {
-                                                    "column-width": "1of3",
-                                                    "main": [
-                                                        {
-                                                            "modId": "px2style:sections/hx",
-                                                            "fields": {
-                                                                "hx": {
-                                                                    "src": "3"
-                                                                },
-                                                                "main": {
-                                                                    "src": "コンテンツを編集します"
-                                                                },
-                                                                "sub": {
-                                                                    "src": ""
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        },
-                                                        {
-                                                            "modId": "px2style:basics/text",
-                                                            "fields": {
-                                                                "main": {
-                                                                    "src": "コンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
-                                                                    "editor": "markdown"
-                                                                },
-                                                                "text-align": {
-                                                                    "src": ""
-                                                                },
-                                                                "font-size": {
-                                                                    "src": ""
-                                                                },
-                                                                "paragraph": {
-                                                                    "src": "px2-p"
-                                                                }
-                                                            },
-                                                            "anchor": "",
-                                                            "dec": ""
-                                                        }
-                                                    ]
-                                                },
-                                                "subModName": "col",
                                                 "anchor": "",
                                                 "dec": ""
                                             }
                                         ]
-                                    }
-                                },
-                                {
-                                    "modId": "px2style:sections/hx",
-                                    "fields": {
-                                        "hx": {
-                                            "src": "3"
-                                        },
-                                        "main": {
-                                            "src": "パブリッシュします"
-                                        },
-                                        "sub": {
-                                            "src": ""
-                                        }
                                     },
+                                    "subModName": "col",
                                     "anchor": "",
                                     "dec": ""
                                 },
                                 {
-                                    "modId": "px2style:basics/text",
+                                    "modId": "px2style:grids/grid",
                                     "fields": {
-                                        "main": {
-                                            "src": "サイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",
-                                            "editor": "markdown"
-                                        },
-                                        "text-align": {
-                                            "src": ""
-                                        },
-                                        "font-size": {
-                                            "src": ""
-                                        },
-                                        "paragraph": {
-                                            "src": "px2-p"
-                                        }
+                                        "column-width": "1of3",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:sections/hx",
+                                                "fields": {
+                                                    "hx": {
+                                                        "src": "3"
+                                                    },
+                                                    "main": {
+                                                        "src": "コンテンツを編集します"
+                                                    },
+                                                    "sub": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "コンテンツは、コンテンツエリアのソースだけが記述されたシンプルなHTMLファイルです。<br />\nサイトマップの path 欄に登録したパスにHTMLファイルを作成してください。<br />\n\nあなたがいま見ているこのページは、テキストエディタで `/index.html` を開くとソースを確認できます。<br />\nこのページも、削除や上書きしてあなたのサイトのトップページに置き換えてください。<br />\n",
+                                                        "editor": "markdown"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    },
+                                                    "paragraph": {
+                                                        "src": "px2-p"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
                                     },
+                                    "subModName": "col",
                                     "anchor": "",
                                     "dec": ""
                                 }
                             ]
                         }
+                    },
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "3"
+                            },
+                            "main": {
+                                "src": "パブリッシュします"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "サイトができあがったら、そのまま静的なHTMLに書き出すことができます。<br />\n次のコマンドで、パブリッシュを実行します。\n\n```\n$ php ./.px_execute.php /?PX=publish.run\n```\n\nしばらくすると、次のパスに、静的なHTMLファイルが生成されます。\n\n```\n./px-files/dist/\n```\n",
+                                "editor": "markdown"
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            },
+                            "paragraph": {
+                                "src": "px2-p"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
                     }
                 ]
             }

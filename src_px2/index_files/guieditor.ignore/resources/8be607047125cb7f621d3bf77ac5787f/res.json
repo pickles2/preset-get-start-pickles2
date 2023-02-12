@@ -6,5 +6,6 @@
     "isPrivateMaterial": false,
     "publicFilename": "",
     "field": "image",
-    "fieldNote": []
+    "fieldNote": [],
+    "type": "image/png"
 }

@@ -1,0 +1,110 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "themeEditorModules:layouts/header",
+                        "fields": {
+                            "sitetitle_linkto": {
+                                "src": "/index.html"
+                            },
+                            "sitetitle_htmlElement": {
+                                "src": ""
+                            },
+                            "shouldernavi": [
+                                {
+                                    "modId": "themeEditorModules:vars/shouldernavi",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "globalnavi": [
+                                {
+                                    "modId": "themeEditorModules:vars/globalnavi",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "sitetitle_image": {
+                                "resKey": "b65e9405adab6577125e26a30dc2e855",
+                                "resType": "none",
+                                "webUrl": "",
+                                "path": "./theme_files/layouts/default/resources/b65e9405adab6577125e26a30dc2e855.unknown"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "themeEditorModules:layouts/rnavi",
+                        "fields": {
+                            "header": [],
+                            "main": [
+                                {
+                                    "modId": "themeEditorModules:vars/breadcrumb",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "themeEditorModules:vars/h1",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "themeEditorModules:vars/bowl",
+                                    "fields": {
+                                        "bowlName": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "themeEditorModules:layouts/backtopagetop",
+                                    "fields": []
+                                },
+                                {
+                                    "modId": "themeEditorModules:vars/breadcrumb",
+                                    "fields": []
+                                }
+                            ],
+                            "rnavi": [
+                                {
+                                    "modId": "themeEditorModules:vars/localnavigation",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "footer": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "themeEditorModules:layouts/footer",
+                        "fields": {
+                            "content": [
+                                {
+                                    "modId": "themeEditorModules:vars/copyright",
+                                    "fields": [],
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            }
+        }
+    }
+}

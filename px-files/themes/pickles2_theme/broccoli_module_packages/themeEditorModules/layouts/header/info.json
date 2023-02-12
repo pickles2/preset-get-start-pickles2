@@ -1,0 +1,36 @@
+{
+    "name": "Header",
+    "areaSizeDetection": "shallow",
+    "interface": {
+        "fields":{
+            "sitetitle_linkto":{
+                "fieldType": "input",
+                "label": "サイト名のリンク先",
+                "type": "href"
+            },
+            "sitetitle_htmlElement":{
+                "fieldType": "input",
+                "label": "サイト名をHTML要素で囲う",
+                "type": "select",
+                "options": [
+                     {"value":"", "label":"囲わない"},
+                     {"value":"h1", "label":"h1"}
+                ]
+            },
+            "sitetitle_image":{
+                "fieldType": "input",
+                "label": "タイトルイメージ",
+                "type": "image"
+            },
+            "shouldernavi": {
+                "fieldType": "module",
+                "label": "ショルダーナビ"
+            },
+            "globalnavi": {
+                "fieldType": "module",
+                "label": "グローバルナビ"
+            }
+        },
+        "subModule": {}
+    }
+}

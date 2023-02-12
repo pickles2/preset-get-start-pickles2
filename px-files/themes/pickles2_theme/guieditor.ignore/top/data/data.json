@@ -1,0 +1,61 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "themeEditorModules:layouts/header",
+                        "fields": {
+                            "sitetitle_linkto": {
+                                "src": ""
+                            },
+                            "sitetitle_htmlElement": {
+                                "src": "h1"
+                            },
+                            "sitetitle_image": {
+                                "resKey": "2641c244cf1dc60854a0c8712c575b13",
+                                "resType": "none",
+                                "webUrl": "",
+                                "path": "./theme_files/layouts/top/resources/2641c244cf1dc60854a0c8712c575b13.unknown"
+                            },
+                            "shouldernavi": [],
+                            "globalnavi": []
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "themeEditorModules:layouts/fullcolumn",
+                        "fields": {
+                            "inner-width": "",
+                            "main": [
+                                {
+                                    "modId": "themeEditorModules:vars/bowl",
+                                    "fields": {
+                                        "bowlName": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "modId": "themeEditorModules:layouts/footer",
+                        "fields": {
+                            "content": [
+                                {
+                                    "modId": "themeEditorModules:vars/copyright",
+                                    "fields": []
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

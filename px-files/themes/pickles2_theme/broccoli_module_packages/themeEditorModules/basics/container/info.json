@@ -1,0 +1,60 @@
+{
+  "name": "Contents Container",
+  "interface": {
+    "fields": {
+      "text-color":{
+        "fieldType": "input",
+        "type": "color",
+        "label": "文字色",
+        "rows": 1
+      },
+      "background-color":{
+        "fieldType": "input",
+        "type": "color",
+        "label": "背景色",
+        "rows": 1
+      },
+      "background-image":{
+        "fieldType": "input",
+        "type": "image",
+        "label": "背景画像"
+      },
+      "background-image-effect":{
+        "fieldType": "input",
+        "type":"select",
+        "label":"背景画像処理",
+        "display":"select",
+        "options":[
+          {"value":"", "label":"なし"},
+          {"value":"scroll-fixed", "label":"スクロールに対して固定"}
+        ]
+      },
+      "min-height":{
+        "fieldType": "input",
+        "type":"text",
+        "label":"高さ",
+        "description":"最低限確保する高さを指定します。単位を含めて入力してください。 (例: 600px)",
+        "rows": 1
+      },
+      "margin-padding":{
+        "fieldType": "input",
+        "type":"css-margin-padding",
+        "label":"ボックス内、ボックス外の隙間 (margin, padding)"
+      },
+      "fluid-innter":{
+        "fieldType": "input",
+        "type":"select",
+        "label":"コンテンツ領域幅",
+        "display":"radio",
+        "options":[
+          {"value":"", "label":"固定幅"},
+          {"value":"fluid", "label":"流動幅"}
+        ]
+      },
+      "main": {
+        "fieldType": "module",
+        "label":"メインエリア"
+      }
+    }
+  }
+}
